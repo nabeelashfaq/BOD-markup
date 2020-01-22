@@ -393,7 +393,7 @@ th {
   padding: 0;
 }
 
-#nav > ul, .nav-links-block .links-list {
+.footer-links-block ul, #nav > ul, .nav-links-block .links-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -834,4 +834,74 @@ input[type=submit] {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+#footer {
+  padding: 70px 0;
+  background: url(../images/Footer-Pattern.svg) no-repeat;
+  background-size: 100%;
+  background-position: 0 100%;
+}
+#footer .logo-text-block {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  padding: 0 120px 0 0;
+}
+#footer .logo-text-block a {
+  color: #0aa7e0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#footer .footer-logo {
+  width: 150px;
+  float: left;
+  margin: 0 40px 0 0;
+}
+#footer .footer-logo img {
+  display: block;
+  width: 100%;
+}
+#footer .text-block {
+  overflow: hidden;
+}
+#footer .text-block .title {
+  display: block;
+  margin-bottom: 10px;
+  color: #2374bb;
+  text-transform: uppercase;
+}
+#footer .copyright-text {
+  display: block;
+  clear: both;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2374bb;
+  margin-top: 20px;
+}
+
+.footer-links-block {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-links-block .col {
+  width: 30%;
+}
+.footer-links-block .col.address-block {
+  width: 40%;
+  text-align: right;
+}
+.footer-links-block span {
+  display: block;
+}
+.footer-links-block a {
+  text-decoration: none;
+  color: #2374bb;
+  text-transform: uppercase;
+}
+.footer-links-block a.tel {
+  color: #0aa7e0;
+}
+.footer-links-block address {
+  font-style: normal;
 }
