@@ -951,6 +951,8 @@ input[type=submit] {
 #footer .logo-text-block {
   width: 50%;
   padding: 0 120px 0 0;
+  display: flex;
+  flex-flow: row nowrap;
 }
 #footer .logo-text-block a {
   color: #0aa7e0;
@@ -963,7 +965,7 @@ input[type=submit] {
 }
 #footer .footer-logo {
   width: 150px;
-  float: left;
+  flex-shrink: 0;
   margin: 0 40px 0 0;
 }
 #footer .footer-logo img {
@@ -971,7 +973,7 @@ input[type=submit] {
   width: 100%;
 }
 #footer .text-block {
-  overflow: hidden;
+  flex-grow: 1;
 }
 #footer .text-block .title {
   display: block;
