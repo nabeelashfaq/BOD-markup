@@ -836,6 +836,112 @@ input[type=submit] {
   padding: 0 20px;
 }
 
+.section {
+  padding: 50px 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.form-holder {
+  background: #eafaff;
+  padding: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+.form-holder .title {
+  color: #0aa7e0;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 26px;
+}
+.form-holder p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.form input[type=text],
+.form input[type=tel],
+.form input[type=email],
+.form textarea {
+  width: 100%;
+  border: none;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+.form input[type=text]::-webkit-input-placeholder,
+.form input[type=tel]::-webkit-input-placeholder,
+.form input[type=email]::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.form input[type=text]::-moz-placeholder,
+.form input[type=tel]::-moz-placeholder,
+.form input[type=email]::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.form input[type=text]:-moz-placeholder,
+.form input[type=tel]:-moz-placeholder,
+.form input[type=email]:-moz-placeholder,
+.form textarea:-moz-placeholder {
+  color: #a8a8a8;
+}
+.form input[type=text]:-ms-input-placeholder,
+.form input[type=tel]:-ms-input-placeholder,
+.form input[type=email]:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.form input[type=text].placeholder,
+.form input[type=tel].placeholder,
+.form input[type=email].placeholder,
+.form textarea.placeholder {
+  color: #a8a8a8;
+}
+.form textarea {
+  resize: none;
+  height: 180px;
+}
+.form .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 40px;
+}
+
+.modal-holder {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  background: rgba(10, 167, 224, 0.35);
+  text-align: center;
+}
+.modal-holder .title {
+  color: #0aa7e0;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.modal-holder .modal {
+  background: #eafaff;
+  padding: 50px 100px;
+  max-width: 800px;
+}
+
 #footer {
   padding: 70px 0;
   background: url(../images/Footer-Pattern.svg) no-repeat;
