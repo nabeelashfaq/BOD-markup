@@ -928,7 +928,7 @@ input[type=submit] {
   background: rgba(10, 167, 224, 0.35);
   text-align: center;
 }
-.modal-holder .title {
+.modal-holder__title {
   color: #0aa7e0;
   display: block;
   text-transform: uppercase;
@@ -936,7 +936,7 @@ input[type=submit] {
   line-height: 26px;
   margin-bottom: 30px;
 }
-.modal-holder .modal {
+.modal-holder__modal {
   background: #eafaff;
   padding: 50px 100px;
   max-width: 800px;
@@ -949,8 +949,6 @@ input[type=submit] {
   background-position: 0 100%;
 }
 #footer .logo-text-block {
-  overflow: hidden;
-  float: left;
   width: 50%;
   padding: 0 120px 0 0;
 }
@@ -958,6 +956,10 @@ input[type=submit] {
   color: #0aa7e0;
   text-decoration: none;
   text-transform: uppercase;
+}
+#footer .container {
+  display: flex;
+  flex-flow: row wrap;
 }
 #footer .footer-logo {
   width: 150px;
@@ -984,11 +986,13 @@ input[type=submit] {
   text-transform: uppercase;
   color: #2374bb;
   margin-top: 20px;
+  width: 100%;
 }
 
 .footer-links-block {
   display: flex;
   flex-flow: row wrap;
+  width: 50%;
 }
 .footer-links-block .col {
   width: 30%;

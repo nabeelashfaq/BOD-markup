@@ -5,8 +5,6 @@
   background-position: 0 100%;
 
   .logo-text-block{
-    overflow: hidden;
-    float: left;
     width: 50%;
     padding: 0 120px 0 0;
 
@@ -15,6 +13,11 @@
       text-decoration: none;
       text-transform: uppercase;
     }
+  }
+
+  .container{
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .footer-logo{
@@ -46,12 +49,14 @@
     text-transform: uppercase;
     color: #2374bb;
     margin-top: 20px;
+    width: 100%;
   }
 }
 
 .footer-links-block{
   display: flex;
   flex-flow: row wrap;
+  width: 50%;
 
   .col{
     width: 30%;
