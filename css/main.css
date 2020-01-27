@@ -686,28 +686,35 @@ input[type=submit] {
 .footer__links-block {
   display: flex;
   flex-flow: row wrap;
-  width: 50%;
-}
-.footer__links-block .footer__col {
   width: 30%;
 }
-.footer__links-block .footer__col.footer__col--address-block {
-  width: 40%;
-  text-align: right;
-}
-.footer__links-block span {
-  display: block;
+.footer__links-block .footer__col {
+  width: 50%;
 }
 .footer__links-block a {
   text-decoration: none;
   color: #2374bb;
   text-transform: uppercase;
 }
-.footer__links-block a.tel {
+
+.footer__address-block {
+  width: 20%;
+  text-align: right;
+}
+.footer__address-block a {
+  text-decoration: none;
+  color: #2374bb;
+  text-transform: uppercase;
+}
+.footer__address-block a.tel {
   color: #0aa7e0;
 }
-.footer__links-block address {
+.footer__address-block address {
   font-style: normal;
+  display: block;
+}
+.footer__address-block span {
+  display: block;
 }
 
 .header__nav-links-block {

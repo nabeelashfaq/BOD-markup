@@ -58,23 +58,26 @@
 .footer__links-block{
   display: flex;
   flex-flow: row wrap;
-  width: 50%;
+  width: 30%;
 
   .footer__col{
-    width: 30%;
-    &.footer__col--address-block{
-      width: 40%;
-      text-align: right;
-    }
+    width: 50%;
   }
+
   ul{
     @extend %listreset;
   }
-
-  span{
-    display: block;
-  }
   
+  a{
+    text-decoration: none;
+    color: #2374bb;
+    text-transform: uppercase;
+  }
+}
+
+.footer__address-block{
+  width: 20%;
+  text-align: right;
   a{
     text-decoration: none;
     color: #2374bb;
@@ -87,6 +90,10 @@
 
   address{
     font-style: normal;
+    display: block;
   }
 
+  span{
+    display: block;
+  }
 }
