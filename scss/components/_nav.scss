@@ -1,24 +1,10 @@
-#header{
-  padding: 50px 0 20px;
-  position: relative;
-  background: url(../images/Header-Pattern.svg) no-repeat;
-  background-size: 100%;
-  box-shadow: 0 0 10px rgba($black, 0.3);
 
-  .logo{
-    float: left;
-    width: 300px;
-    img{
-      width: 100%;
-    }
-  }
-}
 
-.nav-links-block{
+.header__nav-links-block{
   float: right;
   text-align: right;
 
-  .links-list{
+  .header__links-list{
     @extend %listreset;
     margin-bottom: 20px;
 
@@ -42,7 +28,7 @@
   }
 }
 
-#nav{
+#header__nav{
   >ul{
     @extend %listreset;
 

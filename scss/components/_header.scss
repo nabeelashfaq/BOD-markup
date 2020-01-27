@@ -1,0 +1,15 @@
+#header{
+  padding: 50px 0 20px;
+  position: relative;
+  background: url(../images/Header-Pattern.svg) no-repeat;
+  background-size: 100%;
+  box-shadow: 0 0 10px rgba($black, 0.3);
+
+  .header__logo{
+    float: left;
+    width: 300px;
+    img{
+      width: 100%;
+    }
+  }
+}

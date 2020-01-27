@@ -1,0 +1,82 @@
+.form{
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea{
+    width: 100%;
+    border: none;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    @include placeholder{
+      color: #a8a8a8;
+    }
+  }
+
+  textarea{
+    resize: none;
+    height: 180px;
+  }
+
+  .btn-primary{
+    background: #0aa7e0;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 40px;
+  }
+}
+
+.question-form-block{
+  background: #eafaff;
+  text-align: center;
+
+  h2{
+    text-transform: uppercase;
+    color: #2374bb;
+    margin-bottom: 30px;
+  }
+}
+
+.question-form{
+  .question-form__input-holder{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 190px 0 70px;
+    background: #fff;
+  }
+
+  img{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    width: 30px;
+    transform: translateY(-50%);
+  }
+
+  input[type="search"]{
+    width: 100%;
+    border: none;
+    padding: 20px 0;
+    outline: none;
+    font-size: 20px;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    @include placeholder{
+      color: #a8a8a8;
+    }
+  }
+
+  .btn-primary{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #0aa7e0;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 40px;
+  }
+}

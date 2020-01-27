@@ -14,15 +14,15 @@
 	<div id="wrapper">
 		<header id="header">
 			<div class="container">
-				<div class="logo">
+				<div class="header__logo">
 					<a href="#"><img src="images/logo.svg" alt=""></a>
 				</div>
-				<div class="nav-links-block">
-					<ul class="links-list">
+				<div class="header__nav-links-block">
+					<ul class="header__links-list">
 						<li><a href="#"><img src="images/user-icon.svg" alt=""> Login</a></li>
 						<li><a href="#"><img src="images/life-ring-icon.svg" alt=""> Support</a></li>
 					</ul>
-					<nav id="nav">
+					<nav id="header__nav">
 						<ul>
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About</a>
@@ -47,6 +47,18 @@
 			</div>
 		</header>
 		<main id="main">
+			<section class="section question-form-block">
+				<div class="container">
+					<h2>How can we help?</h2>
+					<form action="#" class="question-form">
+						<div class="question-form__input-holder">
+							<img src="images/magnifying-glass.svg" alt="">
+							<input type="search" placeholder="Ask a question...">
+							<button type="submit" class="btn-primary">Search</button>
+						</div>
+					</form>
+				</div>
+			</section>
 			<section class="section">
 				<div class="container">
 					<div class="form-holder">
@@ -63,11 +75,11 @@
 				</div>
 			</section>
 			<div class="modal-holder d-none">
-				<div class="modal">
-					<strong class="title">Grow your patience with <br/>braces on demand</strong>
+				<div class="modal-holder__modal">
+					<strong class="modal-holder__title">Grow your patience with <br/>braces on demand</strong>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<form action="#" class="form">
+					<form action="#" class="form modal-holder--form">
 						<input type="text" placeholder="Name">
 						<input type="email" placeholder="Email">
 						<input type="tel" placeholder="Phone">
@@ -80,17 +92,17 @@
 		<footer id="footer">
 			<div class="container">
 				<div class="logo-text-block">
-					<div class="footer-logo">
+					<div class="footer__logo">
 						<a href="#"><img src="images/footer-logo-svg.svg" alt=""></a>
 					</div>
-					<div class="text-block">
-						<span class="title">The future of orthodontics, today.</span>
+					<div class="footer__text-block">
+						<span class="footer__title">The future of orthodontics, today.</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<a href="#">Learn more</a>
 					</div>
 				</div>
-				<div class="footer-links-block">
-					<div class="col">
+				<div class="footer__links-block">
+					<div class="footer__col">
 						<ul>
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About</a></li>
@@ -99,7 +111,7 @@
 							<li><a href="#">Log in</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="footer__col">
 						<ul>
 							<li><a href="#">Values</a></li>
 							<li><a href="#">Teams</a></li>
@@ -108,14 +120,14 @@
 							<li><a href="#">Support</a></li>
 						</ul>
 					</div>
-					<div class="col address-block">
+					<div class="footer__col footer__col--address-block">
 						<a href="#">Braces on demand</a>
 						<address>Street address <br> city, state, Zip</address>
 						<span>phone</span>
 						<a href="#" class="tel">Contact us</a>
 					</div>
 				</div>
-				<span class="copyright-text">Copyright 2020 - Braces on demand</span>
+				<span class="footer__copyright-text">Copyright 2020 - Braces on demand</span>
 			</div>
 		</footer>
 	</div>

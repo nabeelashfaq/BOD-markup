@@ -1,0 +1,41 @@
+#wrapper{
+  position: relative;
+  width:100%;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @extend %clearfix;
+}
+
+.section{
+  padding: 50px 0;
+}
+
+.d-none{
+  display: none !important;
+}
+
+.form-holder{
+  background: #eafaff;
+  padding: 30px;
+  text-align: center;
+  max-width: 600px;
+
+  .title{
+    color: #0aa7e0;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  p{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+}
