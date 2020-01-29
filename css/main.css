@@ -688,6 +688,37 @@ input[type=submit] {
   text-decoration: none;
 }
 
+.team-block {
+  padding: 50px 0;
+}
+.team-block .team-block__team-holder {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 30px;
+  align-items: center;
+  background: #eafaff;
+}
+.team-block .team-block__img-holder {
+  width: 30%;
+  flex-shrink: 0;
+}
+.team-block .team-block__img-holder img {
+  display: block;
+}
+.team-block .team-block__text-holder {
+  flex-grow: 1;
+  padding: 50px;
+}
+.team-block .team-block__title {
+  display: block;
+  color: #0aa7e0;
+  margin-bottom: 10px;
+}
+.team-block h2 {
+  color: #2374bb;
+  text-transform: uppercase;
+}
+
 #footer {
   padding: 70px 0;
   background: url(../images/Footer-Pattern.svg) no-repeat;

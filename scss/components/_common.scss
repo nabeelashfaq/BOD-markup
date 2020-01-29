@@ -102,3 +102,39 @@
     text-decoration: none;
   }
 }
+
+.team-block{
+  padding: 50px 0;
+
+  .team-block__team-holder{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+    align-items: center;
+    background: #eafaff;
+  }
+
+  .team-block__img-holder{
+    width: 30%;
+    flex-shrink: 0;
+    img{
+      display: block;
+    }
+  }
+
+  .team-block__text-holder{
+    flex-grow: 1;
+    padding: 50px;
+  }
+
+  .team-block__title{
+    display: block;
+    color: #0aa7e0;
+    margin-bottom: 10px;
+  }
+
+  h2{
+    color: #2374bb;
+    text-transform: uppercase;
+  }
+}
