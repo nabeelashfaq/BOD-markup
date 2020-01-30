@@ -611,6 +611,10 @@ input[type=submit] {
   padding: 50px 0;
 }
 
+.boxes-img {
+  margin-bottom: 10px;
+}
+
 .d-none {
   display: none !important;
 }
@@ -717,6 +721,24 @@ input[type=submit] {
 .team-block h2 {
   color: #2374bb;
   text-transform: uppercase;
+}
+
+.info-section {
+  text-align: center;
+  color: #fff;
+  background-color: #215fac;
+  background-image: url(../images/Footer-Pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 100%;
+}
+.info-section h3 {
+  text-transform: uppercase;
+}
+.info-section .info-section__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
 }
 
 #footer {
