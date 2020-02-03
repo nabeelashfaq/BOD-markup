@@ -28,6 +28,7 @@
   padding: 30px;
   text-align: center;
   max-width: 600px;
+  border-radius: 10px;
 
   .title{
     color: #0aa7e0;
@@ -56,7 +57,7 @@
     line-height: 28px;
   }
 
-  .events-block__subtitle{
+  &__subtitle{
     color: #0aa7e0;
     display: block;
     text-transform: uppercase;
@@ -67,33 +68,23 @@
     font-style: italic;
   }
 
-  .events-block__event-holder{
+  &__event-holder{
     background: #eafaff;
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
     max-width: 800px;
     margin: 0 auto 30px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    border-radius: 10px;
   }
 
-  .events-block__icon-holder{
-    width: 120px;
-    flex-shrink: 0;
-    margin: 0 30px 0 0;
-
-    img{
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  .events-block__text-holder{
+  &__text-holder{
     flex-grow: 1;
     padding: 0 50px 0 0;
   }
 
-  .events-block__btn-holder{
+  &__btn-holder{
     flex-shrink: 0;
   }
 
@@ -110,15 +101,17 @@
 .team-block{
   padding: 50px 0;
 
-  .team-block__team-holder{
+  &__team-holder{
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 30px;
     align-items: center;
     background: #eafaff;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
-  .team-block__img-holder{
+  &__img-holder{
     width: 30%;
     flex-shrink: 0;
     img{
@@ -126,12 +119,12 @@
     }
   }
 
-  .team-block__text-holder{
+  &__text-holder{
     flex-grow: 1;
     padding: 50px;
   }
 
-  .team-block__title{
+  &__title{
     display: block;
     color: #0aa7e0;
     margin-bottom: 10px;
@@ -145,20 +138,60 @@
 
 .info-section{
   text-align: center;
-  color: #fff;
-  background-color: #215fac;
-  background-image: url(../images/Footer-Pattern.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 100%;
+  background-color: #f2f2f2;
 
   h3{
     text-transform: uppercase;
+    color: #2374bb;
   }
 
-  .info-section__subtitle{
+  .btn-primary{
+    background: #0aa7e0;
+    color: #fff;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    display: block;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
   }
+}
+
+.download-files-block{
+  padding: 50px 0;
+
+  &__download-holder{
+    max-width: 600px;
+    margin: 0 auto 30px;
+    background: #eafaff;
+    padding: 20px 30px 20px 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  &__pdf-icon{
+    width: 80px;
+    margin: 0 40px 0 0;
+  }
+
+  h3{
+    text-transform: uppercase;
+    color: #0aa7e0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__download-btn{
+    width: 50px;
+    display: block;
+    align-self:flex-end;
+  }
+
+  &__text-holder{
+    padding: 0 50px 0 0;
+  }
+
 }

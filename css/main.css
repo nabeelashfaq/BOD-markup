@@ -624,6 +624,7 @@ input[type=submit] {
   padding: 30px;
   text-align: center;
   max-width: 600px;
+  border-radius: 10px;
 }
 .form-holder .title {
   color: #0aa7e0;
@@ -649,7 +650,7 @@ input[type=submit] {
   font-size: 20px;
   line-height: 28px;
 }
-.events-block .events-block__subtitle {
+.events-block__subtitle {
   color: #0aa7e0;
   display: block;
   text-transform: uppercase;
@@ -658,29 +659,21 @@ input[type=submit] {
 .events-block p {
   font-style: italic;
 }
-.events-block .events-block__event-holder {
+.events-block__event-holder {
   background: #eafaff;
-  padding: 20px;
+  padding: 20px 20px 20px 50px;
   max-width: 800px;
   margin: 0 auto 30px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  border-radius: 10px;
 }
-.events-block .events-block__icon-holder {
-  width: 120px;
-  flex-shrink: 0;
-  margin: 0 30px 0 0;
-}
-.events-block .events-block__icon-holder img {
-  display: block;
-  margin: 0 auto;
-}
-.events-block .events-block__text-holder {
+.events-block__text-holder {
   flex-grow: 1;
   padding: 0 50px 0 0;
 }
-.events-block .events-block__btn-holder {
+.events-block__btn-holder {
   flex-shrink: 0;
 }
 .events-block .btn-primary {
@@ -695,25 +688,27 @@ input[type=submit] {
 .team-block {
   padding: 50px 0;
 }
-.team-block .team-block__team-holder {
+.team-block__team-holder {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 30px;
   align-items: center;
   background: #eafaff;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.team-block .team-block__img-holder {
+.team-block__img-holder {
   width: 30%;
   flex-shrink: 0;
 }
-.team-block .team-block__img-holder img {
+.team-block__img-holder img {
   display: block;
 }
-.team-block .team-block__text-holder {
+.team-block__text-holder {
   flex-grow: 1;
   padding: 50px;
 }
-.team-block .team-block__title {
+.team-block__title {
   display: block;
   color: #0aa7e0;
   margin-bottom: 10px;
@@ -725,20 +720,54 @@ input[type=submit] {
 
 .info-section {
   text-align: center;
-  color: #fff;
-  background-color: #215fac;
-  background-image: url(../images/Footer-Pattern.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 100%;
+  background-color: #f2f2f2;
 }
 .info-section h3 {
   text-transform: uppercase;
+  color: #2374bb;
 }
-.info-section .info-section__subtitle {
+.info-section .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+}
+
+.download-files-block {
+  padding: 50px 0;
+}
+.download-files-block__download-holder {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  background: #eafaff;
+  padding: 20px 30px 20px 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-radius: 10px;
+}
+.download-files-block__pdf-icon {
+  width: 80px;
+  margin: 0 40px 0 0;
+}
+.download-files-block h3 {
+  text-transform: uppercase;
+  color: #0aa7e0;
+  font-size: 16px;
+  line-height: 26px;
+}
+.download-files-block__download-btn {
+  width: 50px;
   display: block;
+  align-self: flex-end;
+}
+.download-files-block__text-holder {
+  padding: 0 50px 0 0;
 }
 
 #footer {
@@ -978,6 +1007,7 @@ input[type=submit] {
   text-transform: uppercase;
   border: none;
   padding: 10px 40px;
+  border-radius: 10px;
 }
 
 .question-form-block {
@@ -990,7 +1020,7 @@ input[type=submit] {
   margin-bottom: 30px;
 }
 
-.question-form .question-form__input-holder {
+.question-form__input-holder {
   position: relative;
   max-width: 700px;
   margin: 0 auto;
@@ -1012,6 +1042,7 @@ input[type=submit] {
   font-size: 20px;
   line-height: 26px;
   text-overflow: ellipsis;
+  border-radius: 10px;
 }
 .question-form input[type=search]::-webkit-input-placeholder {
   color: #a8a8a8;
@@ -1041,6 +1072,116 @@ input[type=submit] {
   padding: 10px 40px;
 }
 
+.signup-login-form {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+.signup-login-form.login {
+  max-width: 400px;
+}
+.signup-login-form.login .btn-holder {
+  margin: 0 -10px 15px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.signup-login-form.login .btn-holder .btn {
+  padding: 0 10px;
+  width: 50%;
+}
+.signup-login-form.login .btn-holder button {
+  width: 100%;
+}
+.signup-login-form h2 {
+  color: #2374bb;
+  text-transform: uppercase;
+}
+.signup-login-form p {
+  margin-bottom: 30px;
+}
+.signup-login-form .row {
+  margin: 0 -10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.signup-login-form .input-holder {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  min-width: 50%;
+  width: 100%;
+}
+.signup-login-form .title {
+  display: block;
+  margin: 30px 0 10px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+}
+.signup-login-form a {
+  text-decoration: none;
+  color: #2374bb;
+}
+.signup-login-form input[type=text],
+.signup-login-form input[type=email],
+.signup-login-form input[type=tel],
+.signup-login-form input[type=password] {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #f2f2f2;
+  padding: 15px 20px;
+  outline: none;
+  text-transform: capitalize;
+}
+.signup-login-form input[type=text]::-webkit-input-placeholder,
+.signup-login-form input[type=email]::-webkit-input-placeholder,
+.signup-login-form input[type=tel]::-webkit-input-placeholder,
+.signup-login-form input[type=password]::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.signup-login-form input[type=text]::-moz-placeholder,
+.signup-login-form input[type=email]::-moz-placeholder,
+.signup-login-form input[type=tel]::-moz-placeholder,
+.signup-login-form input[type=password]::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.signup-login-form input[type=text]:-moz-placeholder,
+.signup-login-form input[type=email]:-moz-placeholder,
+.signup-login-form input[type=tel]:-moz-placeholder,
+.signup-login-form input[type=password]:-moz-placeholder {
+  color: #a8a8a8;
+}
+.signup-login-form input[type=text]:-ms-input-placeholder,
+.signup-login-form input[type=email]:-ms-input-placeholder,
+.signup-login-form input[type=tel]:-ms-input-placeholder,
+.signup-login-form input[type=password]:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.signup-login-form input[type=text].placeholder,
+.signup-login-form input[type=email].placeholder,
+.signup-login-form input[type=tel].placeholder,
+.signup-login-form input[type=password].placeholder {
+  color: #a8a8a8;
+}
+.signup-login-form .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.signup-login-form .btn-secondary {
+  background: #2374bb;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
 .modal-holder {
   position: fixed;
   display: flex;
@@ -1053,7 +1194,7 @@ input[type=submit] {
   background: rgba(10, 167, 224, 0.35);
   text-align: center;
 }
-.modal-holder .modal-holder__title {
+.modal-holder__title {
   color: #0aa7e0;
   display: block;
   text-transform: uppercase;
@@ -1061,8 +1202,11 @@ input[type=submit] {
   line-height: 26px;
   margin-bottom: 30px;
 }
-.modal-holder .modal-holder__modal {
+.modal-holder__modal {
   background: #eafaff;
   padding: 40px 100px;
   max-width: 800px;
+  max-height: 100%;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
 }
