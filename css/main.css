@@ -834,31 +834,6 @@ input[type=submit] {
   max-width: 80%;
 }
 
-.products-list__list-holder {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-}
-.products-list__img-holder {
-  max-width: 100px;
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  min-height: 130px;
-}
-.products-list__col {
-  width: 25%;
-  margin-bottom: 30px;
-  padding: 0 50px;
-}
-.products-list__name {
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #0aa7e0;
-}
-
 #footer {
   padding: 70px 0;
   background: url(../images/Footer-Pattern.svg) no-repeat;
@@ -1529,4 +1504,186 @@ input[type=submit] {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 0;
+}
+
+.heading-block {
+  padding: 30px 0;
+  background: linear-gradient(to right, #053c8f 0%, #2474bb 100%);
+  color: #fff;
+}
+.heading-block h1 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.works-block {
+  padding: 40px 0;
+}
+.works-block .container {
+  counter-reset: item;
+}
+.works-block h2 {
+  color: #2374bb;
+  text-transform: uppercase;
+}
+.works-block p {
+  font-style: italic;
+}
+.works-block__step-holder {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto 80px;
+  justify-content: space-between;
+}
+.works-block__text-holder {
+  width: 50%;
+  position: relative;
+  padding: 0 70px 0 50px;
+}
+.works-block__text-holder:after {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background: #0aa7e0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+.works-block__img-holder {
+  width: 50%;
+  padding: 0 50px;
+}
+.works-block__img-holder img {
+  display: block;
+  margin: 0 auto;
+}
+.works-block__list {
+  margin: 0;
+  padding: 0 0 0 20px;
+  list-style: none;
+  color: #5a5a5a;
+}
+.works-block__list li {
+  padding: 0 0 5px 10px;
+  position: relative;
+}
+.works-block__list li:before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 0;
+  height: 2px;
+  width: 2px;
+  border-radius: 100%;
+  background: #5a5a5a;
+}
+
+.img-text-block {
+  padding: 50px 0;
+  font-style: italic;
+}
+.img-text-block h2 {
+  text-transform: uppercase;
+  color: #2374bb;
+  font-style: normal;
+}
+.img-text-block__col {
+  background: #eafaff;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.img-text-block__text-holder {
+  width: 50%;
+}
+.img-text-block__img-holder {
+  width: 50%;
+}
+.img-text-block__img-holder img {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+.products-list__list-holder {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.products-list__img-holder {
+  max-width: 100px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  min-height: 130px;
+}
+.products-list__col {
+  width: 25%;
+  margin-bottom: 30px;
+  padding: 0 50px;
+}
+.products-list__name {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0aa7e0;
+}
+
+.categories-block {
+  padding: 50px 0;
+  text-align: center;
+}
+.categories-block__cat-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -30px;
+}
+.categories-block__col {
+  width: 33.33%;
+  padding: 0 15px 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.categories-block__col:nth-child(even) a {
+  background: #f2f2f2;
+}
+.categories-block__col:nth-child(even) a:hover {
+  background: #eafaff;
+}
+.categories-block h2 {
+  color: #2374bb;
+}
+.categories-block p {
+  color: #5a5a5a;
+}
+.categories-block a {
+  display: block;
+  text-decoration: none;
+  padding: 50px;
+  background: #eafaff;
+  width: 100%;
+  border-radius: 10px;
+}
+.categories-block a:hover {
+  background: #f2f2f2;
+}
+.categories-block__img-holder {
+  padding: 0 20px;
+  margin-bottom: 30px;
+  min-height: 240px;
+}
+.categories-block__img-holder img {
+  display: block;
+  margin: 0 auto;
 }
