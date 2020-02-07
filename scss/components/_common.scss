@@ -23,27 +23,7 @@
   display: none !important;
 }
 
-.form-holder{
-  background: #eafaff;
-  padding: 30px;
-  text-align: center;
-  max-width: 600px;
-  border-radius: 10px;
 
-  .title{
-    color: #0aa7e0;
-    display: block;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  p{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-}
 
 .events-block{
   color: #5a5a5a;
@@ -136,27 +116,6 @@
   }
 }
 
-.info-section{
-  text-align: center;
-  background-color: #f2f2f2;
-
-  h3{
-    text-transform: uppercase;
-    color: #2374bb;
-  }
-
-  .btn-primary{
-    background: #0aa7e0;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 10px;
-  }
-}
 
 .download-files-block{
   padding: 50px 0;
@@ -263,7 +222,83 @@
   }
 }
 
-.spinner-holder{
-  max-width: 100px;
-  margin: 0 auto;
+.products-block{
+  padding: 50px 0;
+
+  h2{
+    text-transform: uppercase;
+    color: #2374bb;
+  }
+
+  &__product-holder{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    &:nth-child(odd){
+      flex-direction: row-reverse;
+      color: #fff;
+
+      h2{
+        color: #fff;
+      }
+
+      .products-block__text-holder{
+        background: #2374bb;
+      }
+    }
+  }
+
+  &__img-holder{
+    background: #f2f2f2;
+    padding:20px 50px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-holder{
+    background: #eafaff;
+    padding: 50px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-frame{
+    max-width: 80%;
+  }
+}
+
+.products-list{
+  &__list-holder{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  &__img-holder{
+    max-width: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    min-height: 130px;
+  }
+
+  &__col{
+    width: 25%;
+    margin-bottom: 30px;
+    padding: 0 50px;
+  }
+
+  &__name{
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0aa7e0;
+  }
 }

@@ -34,19 +34,21 @@
 
     >li{
       display: inline-block;
-      vertical-align: top;
-      padding: 0 0 0 20px;
+      vertical-align: middle;
+      padding: 0 0 0 30px;
       position: relative;
       
       &.active{
         a{
-          background: #d7f1fa;
+          &:after{
+            display: block;
+          }
         }
       }
 
       &:hover{
-        a{
-          background: #d7f1fa;
+        >a{
+          color: #0aa7e0;
         }
         .inner-nav{
           display: block;
@@ -57,16 +59,28 @@
         text-decoration: none;
         color: #2374bb;
         display: block;
-        padding: 8px 20px;
         text-transform: uppercase;
+        position: relative;
+        padding: 5px 0;
+        &:after{
+          position: absolute;
+          content: '';
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 2px;
+          background: #0aa7e0;
+          display: none;
+        }
         
         &:hover{
-          background: #d7f1fa;
+          color: #0aa7e0;
         }
     
         &.btn-primary{
           background: #0aa7e0;
           color: #fff;
+          padding: 8px 20px;
         }
       }
     }
@@ -75,7 +89,7 @@
     position: absolute;
     top: 100%;
     left: 20px;
-    right:0;
+    width: 80px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -87,7 +101,7 @@
       position: relative;
       &:hover{
         a{
-          background: #f4f4f4;
+          color: #0aa7e0;
         }
         .info-block{
           display: block;
@@ -103,7 +117,7 @@
       text-transform: uppercase;
       background: #d7f1fa;
       &:hover{
-        background: #f4f4f4;
+        color: #0aa7e0;
       }
     }
   }
