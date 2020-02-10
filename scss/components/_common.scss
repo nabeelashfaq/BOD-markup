@@ -78,43 +78,6 @@
   }
 }
 
-.team-block{
-  padding: 50px 0;
-
-  &__team-holder{
-    display: flex;
-    flex-flow: row nowrap;
-    margin-bottom: 30px;
-    align-items: center;
-    background: #eafaff;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  &__img-holder{
-    width: 30%;
-    flex-shrink: 0;
-    img{
-      display: block;
-    }
-  }
-
-  &__text-holder{
-    flex-grow: 1;
-    padding: 50px;
-  }
-
-  &__title{
-    display: block;
-    color: #0aa7e0;
-    margin-bottom: 10px;
-  }
-
-  h2{
-    color: #2374bb;
-    text-transform: uppercase;
-  }
-}
 
 
 .download-files-block{
@@ -219,57 +182,6 @@
     color: #2374bb;
     text-decoration: none;
     font-style: italic;
-  }
-}
-
-.products-block{
-  padding: 50px 0;
-
-  h2{
-    text-transform: uppercase;
-    color: #2374bb;
-  }
-
-  &__product-holder{
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    overflow: hidden;
-
-    &:nth-child(odd){
-      flex-direction: row-reverse;
-      color: #fff;
-
-      h2{
-        color: #fff;
-      }
-
-      .products-block__text-holder{
-        background: #2374bb;
-      }
-    }
-  }
-
-  &__img-holder{
-    background: #f2f2f2;
-    padding:20px 50px;
-    width: 35%;
-    display: flex;
-    align-items: center;
-  }
-
-  &__text-holder{
-    background: #eafaff;
-    padding: 50px;
-    width: 65%;
-    display: flex;
-    align-items: center;
-  }
-
-  &__text-frame{
-    max-width: 80%;
   }
 }
 

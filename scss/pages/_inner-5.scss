@@ -1,0 +1,37 @@
+.team-block{
+  padding: 50px 0;
+
+  &__team-holder{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+    align-items: center;
+    background: #eafaff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__img-holder{
+    width: 30%;
+    flex-shrink: 0;
+    img{
+      display: block;
+    }
+  }
+
+  &__text-holder{
+    flex-grow: 1;
+    padding: 50px;
+  }
+
+  &__title{
+    display: block;
+    color: #0aa7e0;
+    margin-bottom: 10px;
+  }
+
+  h2{
+    color: #2374bb;
+    text-transform: uppercase;
+  }
+}

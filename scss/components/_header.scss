@@ -13,4 +13,14 @@
       width: 100%;
     }
   }
+
+  &.secondary-header{
+    padding: 100px 0 50px;
+    box-shadow: none;
+    .header__logo{
+      width: 200px;
+      margin: 0 auto;
+      float: none;
+    }
+  }
 }
