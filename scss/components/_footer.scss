@@ -1,8 +1,5 @@
 #footer{
   padding: 70px 0;
-  background: url(../images/Footer-Pattern.svg) no-repeat;
-  background-size: 100%;
-  background-position: 0 100%;
 
   .logo-text-block{
     width: 50%;
@@ -95,5 +92,56 @@
 
   span{
     display: block;
+  }
+}
+
+.primary-footer{
+
+  .container{
+    align-items: center;
+  }
+  .logo-text-block{
+    align-items: center;
+  }
+  
+  .footer__address-block{
+    text-align: left;
+    width:auto;
+    flex-grow:1;
+  }
+
+  .links-btn-block{
+    width: 50%;
+    text-align: right;
+  }
+
+  .links{
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 0 0 20px;
+    }
+
+    a{
+      text-decoration: none;
+      color: #2374bb;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn-primary{
+    background: #2374bb;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
   }
 }
