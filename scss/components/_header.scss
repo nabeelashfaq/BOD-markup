@@ -1,8 +1,11 @@
 #header{
-  padding: 50px 0 20px;
+  padding: 50px 0;
   position: relative;
   box-shadow: 0 0 10px rgba($black, 0.3);
   z-index: 99;
+  background: url(../images/bg-1.jpg) no-repeat;
+  background-position: 0 100%;
+  background-size: 100%;
 
   .header__logo{
     float: left;
