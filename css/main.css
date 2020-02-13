@@ -583,7 +583,6 @@ input[type=submit] {
 #header {
   padding: 50px 0;
   position: relative;
-  box-shadow: 0 0 10px rgba(51, 51, 51, 0.3);
   z-index: 99;
   background: url(../images/bg-1.jpg) no-repeat;
   background-position: 0 100%;
@@ -778,6 +777,194 @@ input[type=submit] {
   font-style: italic;
 }
 
+/* 
+private backend styles
+
+*/
+.dashboard-block {
+  padding: 50px 0;
+}
+.dashboard-block .sm-title {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.links-setup-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.links-setup-block .btns-holder .btn-primary,
+.links-setup-block .btns-holder .btn-secondary {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  background: #2374bb;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+.links-setup-block .btns-holder .btn-secondary {
+  background: #f2f2f2;
+  color: #2374bb;
+}
+
+.setup-block {
+  background: #f2f2f2;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between;
+}
+.setup-block .progress-bar {
+  width: 50%;
+  padding: 0 10px;
+}
+.setup-block .checklist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 40%;
+  font-size: 12px;
+  line-height: 16px;
+}
+.setup-block .checklist li {
+  position: relative;
+  padding: 0 0 2px 20px;
+}
+.setup-block .checklist li:before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #2374bb;
+  border-radius: 100%;
+}
+.setup-block .checklist li.checked:before {
+  background: #2374bb;
+}
+.setup-block .bar {
+  width: 100%;
+  height: 13px;
+  border-radius: 20px;
+  border: 1px solid #0aa7e0;
+  overflow: hidden;
+}
+.setup-block .bar span {
+  width: 33.33%;
+  display: block;
+  background: #0aa7e0;
+  height: 11px;
+  border-radius: 0 10px 10px 0;
+}
+.setup-block .title {
+  display: block;
+  color: #2374bb;
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.scoreboard-block {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px 30px;
+}
+.scoreboard-block .col {
+  width: 25%;
+  margin: 0 10px;
+  display: flex;
+  flex-flow: row wrap;
+  background: #f2f2f2;
+  padding: 80px 20px 40px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.scoreboard-block .col-holder {
+  width: 100%;
+  color: #2374bb;
+  text-transform: uppercase;
+  text-align: center;
+}
+.scoreboard-block .title {
+  display: block;
+  font-size: 12px;
+  line-height: 26px;
+}
+.scoreboard-block .num {
+  display: block;
+  font-size: 40px;
+  line-height: 47px;
+}
+.scoreboard-block .subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+.scoreboard-block select::-ms-expand {
+  display: none;
+}
+.scoreboard-block .select-holder {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.scoreboard-block .fake-select {
+  position: relative;
+  display: inline-block;
+}
+.scoreboard-block select {
+  display: inline-block;
+  padding: 5px 30px 4px 15px;
+  margin: 0;
+  outline: none;
+  line-height: 1.2;
+  background: #9c9999;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0 6px 6px 0;
+  min-width: 50px;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+.scoreboard-block .fake-select:after {
+  position: absolute;
+  right: 8px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  line-height: 0;
+  z-index: 1;
+}
+
 #footer {
   padding: 70px 0;
 }
@@ -862,6 +1049,10 @@ input[type=submit] {
   display: block;
 }
 
+.primary-footer {
+  border-top: 5px solid #2374bb;
+  padding: 50px 0;
+}
 .primary-footer .container {
   align-items: center;
 }
