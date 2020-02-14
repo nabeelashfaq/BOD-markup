@@ -1017,6 +1017,69 @@ private backend styles
   color: #707070;
 }
 
+.steps-bar {
+  padding: 50px 0;
+}
+.steps-bar ul {
+  margin: 0;
+  padding: 10px 0 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+.steps-bar ul:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #2374bb;
+}
+.steps-bar li {
+  position: relative;
+  text-transform: uppercase;
+  color: #2374bb;
+  padding: 10px 0 0;
+}
+.steps-bar li.done:before {
+  background: #2374bb;
+}
+.steps-bar li.active {
+  font-weight: bold;
+  color: #0aa7e0;
+}
+.steps-bar li.active:before {
+  background: #0aa7e0;
+  border-color: #0aa7e0;
+}
+.steps-bar li:first-child:before {
+  left: 0;
+  transform: none;
+}
+.steps-bar li:last-child:before {
+  right: 0;
+  left: auto;
+  transform: none;
+}
+.steps-bar li:before {
+  position: absolute;
+  content: "";
+  top: -16px;
+  height: 14px;
+  width: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  border: 1px solid #2374bb;
+  background: #fff;
+}
+.steps-bar span {
+  display: block;
+}
+
 #footer {
   padding: 70px 0;
 }

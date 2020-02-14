@@ -461,3 +461,80 @@ private backend styles
     color: #707070;
   }
 }
+
+.steps-bar{
+  padding: 50px 0;
+  ul{
+    margin: 0;
+    padding:10px 0 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #2374bb;
+    }
+  }
+
+  li{
+    position: relative;
+    text-transform: uppercase;
+    color: #2374bb;
+    padding: 10px 0 0;
+
+    &.done{
+      &:before{
+        background: #2374bb;
+      }
+    }
+
+    &.active{
+      font-weight: bold;
+      color: #0aa7e0;
+      &:before{
+        background: #0aa7e0;
+        border-color: #0aa7e0;
+      }
+    }
+
+
+    &:first-child{
+      &:before{
+        left: 0;
+        transform: none;
+      }
+    }
+    
+
+    &:last-child{
+      &:before{
+        right: 0;
+        left: auto;
+        transform: none;
+      }
+    }
+    &:before{
+      position: absolute;
+      content: '';
+      top: -16px;
+      height: 14px;
+      width: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 100%;
+      border: 1px solid #2374bb;
+      background: #fff;
+    }
+  }
+
+  span{
+    display: block;
+  }
+}
