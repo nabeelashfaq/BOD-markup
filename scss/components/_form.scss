@@ -107,7 +107,6 @@
 }
 
 .sl-form{
-  text-align: center;
   max-width: 700px;
   margin:0 auto 50px;
 
@@ -130,6 +129,23 @@
     }
   }
 
+  &__block{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  &__label{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    color: #a8a8a8;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+  }
+
   h2{
     color: #2374bb;
     text-transform: uppercase;
@@ -143,6 +159,7 @@
     margin: 0 -10px;
     display: flex;
     flex-flow: row nowrap;
+    text-align: left;
   }
 
   &__input-holder{
@@ -150,6 +167,21 @@
     padding: 0 10px;
     min-width: 50%;
     width: 100%;
+    position: relative;
+    &.error{
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"]{
+        border-color: #cc0813;
+        background-color: #f8d9da;
+      }
+
+      .error-info{
+        display: block;
+      }
+
+    }
   }
 
   &__title{
@@ -157,8 +189,21 @@
     margin: 30px 0 10px;
     text-align: left;
     text-transform: uppercase;
+    font-size: 15px;
+    line-height: 20px;
+    color: #707070;
+  }
+
+  .error-info{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    color: #cc0813;
+    font-style: italic;
+    padding-top: 5px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 15px;
+    display: none;
   }
 
   a{
@@ -171,17 +216,34 @@
   input[type="tel"],
   input[type="password"]{
     width: 100%;
-    border:none;
-    border-radius: 5px;
+    border-radius: 9px;
     background: #f2f2f2;
     padding: 15px 20px;
     outline: none;
     text-transform: capitalize;
+    border: 1px solid transparent;
+    &:focus{
+      border-color: #a8a8a8;
+    }
 
     @include placeholder{
       color: #a8a8a8;
     }
 
+  }
+
+  &__text-holder{
+    text-align: center;
+
+    strong{
+      font-style: italic;
+      display: block;
+      font-weight: 600;
+    };
+  }
+
+  &__btn-holder{
+    text-align: center;
   }
 
   .btn-primary{
@@ -202,4 +264,99 @@
     border-radius: 5px;
   }
 
+  .fake-select{
+    position: relative;
+    display:block;
+  }
+
+	select{
+			display:block;
+			margin:0;
+			outline:none;
+			line-height:1.2;
+			border-radius: 9px;
+      background: #f2f2f2;
+      padding: 15px 20px;
+			appearance:none;
+      position: relative;
+      border: none;
+      width: 100%;
+      color: #a8a8a8;
+
+      @include placeholder{
+        color: #a8a8a8;
+      }
+    }
+    
+		.fake-select:after{
+			position: absolute;
+			right:15px;
+			content:'';
+			width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #a8a8a8;
+			position:absolute;
+			top:50%;
+			margin-top:-2px;
+			line-height: 0;
+			z-index: 1;
+		}
+
+    &__radio-list{
+      margin-bottom: 30px;
+    }
+
+    &__radio-input{
+      margin-bottom: 10px;
+    }
+
+    &__radio-input [type="radio"]{
+			position:fixed;
+			left:0;
+			top:0;
+			opacity:0;
+			z-index: -1;
+		}
+		&__radio-input .fake-input ,
+		&__radio-input label {
+			display:inline-block;
+      vertical-align: middle;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #707070;
+
+      strong{
+        text-transform: none;
+      }
+    }
+    
+		&__radio-input  label{padding-right: 5px;}
+		&__radio-input  .fake-input{
+			display: inline-block;
+			width:28px;
+			height:28px;
+			border:1px solid #d8d8d8;
+			background:#fff;
+			vertical-align: middle;
+			position: relative;
+			margin-right: 10px;
+		}
+		&__radio-input [type=radio] + .fake-input{border-radius:100%;}
+
+
+		&__radio-input [type="radio"] + .fake-input:before{
+			content:'';
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			bottom: 5px;
+			left: 5px;
+			background: #1ba7e0;
+			border-radius:100%;
+			opacity: 0;
+		}
+
+		&__radio-input [type="radio"]:checked + .fake-input:before{opacity:1;}
 }

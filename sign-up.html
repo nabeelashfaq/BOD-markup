@@ -23,38 +23,112 @@
 			<section class="section">
 				<div class="container">
 					<form action="#" class="sl-form sl-form--signup">
-						<h2>Get started for today</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<div class="sl-form__row">
-							<div class="sl-form__input-holder">
-								<input type="text" placeholder="First name">
+						<div class="sl-form__text-holder">
+							<h2>Get Started Today For Free</h2>
+							<p>Register for your Braces On Demand account today. It’s free to get started. Connect your FormLabs printer, test our free to print products, or print your first kit of brackets and tubes. <strong>Give the on-demand revolution a try and start saving today. You’ll be glad you did.</strong></p>
+						</div>
+						<strong class="sl-form__title">Your information</strong>
+						<div class="sl-form__block">
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="f-name" class="sl-form__label">First name</label>
+									<input type="text" id="f-name">
+								</div>
+								<div class="sl-form__input-holder">
+									<label for="l-name" class="sl-form__label">Last name</label>
+									<input type="text" id="l-name">
+								</div>
 							</div>
-							<div class="sl-form__input-holder">
-								<input type="text" placeholder="Last name">
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="email" class="sl-form__label">Email</label>
+									<input type="email" id="email">
+								</div>
+								<div class="sl-form__input-holder error">
+									<label for="c-email" class="sl-form__label">Confirm email</label>
+									<input type="email" id="c-email">
+									<span class="error-info">This field is required</span>
+								</div>
+							</div>
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="password" class="sl-form__label">Password</label>
+									<input type="password" id="password" placeholder="6+ Characters">
+								</div>
 							</div>
 						</div>
-						<div class="sl-form__row">
-							<div class="sl-form__input-holder">
-								<input type="text" placeholder="Company">
+						<strong class="sl-form__title">Practice information</strong>
+						<div class="sl-form__block">
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="p-name" class="sl-form__label">Practice name</label>
+									<input type="text" id="p-name">
+								</div>
+							</div>
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="add-1" class="sl-form__label">Address line 1</label>
+									<input type="text" id="add-1">
+								</div>
+								<div class="sl-form__input-holder">
+									<label for="add-2" class="sl-form__label">Address line 2</label>
+									<input type="text" id="add-2">
+								</div>
+							</div>
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="city" class="sl-form__label">City</label>
+									<input type="text" id="city">
+								</div>
+								<div class="sl-form__input-holder">
+									<label for="country" class="sl-form__label">Country</label>
+									<input type="text" id="country">
+								</div>
+							</div>
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="" class="sl-form__label">State</label>
+									<span class="fake-select">
+                                        <select id="select-2">
+                                            <option selected="selected">Choose your state</option>
+                                            <option>Select option 2</option>
+                                            <option>Select option 3</option>
+                                            <option>Select option 4</option>
+                                        </select>
+                                    </span>
+								</div>
+								<div class="sl-form__input-holder">
+									<label for="p-code" class="sl-form__label">Postal code</label>
+									<input type="text" id="p-code">
+								</div>
+							</div>
+							<div class="sl-form__row">
+								<div class="sl-form__input-holder">
+									<label for="l-num" class="sl-form__label">License #</label>
+									<input type="text" id="l-num">
+								</div>
+								<div class="sl-form__input-holder">
+									<label for="l-state" class="sl-form__label">License State/Providence</label>
+									<input type="text" id="l-state">
+								</div>
 							</div>
 						</div>
-						<div class="sl-form__row">
-							<div class="sl-form__input-holder">
-								<input type="email" placeholder="Email">
+						<strong class="sl-form__title">Formlabs</strong>
+						<p>To be able to print, you will need to have a formlabs account</p>
+						<div class="sl-form__radio-list">
+							<div class="sl-form__radio-input">
+								<label for="radio-1">
+									<input id="radio-1" name="radio" type="radio">
+									<span class="fake-input"></span>
+									<span class="fake-label">I already have a formlabs account</span>
+								</label>
 							</div>
-							<div class="sl-form__input-holder">
-								<input type="tel" placeholder="Phone">
-							</div>
-						</div>
-						<strong class="sl-form__title">Create password</strong>
-						<div class="sl-form__row">
-							<div class="sl-form__input-holder">
-								<input type="password" placeholder="password">
-							</div>
-						</div>
-						<div class="sl-form__row">
-							<div class="sl-form__input-holder">
-								<input type="password" placeholder="Re-Enter password">
+							<div class="sl-form__radio-input">
+								<label for="radio-2">
+									<input id="radio-2" name="radio" type="radio">
+									<span class="fake-input"></span>
+									<span class="fake-label">I do not have a formlabs account - it’s ok, <strong>we’ll walk you through it</strong></span>
+								</label>
 							</div>
 						</div>
 						<div class="sl-form__btn-holder">

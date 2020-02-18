@@ -789,6 +789,53 @@ private backend styles
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.dashboard-block--sidebar-holder {
+  padding: 0;
+}
+.dashboard-block--sidebar-holder .container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.dashboard-block .btn-back {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2374bb;
+  margin-bottom: 20px;
+}
+
+.current-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.current-item .title {
+  display: block;
+  color: #2374bb;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  padding: 50px 30px 0 0;
+  width: 25%;
+  background: #f4f4f4;
+  position: relative;
+}
+.sidebar:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 100%;
+  width: 9999px;
+  bottom: 0;
+  background: #f4f4f4;
+}
+
+.content {
+  width: 75%;
+  padding: 50px;
+}
 
 .links-setup-block {
   display: flex;
@@ -1471,7 +1518,6 @@ private backend styles
 }
 
 .sl-form {
-  text-align: center;
   max-width: 700px;
   margin: 0 auto 50px;
 }
@@ -1490,6 +1536,21 @@ private backend styles
 .sl-form--login button {
   width: 100%;
 }
+.sl-form__block {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.sl-form__label {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 5px;
+  color: #a8a8a8;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
 .sl-form h2 {
   color: #2374bb;
   text-transform: uppercase;
@@ -1501,20 +1562,44 @@ private backend styles
   margin: 0 -10px;
   display: flex;
   flex-flow: row nowrap;
+  text-align: left;
 }
 .sl-form__input-holder {
   margin-bottom: 20px;
   padding: 0 10px;
   min-width: 50%;
   width: 100%;
+  position: relative;
+}
+.sl-form__input-holder.error input[type=text],
+.sl-form__input-holder.error input[type=email],
+.sl-form__input-holder.error input[type=tel],
+.sl-form__input-holder.error input[type=password] {
+  border-color: #cc0813;
+  background-color: #f8d9da;
+}
+.sl-form__input-holder.error .error-info {
+  display: block;
 }
 .sl-form__title {
   display: block;
   margin: 30px 0 10px;
   text-align: left;
   text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  color: #707070;
+}
+.sl-form .error-info {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  color: #cc0813;
+  font-style: italic;
+  padding-top: 5px;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
+  display: none;
 }
 .sl-form a {
   text-decoration: none;
@@ -1525,12 +1610,18 @@ private backend styles
 .sl-form input[type=tel],
 .sl-form input[type=password] {
   width: 100%;
-  border: none;
-  border-radius: 5px;
+  border-radius: 9px;
   background: #f2f2f2;
   padding: 15px 20px;
   outline: none;
   text-transform: capitalize;
+  border: 1px solid transparent;
+}
+.sl-form input[type=text]:focus,
+.sl-form input[type=email]:focus,
+.sl-form input[type=tel]:focus,
+.sl-form input[type=password]:focus {
+  border-color: #a8a8a8;
 }
 .sl-form input[type=text]::-webkit-input-placeholder,
 .sl-form input[type=email]::-webkit-input-placeholder,
@@ -1563,6 +1654,17 @@ private backend styles
 .sl-form input[type=password].placeholder {
   color: #a8a8a8;
 }
+.sl-form__text-holder {
+  text-align: center;
+}
+.sl-form__text-holder strong {
+  font-style: italic;
+  display: block;
+  font-weight: 600;
+}
+.sl-form__btn-holder {
+  text-align: center;
+}
 .sl-form .btn-primary {
   background: #0aa7e0;
   color: #fff;
@@ -1578,6 +1680,110 @@ private backend styles
   border: none;
   padding: 10px 40px;
   border-radius: 5px;
+}
+.sl-form .fake-select {
+  position: relative;
+  display: block;
+}
+.sl-form select {
+  display: block;
+  margin: 0;
+  outline: none;
+  line-height: 1.2;
+  border-radius: 9px;
+  background: #f2f2f2;
+  padding: 15px 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  border: none;
+  width: 100%;
+  color: #a8a8a8;
+}
+.sl-form select::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.sl-form select::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.sl-form select:-moz-placeholder {
+  color: #a8a8a8;
+}
+.sl-form select:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.sl-form select.placeholder {
+  color: #a8a8a8;
+}
+.sl-form .fake-select:after {
+  position: absolute;
+  right: 15px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #a8a8a8;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  line-height: 0;
+  z-index: 1;
+}
+.sl-form__radio-list {
+  margin-bottom: 30px;
+}
+.sl-form__radio-input {
+  margin-bottom: 10px;
+}
+.sl-form__radio-input [type=radio] {
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.sl-form__radio-input .fake-input, .sl-form__radio-input label {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #707070;
+}
+.sl-form__radio-input .fake-input strong, .sl-form__radio-input label strong {
+  text-transform: none;
+}
+.sl-form__radio-input label {
+  padding-right: 5px;
+}
+.sl-form__radio-input .fake-input {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 10px;
+}
+.sl-form__radio-input [type=radio] + .fake-input {
+  border-radius: 100%;
+}
+.sl-form__radio-input [type=radio] + .fake-input:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  background: #1ba7e0;
+  border-radius: 100%;
+  opacity: 0;
+}
+.sl-form__radio-input [type=radio]:checked + .fake-input:before {
+  opacity: 1;
 }
 
 .modal-holder {
