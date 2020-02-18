@@ -589,3 +589,23 @@ private backend styles
     display: block;
   }
 }
+
+.tooth-select-block{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  &__col{
+      width: 40%;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

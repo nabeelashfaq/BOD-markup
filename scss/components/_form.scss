@@ -165,7 +165,7 @@
   &__input-holder{
     margin-bottom: 20px;
     padding: 0 10px;
-    min-width: 50%;
+    min-width: 33.3%;
     width: 100%;
     position: relative;
     &.error{
@@ -332,8 +332,11 @@
       }
     }
     
-		&__radio-input  label{padding-right: 5px;}
-		&__radio-input  .fake-input{
+		&__radio-input  label{
+      padding-right: 5px;
+    }
+    
+    .fake-input{
 			display: inline-block;
 			width:28px;
 			height:28px;
@@ -343,10 +346,11 @@
 			position: relative;
 			margin-right: 10px;
 		}
-		&__radio-input [type=radio] + .fake-input{border-radius:100%;}
+    
+    input[type=radio] + .fake-input{border-radius:100%;}
 
 
-		&__radio-input [type="radio"] + .fake-input:before{
+		input[type="radio"] + .fake-input:before{
 			content:'';
 			position: absolute;
 			top: 5px;
@@ -358,5 +362,5 @@
 			opacity: 0;
 		}
 
-		&__radio-input [type="radio"]:checked + .fake-input:before{opacity:1;}
+		input[type="radio"]:checked + .fake-input:before{opacity:1;}
 }

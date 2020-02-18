@@ -1127,6 +1127,24 @@ private backend styles
   display: block;
 }
 
+.tooth-select-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.tooth-select-block__col {
+  width: 40%;
+}
+.tooth-select-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tooth-select-block ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
 #footer {
   padding: 70px 0;
 }
@@ -1567,7 +1585,7 @@ private backend styles
 .sl-form__input-holder {
   margin-bottom: 20px;
   padding: 0 10px;
-  min-width: 50%;
+  min-width: 33.3%;
   width: 100%;
   position: relative;
 }
@@ -1758,7 +1776,7 @@ private backend styles
 .sl-form__radio-input label {
   padding-right: 5px;
 }
-.sl-form__radio-input .fake-input {
+.sl-form .fake-input {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -1768,10 +1786,10 @@ private backend styles
   position: relative;
   margin-right: 10px;
 }
-.sl-form__radio-input [type=radio] + .fake-input {
+.sl-form input[type=radio] + .fake-input {
   border-radius: 100%;
 }
-.sl-form__radio-input [type=radio] + .fake-input:before {
+.sl-form input[type=radio] + .fake-input:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1782,7 +1800,7 @@ private backend styles
   border-radius: 100%;
   opacity: 0;
 }
-.sl-form__radio-input [type=radio]:checked + .fake-input:before {
+.sl-form input[type=radio]:checked + .fake-input:before {
   opacity: 1;
 }
 
