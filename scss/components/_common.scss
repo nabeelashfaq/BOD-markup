@@ -540,11 +540,6 @@ private backend styles
     color: #2374bb;
     padding: 10px 0 0;
 
-    &.done{
-      &:before{
-        background: #2374bb;
-      }
-    }
 
     &.active{
       font-weight: bold;
@@ -552,6 +547,12 @@ private backend styles
       &:before{
         background: #0aa7e0;
         border-color: #0aa7e0;
+      }
+
+      ~ li{
+        &::before{
+          background: #fff;
+        }
       }
     }
 
@@ -581,7 +582,7 @@ private backend styles
       transform: translateX(-50%);
       border-radius: 100%;
       border: 1px solid #2374bb;
-      background: #fff;
+      background: #2374bb;
     }
   }
 
@@ -670,4 +671,42 @@ private backend styles
   input[type="radio"]{
     display: none;
   }
+}
+
+.your-cart-block{
+
+  .title{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+
+  .cart-holder{
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 2px solid #d8d8d8;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .img-holder{
+    width: 25%;
+
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .details{
+    width: 50%;
+  }
+
+  .price-info-block{
+    width: 25%;
+  }
+
 }
