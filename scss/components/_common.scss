@@ -595,17 +595,79 @@ private backend styles
   flex-flow: row wrap;
   justify-content: center;
   &__col{
-      width: 40%;
+    width: 50%;
+    padding: 0 20px;
+
+    &:first-child{
+      text-align: right;
+      ul{
+        &:last-child{
+          .value{
+            border-bottom: none;
+            border-top: 2px solid #d8d8d8;
+          }
+        }
+      }
+    }
+
+    &:last-child{
+      ul{
+        &:first-child{
+          .value{
+            border-right: none;
+            border-left: 2px solid #d8d8d8;
+          }
+        }
+
+        &:last-child{
+          .value{
+            border-bottom: none;
+            border-right: none;
+            border-left: 2px solid #d8d8d8;
+            border-top: 2px solid #d8d8d8;
+          }
+        }
+      }
+    }
   }
 
   ul{
-    margin: 0;
+    margin: 0 0 10px;
     padding: 0;
     list-style: none;
 
     li{
       display: inline-block;
       vertical-align: top;
+      padding: 0 2px;
     }
+
+    label{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #d8d8d8;
+      border-radius: 4px;
+      height: 59px;
+      width: 40px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #96d4e8;
+      }
+
+    }
+  }
+
+  .value{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 7px;
+    border-right: 2px solid #d8d8d8;
+    border-bottom: 2px solid #d8d8d8;
+  }
+
+  input[type="radio"]{
+    display: none;
   }
 }
