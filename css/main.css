@@ -804,6 +804,15 @@ private backend styles
   text-transform: uppercase;
   color: #2374bb;
   margin-bottom: 20px;
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.dashboard-block .btn-back:before {
+  position: absolute;
+  content: "";
+  font-family: "fontello";
+  top: 0;
+  left: 0;
 }
 
 .current-item {
@@ -903,6 +912,11 @@ private backend styles
 }
 .setup-block .checklist li.checked:before {
   background: #2374bb;
+  content: "";
+  font-family: "fontello";
+  font-size: 7px;
+  line-height: 10px;
+  color: #fff;
 }
 .setup-block .bar {
   width: 100%;

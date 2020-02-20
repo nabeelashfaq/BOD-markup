@@ -216,6 +216,15 @@ private backend styles
     text-transform: uppercase;
     color: #2374bb;
     margin-bottom: 20px;
+    position: relative;
+    padding: 0 0 0 10px;
+    &:before{
+      position: absolute;
+      content: '\e801';
+      font-family: 'fontello';
+      top: 0;
+      left: 0;
+    }
   }
 }
 
@@ -324,6 +333,11 @@ private backend styles
       &.checked{
         &:before{
           background: #2374bb;
+          content: '\e809';
+          font-family: 'fontello';
+          font-size: 7px;
+          line-height: 10px;
+          color: #fff;
         }
       }
     }
