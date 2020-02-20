@@ -492,6 +492,14 @@ private backend styles
 
   input[type="radio"]{
     display: none;
+    &:checked ~ {
+      label{
+        border-color: #2374bb;
+        &:after{
+          display: block;
+        }
+      }
+    }
   }
 
   label{
@@ -501,8 +509,27 @@ private backend styles
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: '\e809';
+      font-family: 'fontello';
+      top: 12px;
+      right: 12px;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+      background: #2374bb;
+      color: #fff;
+      font-size: 10px;
+      line-height: 13px;
+      padding: 4px 0 0;
+      display: none;
+    }
+
     &:hover{
-      border-color: #2374bb;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     }
   }
 
@@ -549,9 +576,17 @@ private backend styles
         border-color: #0aa7e0;
       }
 
+      &:after{
+        display: none;
+      }
+
       ~ li{
         &::before{
           background: #fff;
+        }
+
+        &:after{
+          display: none;
         }
       }
     }
@@ -562,12 +597,23 @@ private backend styles
         left: 0;
         transform: none;
       }
+
+      &:after{
+        left: 2px;
+        transform: none;
+      }
     }
     
 
     &:last-child{
       &:before{
         right: 0;
+        left: auto;
+        transform: none;
+      }
+
+      &:after{
+        right: 3px;
         left: auto;
         transform: none;
       }
@@ -583,6 +629,18 @@ private backend styles
       border-radius: 100%;
       border: 1px solid #2374bb;
       background: #2374bb;
+    }
+
+    &:after{
+      position: absolute;
+      content: '\e809';
+      font-family: 'fontello';
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 7px;
+      line-height: 12px;
+      color: #fff;
     }
   }
 
@@ -654,7 +712,7 @@ private backend styles
       cursor: pointer;
 
       &:hover{
-        background-color: #96d4e8;
+        
       }
 
     }
@@ -670,6 +728,11 @@ private backend styles
 
   input[type="radio"]{
     display: none;
+    &:checked ~ {
+      label{
+        background-color: #96d4e8;
+      }
+    }
   }
 }
 
