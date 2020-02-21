@@ -1480,6 +1480,27 @@ private backend styles
   text-transform: uppercase;
 }
 
+.print-preview-block ul {
+  background: #fff;
+  padding: 5px 5px 0;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -3px;
+  list-style: none;
+}
+.print-preview-block li {
+  padding: 0 3px 6px;
+  width: 7.14%;
+}
+.print-preview-block li.active span {
+  background: #2374bb;
+}
+.print-preview-block span {
+  display: block;
+  height: 13px;
+  background: #f2f2f2;
+}
+
 #footer {
   padding: 70px 0;
 }
