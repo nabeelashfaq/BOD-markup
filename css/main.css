@@ -782,8 +782,9 @@ input[type=submit] {
 private backend styles
 
 */
-.dashboard-block {
-  padding: 50px 0;
+.dashboard-block .container {
+  display: flex;
+  flex-flow: row wrap;
 }
 .dashboard-block .sm-title {
   display: block;
@@ -798,13 +799,6 @@ private backend styles
   margin-bottom: 20px;
   font-size: 19px;
   line-height: 24px;
-}
-.dashboard-block--sidebar-holder {
-  padding: 0;
-}
-.dashboard-block--sidebar-holder .container {
-  display: flex;
-  flex-flow: row wrap;
 }
 .dashboard-block .btn-back {
   display: inline-block;
@@ -854,6 +848,11 @@ private backend styles
 .content {
   width: 75%;
   padding: 50px;
+  padding: 50px;
+}
+.content:only-child {
+  width: 100%;
+  padding: 50px 0;
 }
 
 .links-setup-block {

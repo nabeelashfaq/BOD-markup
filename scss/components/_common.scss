@@ -192,7 +192,12 @@ private backend styles
 
 
 .dashboard-block{
-  padding: 50px 0;
+  
+
+  .container{
+    display: flex;
+    flex-flow: row wrap;
+  }
 
   .sm-title{
     display: block;
@@ -208,15 +213,6 @@ private backend styles
     margin-bottom: 20px;
     font-size: 19px;
     line-height: 24px;
-  }
-
-  &--sidebar-holder{
-    padding: 0;
-
-    .container{
-      display: flex;
-      flex-flow: row wrap;
-    }
   }
 
   .btn-back{
@@ -269,6 +265,11 @@ private backend styles
 .content{
   width: 75%;
   padding: 50px;
+  padding: 50px;
+  &:only-child {
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 
 .links-setup-block{
