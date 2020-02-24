@@ -1046,3 +1046,151 @@ private backend styles
     background: #f2f2f2;
   }
 }
+
+.breadcrumbs{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li{
+    display: inline-block;
+    vertical-align: top;
+    color: #0aa7e0;
+    font-weight: bold;
+
+    +li {
+      position: relative;
+      padding: 0 0 0 20px;
+      &:before{
+        position: absolute;
+        content: '>';
+        top: 0;
+        left: 5px;
+      }
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #0aa7e0;
+    font-weight: 600;
+  }
+}
+
+.checkout-form{
+  color: #707070;
+  .fake-select{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  label{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .select-holder{
+    margin-bottom: 40px;
+  }
+
+  .icon-holder{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    z-index: 1;
+    width: 70px;
+    border-right: 2px solid #707070;
+    display: flex;align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 25px;
+    color: #707070;
+  }
+
+	select{
+    display:inline-block;
+    padding:20px 30px 20px 80px;
+    margin:0;
+    outline:none;
+    line-height:1.2;
+    background: #f4f4f4;
+    appearance:none;
+    border-radius:9px;
+    border: none;
+    min-width:50px;
+    position: relative;
+    text-transform: uppercase;
+    color: #707070;
+    font-weight: 500;
+    width: 100%;
+  }
+
+    
+    
+  .fake-select:after{
+    position: absolute;
+    right:15px;
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #707070;
+    position:absolute;
+    top:50%;
+    margin-top:-2px;
+    line-height: 0;
+    z-index: 1;
+  }
+
+  .link-holder{
+    display: block;
+    text-align: right;
+    margin-bottom: -20px;
+
+    a{
+      text-decoration: none;
+      color: #707070;
+      font-style: italic;
+    }
+  }
+
+  .billing-info{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 100px;
+  }
+
+  .total{
+    display: block;
+  }
+
+  .price{
+    font-size: 47px;
+    line-height: 53px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #0aa7e0;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+}

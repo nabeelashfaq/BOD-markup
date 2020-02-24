@@ -429,7 +429,7 @@ html {
 body {
   color: #333;
   background: #fff;
-  font: 13px/1.2 "Open Sans", sans-serif;
+  font: 13px/1.2 "Montserrat", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1498,6 +1498,140 @@ private backend styles
   display: block;
   height: 13px;
   background: #f2f2f2;
+}
+
+.breadcrumbs {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+  color: #0aa7e0;
+  font-weight: bold;
+}
+.breadcrumbs li + li {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+.breadcrumbs li + li:before {
+  position: absolute;
+  content: ">";
+  top: 0;
+  left: 5px;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: #0aa7e0;
+  font-weight: 600;
+}
+
+.checkout-form {
+  color: #707070;
+}
+.checkout-form .fake-select {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.checkout-form label {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.checkout-form .select-holder {
+  margin-bottom: 40px;
+}
+.checkout-form .icon-holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  z-index: 1;
+  width: 70px;
+  border-right: 2px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 25px;
+  color: #707070;
+}
+.checkout-form select {
+  display: inline-block;
+  padding: 20px 30px 20px 80px;
+  margin: 0;
+  outline: none;
+  line-height: 1.2;
+  background: #f4f4f4;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 9px;
+  border: none;
+  min-width: 50px;
+  position: relative;
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: 500;
+  width: 100%;
+}
+.checkout-form .fake-select:after {
+  position: absolute;
+  right: 15px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #707070;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  line-height: 0;
+  z-index: 1;
+}
+.checkout-form .link-holder {
+  display: block;
+  text-align: right;
+  margin-bottom: -20px;
+}
+.checkout-form .link-holder a {
+  text-decoration: none;
+  color: #707070;
+  font-style: italic;
+}
+.checkout-form .billing-info {
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.checkout-form .total {
+  display: block;
+}
+.checkout-form .price {
+  font-size: 47px;
+  line-height: 53px;
+  display: block;
+  margin-bottom: 20px;
+}
+.checkout-form .btn-primary {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #0aa7e0;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 #footer {
@@ -2764,8 +2898,8 @@ private backend styles
 
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello.eot?91820515");
-  src: url("../fonts/fontello.eot?91820515#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?91820515") format("woff2"), url("../fonts/fontello.woff?91820515") format("woff"), url("../fonts/fontello.ttf?91820515") format("truetype"), url("../fonts/fontello.svg?91820515#fontello") format("svg");
+  src: url("../fonts/fontello.eot?91812106");
+  src: url("../fonts/fontello.eot?91812106#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?91812106") format("woff2"), url("../fonts/fontello.woff?91812106") format("woff"), url("../fonts/fontello.ttf?91812106") format("truetype"), url("../fonts/fontello.svg?91812106#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2775,7 +2909,7 @@ private backend styles
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?91820515#fontello') format('svg');
+    src: url('../font/fontello.svg?91812106#fontello') format('svg');
   }
 }
 */
@@ -2807,11 +2941,6 @@ private backend styles
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-icon-1:before {
-  content: "";
-}
-
-/* '' */
 .icon-icon-arrow-left:before {
   content: "";
 }
@@ -2947,3 +3076,18 @@ private backend styles
 }
 
 /* '' */
+.icon-icon-card:before {
+  content: "";
+}
+
+/* '' */
+.icon-icon-print-2:before {
+  content: "";
+}
+
+/* '' */
+.icon-icon-print:before {
+  content: "";
+}
+
+/* '' */
