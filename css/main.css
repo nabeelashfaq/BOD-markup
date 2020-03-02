@@ -895,7 +895,7 @@ private backend styles
 .content {
   width: 75%;
   padding: 50px;
-  padding: 50px;
+  padding: 50px 0 50px 50px;
 }
 .content:only-child {
   width: 100%;
@@ -1086,6 +1086,21 @@ private backend styles
   max-width: 900px;
   margin: 0 auto;
 }
+.cat-selection-block .btn-holder {
+  text-align: right;
+}
+.cat-selection-block .btn-holder .btn-primary {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #0aa7e0;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
 
 .categories {
   display: flex;
@@ -1132,6 +1147,7 @@ private backend styles
   border-radius: 10px;
   cursor: pointer;
   position: relative;
+  margin-bottom: 20px;
 }
 .categories label:after {
   position: absolute;
@@ -1151,6 +1167,17 @@ private backend styles
 }
 .categories label:hover {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+}
+.categories .select-indicators .left-side,
+.categories .select-indicators .right-side {
+  padding: 0 5px;
+}
+.categories .select-indicators li {
+  padding: 0;
+}
+.categories .select-indicators span {
+  width: 11px;
+  height: 16px;
 }
 .categories__title {
   display: block;

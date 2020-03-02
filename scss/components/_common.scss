@@ -318,7 +318,7 @@ private backend styles
 .content{
   width: 75%;
   padding: 50px;
-  padding: 50px;
+  padding: 50px 0 50px 50px;
   &:only-child {
     width: 100%;
     padding: 50px 0;
@@ -532,6 +532,24 @@ private backend styles
 .cat-selection-block{
   max-width: 900px;
   margin: 0 auto;
+
+  .btn-holder{
+    text-align: right;
+
+    .btn-primary{
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: top;
+      color: #fff;
+      border-radius: 7px;
+      background-color: #0aa7e0;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  
 }
 
 .categories{
@@ -589,6 +607,7 @@ private backend styles
     border-radius: 10px;
     cursor: pointer;
     position: relative;
+    margin-bottom: 20px;
 
     &:after{
       position: absolute;
@@ -611,6 +630,24 @@ private backend styles
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     }
   }
+
+  .select-indicators{
+
+    .left-side,
+    .right-side{
+      padding: 0 5px;
+    }
+
+    li{
+      padding: 0;
+    }
+    span{
+      width: 11px;
+      height: 16px;
+    }
+  }
+
+
 
   &__title{
     display: block;
