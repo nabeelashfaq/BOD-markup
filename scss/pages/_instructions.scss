@@ -1,0 +1,22 @@
+.instructions-block{
+    padding: 50px 0;
+    font-size: 16px;
+    line-height: 27px;
+
+    .title{
+        display: block;
+        text-transform: uppercase;
+        color: $cerulean;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+    p{
+        margin-bottom: 30px;
+    }
+
+    .steps-list{
+        @extend %listreset;
+    }
+}

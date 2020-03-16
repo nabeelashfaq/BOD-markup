@@ -29,10 +29,13 @@ body{
   margin: 0 auto;
   padding: 0 20px;
   @extend %clearfix;
+  @include media('>=xl-screen') {
+    max-width: 1490px;
+  }
 }
 
 .section{
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .boxes-img{
@@ -222,7 +225,12 @@ private backend styles
   .sm-title{
     display: block;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $dove-gray;
+    letter-spacing: 0.8px;
   }
 
   .lg-title{
@@ -233,6 +241,9 @@ private backend styles
     margin-bottom: 20px;
     font-size: 19px;
     line-height: 24px;
+    @include media('>=xl-screen') {
+      margin-bottom: 40px;
+    }
   }
 
   .lg-subtitle{
@@ -251,9 +262,12 @@ private backend styles
     text-decoration: none;
     text-transform: uppercase;
     color: #2374bb;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
     &:before{
       position: absolute;
       content: '\e801';
@@ -268,7 +282,7 @@ private backend styles
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 20px;
+  padding: 24px 27px;
 
   .title{
     display: block;
@@ -304,6 +318,12 @@ private backend styles
   width: 25%;
   background: #f4f4f4;
   position: relative;
+
+  @include media('>=xl-screen') {
+    width: 29.6%;
+    padding: 132px 71px 132px 0;
+  }
+
   &:after{
     position: absolute;
     content: '';
@@ -313,15 +333,27 @@ private backend styles
     bottom: 0;
     background: #f4f4f4;
   }
+
+  .sm-title{
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
 }
 
 .content{
   width: 75%;
   padding: 50px;
-  padding: 50px 0 50px 50px;
+  padding: 58px 0 50px 50px;
+
+  @include media('>=xl-screen') {
+    width: 70.4%;
+    padding: 132px 0 100px 78px;
+  }
   &:only-child {
     width: 100%;
-    padding: 50px 0;
+    padding: 58px 0;
   }
 }
 
@@ -331,6 +363,9 @@ private backend styles
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 30px;
+  @include media('>=xl-screen') {
+    margin-bottom: 84px;
+  }
 
   .btns-holder{
 
@@ -341,13 +376,20 @@ private backend styles
       width: 200px;
       background: #2374bb;
       color: #fff;
-      text-transform: uppercase;
       padding: 25px 30px;
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
       text-align: center;
       margin: 0 10px 0 0;
+      letter-spacing: 1px;
+      @include media('>=xl-screen') {
+        width: 300px;
+        font-size: 22px;
+        line-height: 26px;
+        padding: 38px 30px;
+        margin: 0 30px 0 0;
+      }
     }
 
     .btn-secondary{
@@ -358,18 +400,25 @@ private backend styles
 }
 
 .setup-block{
-  background: #f2f2f2;
-  padding: 10px 10px;
+  background: $concrete;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   width: 350px;
   justify-content: space-between;
+  color: $dove-gray;
+  @include media('>=xl-screen') {
+    width: 510px;
+  }
 
   .progress-bar{
     width: 50%;
     padding: 0 10px;
+    @include media('>=xl-screen') {
+      padding: 0 13px 0 24px;
+    }
   }
 
   .checklist{
@@ -379,10 +428,19 @@ private backend styles
     width: 40%;
     font-size: 12px;
     line-height: 16px;
+    @include media('>=xl-screen') {
+      font-size: 16px;
+      line-height: 27px;
+      width: 43%;
+    }
 
     li{
       position: relative;
       padding: 0 0 2px 20px;
+      @include media('>=xl-screen') {
+        padding: 0 0 0 35px;
+      }
+
       &:before{
         position: absolute;
         content: '';
@@ -392,6 +450,10 @@ private backend styles
         width: 12px;
         border: 1px solid #2374bb;
         border-radius: 100%;
+        @include media('>=xl-screen') {
+          height: 20px;
+          width: 20px;
+        }
       }
 
       &.checked{
@@ -399,9 +461,15 @@ private backend styles
           background: #2374bb;
           content: '\e809';
           font-family: 'fontello';
-          font-size: 7px;
+          font-size: 6px;
           line-height: 10px;
           color: #fff;
+          padding: 0 0 0 1px;
+          @include media('>=xl-screen') {
+            font-size: 10px;
+            line-height: 15px;
+            padding: 2px 0 0 2px;
+          }
         }
       }
     }
@@ -413,6 +481,10 @@ private backend styles
     border-radius: 20px;
     border: 1px solid #0aa7e0;
     overflow: hidden;
+    @include media('>=xl-screen') {
+      height: 16px;
+      border: 2px solid #0aa7e0;
+    }
 
     span{
       width: 33.33%;
@@ -420,6 +492,9 @@ private backend styles
       background: #0aa7e0;
       height: 11px;
       border-radius: 0 10px 10px 0;
+      @include media('>=xl-screen') {
+        height: 13px;
+      }
     }
   }
 
@@ -428,7 +503,12 @@ private backend styles
     color: #2374bb;
     text-align: center;
     margin-bottom: 5px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    @include media('>=xl-screen') {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 13px;
+    }
   }
 }
 
@@ -437,6 +517,9 @@ private backend styles
   display: flex;
   flex-flow: row wrap;
   margin: 0 -10px 30px;
+  @include media('>=xl-screen') {
+    margin: 0 -18px;
+  }
 
   .col{
     width: 25%;
@@ -449,12 +532,15 @@ private backend styles
     align-items: center;
     justify-content: center;
     position: relative;
+    @include media('>=xl-screen') {
+      width: 21%;
+      margin: 0 18px;
+    }
   }
 
   .col-holder{
     width: 100%;
     color: #2374bb;
-    text-transform: uppercase;
     text-align: center;
     
   }
@@ -463,18 +549,32 @@ private backend styles
     display: block;
     font-size: 12px;
     line-height: 26px;
+    margin-bottom: 4px;
+    @include media('>=xl-screen') {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   .num{
     display: block;
     font-size: 40px;
     line-height: 47px;
+    @include media('>=xl-screen') {
+      font-size: 61px;
+      line-height: 65px;
+    }
   }
 
   .subtitle{
     display: block;
     font-size: 16px;
     line-height: 24px;
+    text-transform: uppercase;
+    @include media('>=xl-screen') {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   select::-ms-expand {display: none;}
@@ -482,7 +582,7 @@ private backend styles
 
   .select-holder{
     position: absolute;
-    top: 30px;
+    top: 27px;
     left: 0;
   }
 
@@ -493,23 +593,20 @@ private backend styles
 
 	select{
 			display:inline-block;
-			padding:5px 30px 4px 15px;
+			padding:7px 20px 7px 12px;
 			margin:0;
 			outline:none;
 			line-height:1.2;
-			background:#9c9999;
-			-webkit-appearance:none;
-			-webkit-border-radius:0 6px 6px 0;
-			-moz-border-radius:0 6px 6px 0;
+			background:$dusty-gray;
 			appearance:none;
-			border-radius:0 6px 6px 0;
-			min-width:50px;
+			border-radius:0 8px 8px 0;
+			min-width:162px;
       position: relative;
-      text-transform: uppercase;
-      color: #fff;
+      color: $white;
       font-weight: bold;
       font-size: 12px;
       line-height: 16px;
+      border: none;
     }
     
 		.fake-select:after{
@@ -530,7 +627,7 @@ private backend styles
 }
 
 .cat-selection-block{
-  max-width: 900px;
+  max-width: 740px;
   margin: 0 auto;
 
   .btn-holder{
@@ -567,10 +664,10 @@ private backend styles
   }
 
   &__img{
-    min-height: 200px;
+    min-height: 145px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 
     img{
       display: block;
@@ -602,12 +699,12 @@ private backend styles
   label{
     display: block;
     border: 1px solid #d8d8d8;
-    padding: 20px;
+    padding: 10px 20px 14px;
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 
     &:after{
       position: absolute;
@@ -653,11 +750,16 @@ private backend styles
     display: block;
     text-transform: uppercase;
     color: #707070;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
 .steps-bar{
   padding: 50px 0;
+  max-width: 830px;
+  margin: 0 auto 50px;
+
   ul{
     margin: 0;
     padding:10px 0 0;
@@ -679,7 +781,7 @@ private backend styles
 
   li{
     position: relative;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #2374bb;
     padding: 10px 0 0;
     font-size: 12px;
@@ -688,10 +790,10 @@ private backend styles
 
     &.active{
       font-weight: bold;
-      color: #0aa7e0;
+      color: $cerulean;
       &:before{
-        background: #0aa7e0;
-        border-color: #0aa7e0;
+        background: $cerulean;
+        border-color: $cerulean;
       }
 
       &:after{
@@ -700,7 +802,7 @@ private backend styles
 
       ~ li{
         &::before{
-          background: #fff;
+          background: $white;
         }
 
         &:after{
@@ -753,13 +855,13 @@ private backend styles
     &:before{
       position: absolute;
       content: '';
-      top: -16px;
-      height: 14px;
-      width: 14px;
+      top: -17px;
+      height: 16px;
+      width: 16px;
       left: 50%;
       transform: translateX(-50%);
       border-radius: 100%;
-      border: 1px solid #2374bb;
+      border: 2px solid #2374bb;
       background: #2374bb;
     }
 
@@ -773,6 +875,7 @@ private backend styles
       font-size: 7px;
       line-height: 12px;
       color: #fff;
+      padding: 0 0 0 1px;
     }
   }
 
@@ -788,9 +891,11 @@ private backend styles
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 0 -100px;
+
   &__col{
     width: 50%;
-    padding: 0 20px;
+    padding: 0 30px;
 
     &:first-child{
       text-align: right;
@@ -826,14 +931,14 @@ private backend styles
   }
 
   ul{
-    margin: 0 0 10px;
+    margin: 0 0 22px;
     padding: 0;
     list-style: none;
 
     li{
       display: inline-block;
       vertical-align: top;
-      padding: 0 2px;
+      padding: 0 6px;
     }
 
     label{
@@ -875,8 +980,10 @@ private backend styles
 
   .title{
     display: block;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    font-size: 19px;
+    line-height: 24px;
+    text-transform: capitalize;
   }
 
 
@@ -888,10 +995,13 @@ private backend styles
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    @include media('>=xl-screen') {
+      padding: 25px 25px 20px 20px;
+    }
   }
 
   .img-holder{
-    width: 25%;
+    width: 23%;
 
     img{
       display: block;
@@ -900,18 +1010,17 @@ private backend styles
   }
 
   .details{
-    width: 55%;
-    padding: 0 40px;
+    width: 60%;
+    padding: 0 22px;
   }
 
   .price-info-block{
-    width: 20%;
+    width: 17%;
   }
 
   .d-title{
     display: block;
     margin-bottom: 10px;
-    text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
   }
@@ -921,13 +1030,14 @@ private backend styles
     text-transform: uppercase;
     font-size: 11px;
     line-height: 15px;
+    font-weight: bold;
   }
 
   .price-quantity{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 62px;
   }
 
   .price{
@@ -986,7 +1096,7 @@ private backend styles
         position: absolute;
         content: "";
         left:-5px;
-        border-width: 5px;
+        border-width: 7px;
         border-style: solid;
         transform: translateY(-50%);
       }
@@ -998,7 +1108,7 @@ private backend styles
       }
       &--down {
         right: auto;
-        left: 0;
+        left: -4px;
 
         &:after {
           border-color: transparent #a8a8a8 transparent transparent ;
@@ -1030,7 +1140,7 @@ private backend styles
     border-radius: 7px;
     background-color: #0aa7e0;
     text-transform: uppercase;
-    padding: 5px 20px;
+    padding: 7px 23px;
     font-weight: bold;
     font-size: 14px;
   }
@@ -1040,6 +1150,9 @@ private backend styles
   margin:0;
   padding: 0;
   list-style: none;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
 
   li{
     padding: 0 0 0 10px;
@@ -1058,16 +1171,15 @@ private backend styles
 
 .review-item-block{
   max-width: 500px;
-  border: 2px solid #d8d8d8;
+  border: 2px solid $alto;
   margin: 0 auto 50px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 36px 42px 36px 45px;
 
   .divider{
     display: block;
-    border-bottom: 2px solid #d8d8d8;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    border-bottom: 2px solid $alto;
+    margin: 25px 0;
   }
 
   .img-holder{
@@ -1087,6 +1199,8 @@ private backend styles
 
   .lg-title{
     text-align: left;
+    text-transform: none;
+    margin-bottom: 10px;
   }
 
   .subtitle{
@@ -1099,7 +1213,7 @@ private backend styles
   .info{
     font-weight: 500;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .btn-holder{
@@ -1114,9 +1228,9 @@ private backend styles
     border-radius: 7px;
     background-color: #0aa7e0;
     text-transform: capitalize;
-    padding: 10px 20px;
+    padding: 10px 16px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 11px;
 
     i{
       margin-right: 5px;
@@ -1127,11 +1241,13 @@ private backend styles
     margin: 0;
     padding: 0;
     list-style: none;
-    max-width: 200px;
+    max-width: 147px;
+    font-size: 12px;
+    line-height: 16px;
 
     li{
       position: relative;
-      padding: 0 0 15px 40px;
+      padding: 0 0 12px 34px;
       display: flex;
       justify-content: space-between;
       &:before{
@@ -1141,7 +1257,7 @@ private backend styles
         top: -2px;
         left: 0;
         color: #2374bb;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
       }
     }
@@ -1257,6 +1373,13 @@ private backend styles
 }
 
 .print-preview-block{
+
+  .sm-title{
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
   ul{
     background: #fff;
     padding: 5px 5px 0;
@@ -1267,7 +1390,7 @@ private backend styles
   }
 
   li{
-    padding: 0 3px 6px;
+    padding: 0 3px 5px;
     width: 7.14%;
     &.active{
       span{
@@ -1279,6 +1402,9 @@ private backend styles
   span{
     display: block;
     height: 13px;
+    @include media('>=xl-screen') {
+      height: 20px;
+    }
     
     background: #f2f2f2;
   }
@@ -1286,7 +1412,7 @@ private backend styles
 
 .breadcrumbs{
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   ul{
     margin: 0;
@@ -1297,12 +1423,12 @@ private backend styles
   li{
     display: inline-block;
     vertical-align: top;
-    color: #0aa7e0;
+    color: $cerulean;
     font-weight: bold;
 
     +li {
       position: relative;
-      padding: 0 0 0 20px;
+      padding: 0 0 0 36px;
       &:before{
         position: absolute;
         content: '>';
@@ -1330,22 +1456,24 @@ private backend styles
   label{
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 15px;
+    line-height: 19px;
   }
 
   .select-holder{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .icon-holder{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 40px;
+    height: 42px;
     z-index: 1;
-    width: 70px;
+    width: 72px;
     border-right: 2px solid #707070;
     display: flex;align-items: center;
     justify-content: center;
@@ -1356,7 +1484,7 @@ private backend styles
 
 	select{
     display:inline-block;
-    padding:20px 30px 20px 80px;
+    padding:23px 30px 22px 89px;
     margin:0;
     outline:none;
     line-height:1.2;
@@ -1366,10 +1494,11 @@ private backend styles
     border: none;
     min-width:50px;
     position: relative;
-    text-transform: uppercase;
     color: #707070;
     font-weight: 500;
     width: 100%;
+    font-size: 20px;
+    line-height: 26px;
   }
 
     
@@ -1380,9 +1509,9 @@ private backend styles
     content:'';
     width: 0; 
     height: 0; 
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid #707070;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #707070;
     position:absolute;
     top:50%;
     margin-top:-2px;
@@ -1393,7 +1522,9 @@ private backend styles
   .link-holder{
     display: block;
     text-align: right;
-    margin-bottom: -20px;
+    margin-bottom: -28px;
+    font-size: 16px;
+    line-height: 20px;
 
     a{
       text-decoration: none;
@@ -1405,18 +1536,21 @@ private backend styles
   .billing-info{
     text-align: right;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 109px;
   }
 
   .total{
     display: block;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 6px;
   }
 
   .price{
     font-size: 47px;
     line-height: 53px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
   }
 
   .btn-primary{
@@ -1424,11 +1558,13 @@ private backend styles
     display: inline-block;
     vertical-align: top;
     color: #fff;
-    border-radius: 7px;
+    border-radius: 9px;
     background-color: #0aa7e0;
-    text-transform: capitalize;
-    padding: 10px 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
     font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -1440,42 +1576,45 @@ private backend styles
   h2{
     color: #2374bb;
     text-transform: uppercase;
+    margin-bottom: 36px;
   }
 }
 
 .print-block{
-  width: 55%;
-  padding: 0 50px 0 0;
+  width: 57%;
+  padding: 0 135px 0 0;
 }
 
 .summary-block{
-  width: 45%;
+  width: 43%;
   position: relative;
   background: #f4f4f4;
-  padding: 0 0 0 50px;
+  padding: 98px 0 0 89px;
   z-index: 1;
   &:before{
     position: absolute;
     content: '';
-    top: -50px;
+    top: -58px;
     width: 9999px;
     left: 0;
-    bottom: -50px;
+    bottom: -58px;
     background: #f4f4f4;
     z-index: -1;
   }
 
   .title{
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     text-transform: uppercase;
+    font-size: 15px;
+    line-height: 19px;
   }
 
   .item-holder{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
     .img-holder{
       width: 100px;
       height: 100px;
@@ -1502,6 +1641,8 @@ private backend styles
     .d-title{
       display: block;
       margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 23px;
     }
 
     .subtitle{
@@ -1515,6 +1656,8 @@ private backend styles
       flex-shrink: 0;
       display: block;
       text-align: right;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
@@ -1551,6 +1694,7 @@ private backend styles
 .select-indicators{
   display: flex;
   flex-flow: row wrap;
+  margin: 30px 0 0;
 
   .left-side{
     width: 50%;
@@ -1593,7 +1737,7 @@ private backend styles
 }
 
 .appliances-tabs{
-  padding: 50px 0;
+  padding: 29px 0 25px;
   background-color: #215fac;
   color: #fff;
 
@@ -1605,25 +1749,28 @@ private backend styles
   .icons-text-holder{
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 36%;
     padding: 0 20px 0 0;
   }
 
   .title{
     display: block;
     text-transform: uppercase;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 10px;
   }
 
   .info-icon{
     display: block;
-    margin: 0 20px 0 0;
-    font-size: 20px;
-    line-height: 24px;
+    margin: 10px 28px 0 0;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   .bucket-icon{
     display: block;
-    margin: 0 20px 0 0;
+    margin: 0 30px 0 0;
     width: 70px;
     flex-shrink: 0;
   }
@@ -1632,8 +1779,8 @@ private backend styles
 .tabs-holder{
   width: 70%;
   .tabset{
-    margin: 0 0 30px;
-    padding: 0 0 15px;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -1650,8 +1797,8 @@ private backend styles
         content: '';
         left: 0;
         right: 0;
-        bottom: -18px;
-        height: 3px;
+        bottom: -14px;
+        height: 5px;
         background: #fff;
         opacity: 0;
         visibility: hidden;
@@ -1662,7 +1809,7 @@ private backend styles
         position: absolute;
         content: '';
         left: 50%;
-        bottom: -24px;
+        bottom: -20px;
         width: 0; 
         height: 0; 
         border-left: 9px solid transparent;
@@ -1705,7 +1852,7 @@ private backend styles
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 auto 10px;
+      margin: 0 auto 16px;
       opacity: 0.38;
       transition:  0.25s linear all;
     }
@@ -1757,9 +1904,18 @@ private backend styles
     display: flex;
     align-items: center;
     padding: 0 30px 0 0;
+    @include media('>=xl-screen') {
+      padding: 0 64px 0 0;
+    }
 
     &.disabled{
       opacity: 0.1;
+    }
+
+    .title{
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0;
     }
   }
 
