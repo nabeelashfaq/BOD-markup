@@ -3702,6 +3702,115 @@ private backend styles
 .instructions-block p {
   margin-bottom: 30px;
 }
+.calculate-block {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5a5a5a;
+}
+.calculate-block .container {
+  max-width: 1070px;
+}
+.calculate-block h1 {
+  font-size: 35px;
+  line-height: 40px;
+  color: #2374bb;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.calculate-block .title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0aa7e0;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+.calculate-block h2 {
+  font-size: 28px;
+  line-height: 34px;
+  color: #2374bb;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.calculate-block p {
+  margin-bottom: 80px;
+}
+.calculate-block .input-holder {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.calculate-block .input-holder label {
+  flex-shrink: 0;
+  margin: 0 10px 0 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+.calculate-block .input-holder input {
+  flex-grow: 1;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 9px;
+  outline: none;
+  padding: 10px;
+  text-align: right;
+  font-size: 18px;
+  line-height: 22px;
+}
+.calculate-block .two-cols {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 100px;
+}
+.calculate-block .col {
+  width: 50%;
+  text-align: left;
+  padding: 0 0 0 80px;
+}
+.calculate-block .col:first-child {
+  padding: 0 80px 0 0;
+  border-right: 2px solid #f2f2f2;
+}
+.calculate-block .col .btn-primary {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+}
+.calculate-block .inputs-frame {
+  margin-bottom: 50px;
+}
+.calculate-block .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 20px 50px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.calculate-block .total {
+  font-size: 40px;
+  line-height: 44px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.calculate-block .total span {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 @font-face {
   font-family: "fontello";
   src: url("../fonts/fontello.eot?91812106");

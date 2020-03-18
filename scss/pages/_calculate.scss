@@ -1,0 +1,126 @@
+.calculate-block{
+    text-align: center;
+    padding: 60px 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: $scorpion;
+
+    .container{
+        max-width: 1070px;
+    }
+
+    h1{
+        font-size: 35px;
+        line-height: 40px;
+        color: $mariner;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 30px;
+        color: $cerulean;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    h2{
+        font-size: 28px;
+        line-height: 34px;
+        color: $mariner;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-bottom: 80px;
+    }
+
+
+    .input-holder{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 10px;
+        align-items: center;
+
+        label{
+            flex-shrink: 0;
+            margin: 0 10px 0 0;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        input{
+            flex-grow: 1;
+            border: none;
+            background: $concrete;
+            border-radius: 9px;
+            outline: none;
+            padding: 10px;
+            text-align: right;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .two-cols{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 100px;
+    }
+
+    .col{
+        width: 50%;
+        text-align: left;
+        padding: 0 0 0 80px;
+
+        &:first-child{
+            padding: 0 80px 0 0;
+            border-right: 2px solid $concrete;
+        }
+
+        .btn-primary{
+            font-size: 16px;
+            line-height: 20px;
+            padding: 10px 20px;
+        }
+    }
+
+    .inputs-frame{
+        margin-bottom: 50px;
+    }
+
+    .btn-primary{
+        background: #0aa7e0;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        padding: 20px 50px;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .total{
+        font-size: 40px;
+        line-height: 44px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        span{
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+    
+}
