@@ -660,6 +660,8 @@ private backend styles
   &__input-holder{
     width: 33.33%;
     padding: 0 10px 20px;
+    position: relative;
+    z-index: 1;
     
   }
 
@@ -676,7 +678,12 @@ private backend styles
   }
 
   input[type="radio"]{
-    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: -2;
+
+
     &:checked ~ {
       label{
         border-color: #2374bb;
@@ -705,6 +712,7 @@ private backend styles
     cursor: pointer;
     position: relative;
     margin-bottom: 7px;
+    background: $white;
 
     &:after{
       position: absolute;

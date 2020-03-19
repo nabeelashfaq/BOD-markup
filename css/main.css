@@ -1284,6 +1284,8 @@ private backend styles
 .categories__input-holder {
   width: 33.33%;
   padding: 0 10px 20px;
+  position: relative;
+  z-index: 1;
 }
 .categories__img {
   min-height: 145px;
@@ -1296,7 +1298,10 @@ private backend styles
   margin: 0 auto;
 }
 .categories input[type=radio] {
-  display: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: -2;
 }
 .categories input[type=radio]:checked ~ label {
   border-color: #2374bb;
@@ -1321,6 +1326,7 @@ private backend styles
   cursor: pointer;
   position: relative;
   margin-bottom: 7px;
+  background: #fff;
 }
 .categories label:after {
   position: absolute;
@@ -3036,10 +3042,12 @@ private backend styles
   font-weight: bold;
 }
 .sl-form__radio-input [type=radio] {
-  position: absolute;
-  left: 6px;
-  top: 6px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
   z-index: -1;
+  display: none;
 }
 .sl-form__radio-input .fake-input, .sl-form__radio-input label {
   display: inline-block;
@@ -3047,9 +3055,6 @@ private backend styles
   font-weight: bold;
   text-transform: uppercase;
   color: #707070;
-  position: relative;
-  background: #fff;
-  z-index: 1;
 }
 .sl-form__radio-input .fake-input strong, .sl-form__radio-input label strong {
   text-transform: none;
