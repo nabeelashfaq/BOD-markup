@@ -332,12 +332,10 @@
     }
 
     &__radio-input [type="radio"]{
-			position:fixed;
-			left:0;
-			top:0;
-			opacity:0;
+			position: absolute;;
+			left:6px;
+			top:6px;
       z-index: -1;
-      display: none;
 		}
 		&__radio-input .fake-input ,
 		&__radio-input label {
@@ -346,6 +344,9 @@
       font-weight: bold;
       text-transform: uppercase;
       color: #707070;
+      position: relative;
+      background: $white;
+      z-index: 1;
 
       strong{
         text-transform: none;

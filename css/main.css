@@ -3036,12 +3036,10 @@ private backend styles
   font-weight: bold;
 }
 .sl-form__radio-input [type=radio] {
-  position: fixed;
-  left: 0;
-  top: 0;
-  opacity: 0;
+  position: absolute;
+  left: 6px;
+  top: 6px;
   z-index: -1;
-  display: none;
 }
 .sl-form__radio-input .fake-input, .sl-form__radio-input label {
   display: inline-block;
@@ -3049,6 +3047,9 @@ private backend styles
   font-weight: bold;
   text-transform: uppercase;
   color: #707070;
+  position: relative;
+  background: #fff;
+  z-index: 1;
 }
 .sl-form__radio-input .fake-input strong, .sl-form__radio-input label strong {
   text-transform: none;
