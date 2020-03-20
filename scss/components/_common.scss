@@ -48,60 +48,6 @@ body{
 
 
 
-.events-block{
-  color: #5a5a5a;
-  padding: 50px 0;
-  
-  h3{
-    text-transform: uppercase;
-    color: #2374bb;
-    margin-bottom: 5px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  &__subtitle{
-    color: #0aa7e0;
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-
-  p{
-    font-style: italic;
-  }
-
-  &__event-holder{
-    background: #eafaff;
-    padding: 20px 20px 20px 50px;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    border-radius: 10px;
-  }
-
-  &__text-holder{
-    flex-grow: 1;
-    padding: 0 50px 0 0;
-  }
-
-  &__btn-holder{
-    flex-shrink: 0;
-  }
-
-  .btn-primary{
-    background: #0aa7e0;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-}
-
-
 
 .download-files-block{
   padding: 50px 0;
