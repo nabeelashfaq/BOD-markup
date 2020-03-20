@@ -1,0 +1,60 @@
+.error-block{
+    padding: 200px 0 150px;
+    text-align: center;
+    background: url(../images/bg-2.jpg) no-repeat;
+    background-size: 100%;
+
+    h1{
+        font-size: 87px;
+        line-height: 100px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        color: $mariner;
+        font-weight: 600;
+    }
+
+    .subtitle{
+        font-size: 24px;
+        line-height: 30px;
+        color: $cerulean;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        display: block;
+        font-weight: 600;
+    }
+
+    .links{
+        @extend %listreset;
+        font-size: 20px;
+        line-height: 26px;
+
+        li{
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 10px;
+            position: relative;
+             + li{
+                 &:before{
+                     position: absolute;
+                     content: '';
+                     top: 10px;
+                     left: -3px;
+                     height: 4px;
+                     width: 4px;
+                     border-radius: 100%;
+                     background: $mariner;
+                 }
+             }
+        }
+
+        a{
+            text-decoration: none;
+            color: $mariner;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $cerulean;
+            }
+        }
+    }
+}

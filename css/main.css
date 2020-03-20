@@ -394,7 +394,7 @@ th {
   padding: 0;
 }
 
-.instructions-block .steps-list, #header__nav > ul, .header__nav-links-block .header__links-list, .footer__links-block ul {
+.error-block .links, .instructions-block .steps-list, #header__nav > ul, .header__nav-links-block .header__links-list, .footer__links-block ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -3850,6 +3850,58 @@ private backend styles
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 9px;
+}
+
+.error-block {
+  padding: 200px 0 150px;
+  text-align: center;
+  background: url(../images/bg-2.jpg) no-repeat;
+  background-size: 100%;
+}
+.error-block h1 {
+  font-size: 87px;
+  line-height: 100px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #2374bb;
+  font-weight: 600;
+}
+.error-block .subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0aa7e0;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  display: block;
+  font-weight: 600;
+}
+.error-block .links {
+  font-size: 20px;
+  line-height: 26px;
+}
+.error-block .links li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  position: relative;
+}
+.error-block .links li + li:before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -3px;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background: #2374bb;
+}
+.error-block .links a {
+  text-decoration: none;
+  color: #2374bb;
+  text-transform: uppercase;
+}
+.error-block .links a:hover {
+  color: #0aa7e0;
 }
 
 @font-face {
