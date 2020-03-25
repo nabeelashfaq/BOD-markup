@@ -103,3 +103,69 @@
   }
 
 }
+
+.fadeInleft{
+	opacity:0;
+	&.in-viewport{
+		animation:fadeInleft 0.3s ease-in-out forwards;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		animation-timing-function: ease;
+	}
+}
+
+@-webkit-keyframes fadeInleft {
+	0% {
+		opacity: 0;
+		transform: translate3d(-35px, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fadeInleft {
+	0% {
+		opacity: 0;
+		transform: translate3d(-35px, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+
+
+@-webkit-keyframes fadeInright {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 35px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+	
+@keyframes fadeInright {
+	0% {
+		opacity: 0;
+		transform: translate3d(35px, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInright{
+	opacity:0;
+	&.in-viewport{
+		animation:fadeInright 0.3s ease-in-out forwards;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		animation-timing-function: ease;
+	}
+}
