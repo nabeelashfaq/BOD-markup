@@ -1,6 +1,16 @@
 #footer{
   padding: 79px 0 40px;
   align-self: flex-end;
+  @include media('>=xl-screen') {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .container{
+    @include media('>=xl-screen') {
+      max-width: 1550px;
+    }
+  }
 
   .logo-text-block{
     width: 50%;
@@ -8,8 +18,7 @@
     display: flex;
     flex-flow: row nowrap;
     @include media('>=xl-screen') {
-      font-size: 16px;
-      line-height: 27px;
+      width: 57%;
     }
   }
 
@@ -38,12 +47,16 @@
     .footer__title{
       display: block;
       margin-bottom: 10px;
-      color: #2374bb;
+      color: $mariner;
       text-transform: uppercase;
+      @include media('>=xl-screen') {
+        font-size: 20px;
+        line-height: 25px;
+      }
     }
 
     a{
-      color: #0aa7e0;
+      color: $cerulean;
       text-decoration: none;
       text-transform: uppercase;
     }
@@ -54,7 +67,7 @@
     clear:both;
     text-align: center;
     text-transform: uppercase;
-    color: #2374bb;
+    color: $mariner;
     margin-top: 30px;
     width: 100%;
     font-size: 14px;
@@ -67,6 +80,9 @@
   display: flex;
   flex-flow: row wrap;
   width: 30%;
+  @include media('>=xl-screen') {
+    width: 28%;
+  }
   
 
   .footer__col{
@@ -83,7 +99,7 @@
   
   a{
     text-decoration: none;
-    color: #2374bb;
+    color: $mariner;
     text-transform: uppercase;
   }
 }
@@ -91,13 +107,18 @@
 .footer__address-block{
   width: 20%;
   text-align: right;
+
+  @include media('>=xl-screen') {
+    width: 15%;
+  }
+
   a{
     text-decoration: none;
-    color: #2374bb;
+    color: $mariner;
     text-transform: uppercase;
 
     &.tel{
-      color: #0aa7e0;
+      color: $cerulean;
     }
   }
 
@@ -112,7 +133,7 @@
 }
 
 .primary-footer{
-  border-top: 8px solid #2374bb;
+  border-top: 8px solid $mariner;
   padding: 50px 0;
   
   .logo-text-block{
@@ -125,15 +146,11 @@
     flex-grow:1;
 
     a{
-      color: #2374bb;
-      @include media('>=xl-screen') {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 600;
-      }
+      color: $mariner;
+      font-weight: 600;
 
       &.tel{
-        color: #0aa7e0;
+        color: $cerulean;
       }
     }
   }
@@ -146,10 +163,6 @@
     width: 50%;
     text-align: right;
     font-weight: 600;
-    @include media('>=xl-screen') {
-      font-size: 16px;
-      line-height: 27px;
-    }
   }
 
   .links{
@@ -171,14 +184,14 @@
 
     a{
       text-decoration: none;
-      color: #2374bb;
+      color: $mariner;
       text-transform: uppercase;
     }
   }
 
   .btn-primary{
-    background: #2374bb;
-    color: #fff;
+    background: $mariner;
+    color: $white;
     text-transform: uppercase;
     border: none;
     padding: 10px;

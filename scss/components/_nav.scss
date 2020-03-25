@@ -3,10 +3,18 @@
 .header__nav-links-block{
   float: right;
   text-align: right;
+  @include media('>=xl-screen') {
+    padding: 14px 0 0;
+  }
 
   .header__links-list{
     @extend %listreset;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 18px;
+    @include media('>=xl-screen') {
+      margin-bottom: 56px;
+    }
 
     li{
       display: inline-block;
@@ -37,6 +45,9 @@
       vertical-align: middle;
       padding: 0 0 0 30px;
       position: relative;
+      @include media('>=xl-screen') {
+        padding: 0 0 0 53px;
+      }
       
       &.active{
         a{
@@ -57,11 +68,19 @@
 
       >a{
         text-decoration: none;
-        color: #2374bb;
+        color: $mariner;
         display: block;
         text-transform: uppercase;
         position: relative;
         padding: 5px 0;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        @include media('>=xl-screen') {
+          font-size: 20px;
+          line-height: 26px;
+        }
+
         &:after{
           position: absolute;
           content: '';
@@ -74,13 +93,14 @@
         }
         
         &:hover{
-          color: #0aa7e0;
+          color: $cerulean;
         }
     
         &.btn-primary{
-          background: #0aa7e0;
-          color: #fff;
-          padding: 8px 20px;
+          background: $cerulean;
+          color: $white;
+          padding: 9px 29px;
+          border-radius: 9px;
         }
       }
     }
@@ -95,6 +115,12 @@
     padding: 0;
     text-align: center;
     display: none;
+    @include media('>=xl-screen') {
+      width: 120px;
+      font-size: 16px;
+      line-height: 20px;
+      left: 53px;
+    }
     
     li{
       border-top: 1px solid #fff;
