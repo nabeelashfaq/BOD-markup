@@ -692,7 +692,6 @@ body {
 #wrapper {
   position: relative;
   width: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -916,7 +915,7 @@ private backend styles
 }
 
 .sidebar {
-  padding: 50px 30px 0 0;
+  padding: 0 30px 0 0;
   width: 25%;
   background: #f4f4f4;
   position: relative;
@@ -926,6 +925,14 @@ private backend styles
     width: 29.6%;
     padding: 132px 71px 132px 0;
   }
+}
+.sidebar .sidebar-holder {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
 }
 .sidebar:after {
   position: absolute;
@@ -946,7 +953,7 @@ private backend styles
 .content {
   width: 75%;
   padding: 50px;
-  padding: 58px 0 50px 50px;
+  padding: 38px 0 50px 50px;
 }
 @media (min-width: 1600px) {
   .content {
@@ -1479,9 +1486,16 @@ private backend styles
 }
 
 .steps-bar {
-  padding: 50px 0;
+  padding: 40px 0;
   max-width: 830px;
   margin: 0 auto 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 9;
 }
 .steps-bar ul {
   margin: 0;
