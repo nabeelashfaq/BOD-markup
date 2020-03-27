@@ -585,6 +585,18 @@ input[type=submit] {
   padding: 35px 0 60px;
   position: relative;
   z-index: 99;
+  z-index: 1;
+}
+#header:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/Header-Pattern.svg) no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 @media (min-width: 1600px) {
   #header .container {
@@ -2478,6 +2490,8 @@ private backend styles
 #footer {
   padding: 79px 0 40px;
   align-self: flex-end;
+  background: url(../images/Footer-Pattern.svg) no-repeat;
+  background-size: cover;
 }
 @media (min-width: 1600px) {
   #footer {
