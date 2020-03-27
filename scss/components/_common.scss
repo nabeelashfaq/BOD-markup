@@ -468,7 +468,7 @@ private backend styles
   }
 
   .col{
-    width: 25%;
+    width: calc(25% - 40px);
     margin: 0 10px;
     display: flex;
     flex-flow: row wrap;
@@ -482,13 +482,174 @@ private backend styles
       width: 21%;
       margin: 0 18px;
     }
+
+    &.lg-col{
+      width: 75%;
+      padding: 20px;
+      @include media('>=xl-screen') {
+        width: 79%;
+      }
+    }
   }
 
   .col-holder{
     width: 100%;
     color: #2374bb;
     text-align: center;
-    
+  }
+
+  .points-detail{
+    padding: 0 0 40px 200px;
+    text-align: left;
+  }
+
+  .point-holder{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    &.text-green{
+      color: $chelsea-cucumber;
+    }
+
+    &.text-black{
+      color: $black;
+    }
+
+    .points-num{
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0 20px 0 0;
+      font-size: 28px;
+      line-height: 30px;
+      min-width: 60px;
+    }
+
+    .points-info{
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0 20px 0 0;
+    }
+
+    .disc-text{
+      display: inline-block;
+      vertical-align: bottom;
+      text-transform: none;
+    }
+  }
+
+  .points-indicators{
+    display: flex;
+    flex-flow: row wrap;
+
+    .box-holder{
+      width: 15%;
+      border: 2px solid $mariner;
+      padding: 15px 10px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+
+      .point{
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        transform: rotate(-40deg);
+      }
+
+      &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: $mariner;
+        z-index: -1;
+        border-radius: 0 5px 5px 0;
+      }
+
+      &.fill-25{
+        &:before{
+          width: 25%;
+        }
+      }
+
+      &.fill-50{
+        &:before{
+          width: 50%;
+        }
+      }
+
+      &.fill-75{
+        &:before{
+          width: 75%;
+        }
+      }
+
+      &.fill-100{
+        &:before{
+          width: 100%;
+        }
+      }
+
+      span{
+        display: block;
+        
+      }
+
+      &.circle{
+        span{
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          background: $chelsea-cucumber;
+        }
+      }
+
+      &.square{
+        width: 20%;
+
+        &.fill-50,
+        &.fill-75,
+        &.fill-100,{
+          span{
+            background: $white;
+            border-color: $black;
+          }
+        }
+        span{
+          width: 30px;
+          height: 30px;
+          background: $denim;
+          border: 2px solid transparent;
+        }
+      }
+
+      &.triangle{
+        width: 40%;
+        span{
+          width: 30px;
+          height: 30px;
+          background: $black;
+          transform: rotate(45deg);
+        }
+      }
+
+      &.d-triangle{
+        width: 25%;
+        span{
+          width: 30px;
+          height: 30px;
+          background: $black;
+          transform: rotate(45deg);
+          margin: 0 7px;
+        }
+      }
+    }
   }
 
   .title{

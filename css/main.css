@@ -1121,7 +1121,7 @@ private backend styles
   }
 }
 .scoreboard-block .col {
-  width: 25%;
+  width: calc(25% - 40px);
   margin: 0 10px;
   display: flex;
   flex-flow: row wrap;
@@ -1138,10 +1138,137 @@ private backend styles
     margin: 0 18px;
   }
 }
+.scoreboard-block .col.lg-col {
+  width: 75%;
+  padding: 20px;
+}
+@media (min-width: 1600px) {
+  .scoreboard-block .col.lg-col {
+    width: 79%;
+  }
+}
 .scoreboard-block .col-holder {
   width: 100%;
   color: #2374bb;
   text-align: center;
+}
+.scoreboard-block .points-detail {
+  padding: 0 0 40px 200px;
+  text-align: left;
+}
+.scoreboard-block .point-holder {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.scoreboard-block .point-holder.text-green {
+  color: #72ac4d;
+}
+.scoreboard-block .point-holder.text-black {
+  color: #333;
+}
+.scoreboard-block .point-holder .points-num {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 20px 0 0;
+  font-size: 28px;
+  line-height: 30px;
+  min-width: 60px;
+}
+.scoreboard-block .point-holder .points-info {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 20px 0 0;
+}
+.scoreboard-block .point-holder .disc-text {
+  display: inline-block;
+  vertical-align: bottom;
+  text-transform: none;
+}
+.scoreboard-block .points-indicators {
+  display: flex;
+  flex-flow: row wrap;
+}
+.scoreboard-block .points-indicators .box-holder {
+  width: 15%;
+  border: 2px solid #2374bb;
+  padding: 15px 10px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.scoreboard-block .points-indicators .box-holder .point {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  transform: rotate(-40deg);
+}
+.scoreboard-block .points-indicators .box-holder:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #2374bb;
+  z-index: -1;
+  border-radius: 0 5px 5px 0;
+}
+.scoreboard-block .points-indicators .box-holder.fill-25:before {
+  width: 25%;
+}
+.scoreboard-block .points-indicators .box-holder.fill-50:before {
+  width: 50%;
+}
+.scoreboard-block .points-indicators .box-holder.fill-75:before {
+  width: 75%;
+}
+.scoreboard-block .points-indicators .box-holder.fill-100:before {
+  width: 100%;
+}
+.scoreboard-block .points-indicators .box-holder span {
+  display: block;
+}
+.scoreboard-block .points-indicators .box-holder.circle span {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #72ac4d;
+}
+.scoreboard-block .points-indicators .box-holder.square {
+  width: 20%;
+}
+.scoreboard-block .points-indicators .box-holder.square.fill-50 span, .scoreboard-block .points-indicators .box-holder.square.fill-75 span, .scoreboard-block .points-indicators .box-holder.square.fill-100 span {
+  background: #fff;
+  border-color: #333;
+}
+.scoreboard-block .points-indicators .box-holder.square span {
+  width: 30px;
+  height: 30px;
+  background: #1068c8;
+  border: 2px solid transparent;
+}
+.scoreboard-block .points-indicators .box-holder.triangle {
+  width: 40%;
+}
+.scoreboard-block .points-indicators .box-holder.triangle span {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  transform: rotate(45deg);
+}
+.scoreboard-block .points-indicators .box-holder.d-triangle {
+  width: 25%;
+}
+.scoreboard-block .points-indicators .box-holder.d-triangle span {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  transform: rotate(45deg);
+  margin: 0 7px;
 }
 .scoreboard-block .title {
   display: block;
