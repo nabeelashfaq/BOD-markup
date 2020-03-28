@@ -34,24 +34,53 @@
                     <aside class="sidebar">
                         <div class="sidebar-holder">
                             <ul class="tabs-links-list">
-                                <li><a href="#">account Settings</a></li>
+                                <li class="active"><a href="#">account Settings</a></li>
                                 <li><a href="#">Practice Info</a></li>
-                                <li class="active"><a href="#">FormLabs Integration</a></li>
+                                <li><a href="#">FormLabs Integration</a></li>
                                 <li><a href="#">Billing</a></li>
                                 <li><a href="#">Notifications &amp; Preferences</a></li>
                             </ul>
                         </div>
                     </aside>
                     <div class="content">
-                        <div class="integration-block">
-                            <strong class="sm-title">Formlabs Printer Group</strong>
-                            <h2>BRACESONDEMAND_SHANNON</h2>
-                            <ul class="integration-list">
-                                <li><a href="#">How to create a form labs account</a></li>
-                                <li><a href="#">How to join this group in my formlabs account</a></li>
-                                <li><a href="#">How to add a printer to form labs printer group</a></li>
-                            </ul>
-                        </div>
+                        <form action="#" class="sl-form sl-form--signup">
+                            <strong class="sl-form__title">Your information</strong>
+                            <div class="sl-form__block">
+                                <div class="sl-form__row sl-form--other">
+                                    <div class="sl-form__input-holder">
+                                        <label for="f-name" class="sl-form__label">First name</label>
+                                        <input type="text" id="f-name">
+                                    </div>
+                                    <div class="sl-form__input-holder">
+                                        <label for="l-name" class="sl-form__label">Last name</label>
+                                        <input type="text" id="l-name">
+                                    </div>
+                                </div>
+                                <div class="sl-form__row sl-form--other">
+                                    <div class="sl-form__input-holder">
+                                        <label for="email" class="sl-form__label">Email</label>
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="sl-form__btn-holder sl-form--text-right">
+                                    <button type="submit" class="btn-primary">Update</button>
+                                </div>
+                            </div>
+                            <strong class="sl-form__title">Change Password</strong>
+                            <div class="sl-form__row sl-form--other">
+                                <div class="sl-form__input-holder">
+                                    <label for="n-pasw" class="sl-form__label">New Password</label>
+                                    <input type="password" id="n-pasw" placeholder="6+ Characters">
+                                </div>
+                                <div class="sl-form__input-holder">
+                                    <label for="c-pasw" class="sl-form__label">Confirm New Password</label>
+                                    <input type="password" id="c-pasw" placeholder="6+ Characters">
+                                </div>
+                            </div>
+                            <div class="sl-form__btn-holder sl-form--text-right">
+                                <button type="submit" class="btn-primary">Change Password</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -82,5 +111,4 @@
 		</footer>
 	</div>
 </body>
-
 </html>

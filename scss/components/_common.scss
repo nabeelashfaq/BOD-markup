@@ -161,6 +161,19 @@ private backend styles
 
 .dashboard-block{
   
+  &.form-container{
+    .sidebar{
+      width: 20.6%;
+    }
+
+    .content{
+      width: 79.4%;
+    }
+
+    .sl-form{
+      margin: 0 0 50px;
+    }
+  }
 
   .container{
     display: flex;
@@ -266,7 +279,7 @@ private backend styles
 
   @include media('>=xl-screen') {
     width: 29.6%;
-    padding: 132px 71px 132px 0;
+    padding: 0 71px 0 0;
   }
 
   .sidebar-holder{
@@ -305,7 +318,7 @@ private backend styles
   text-transform: uppercase;
 
   li{
-    padding-bottom: 40px;
+    padding-bottom: 43px;
     &.active{
       a{
         &:after{
@@ -318,7 +331,7 @@ private backend styles
   a{
     text-decoration: none;
     color: $matisse;
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     position: relative;
     &:after{
@@ -491,11 +504,11 @@ private backend styles
 .content{
   width: 75%;
   padding: 50px;
-  padding: 38px 0 50px 50px;
+  padding: 50px 0 50px 50px;
 
   @include media('>=xl-screen') {
     width: 70.4%;
-    padding: 132px 0 100px 78px;
+    padding: 50px 0 100px 78px;
   }
   &:only-child {
     width: 100%;

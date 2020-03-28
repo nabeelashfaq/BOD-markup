@@ -825,6 +825,15 @@ body {
 private backend styles
 
 */
+.dashboard-block.form-container .sidebar {
+  width: 20.6%;
+}
+.dashboard-block.form-container .content {
+  width: 79.4%;
+}
+.dashboard-block.form-container .sl-form {
+  margin: 0 0 50px;
+}
 .dashboard-block .container {
   display: flex;
   flex-flow: row wrap;
@@ -923,7 +932,7 @@ private backend styles
 @media (min-width: 1600px) {
   .sidebar {
     width: 29.6%;
-    padding: 132px 71px 132px 0;
+    padding: 0 71px 0 0;
   }
 }
 .sidebar .sidebar-holder {
@@ -960,7 +969,7 @@ private backend styles
   text-transform: uppercase;
 }
 .tabs-links-list li {
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 }
 .tabs-links-list li.active a:after {
   width: 100%;
@@ -968,7 +977,7 @@ private backend styles
 .tabs-links-list a {
   text-decoration: none;
   color: #215fac;
-  display: inline;
+  display: inline-block;
   vertical-align: top;
   position: relative;
 }
@@ -1118,12 +1127,12 @@ private backend styles
 .content {
   width: 75%;
   padding: 50px;
-  padding: 38px 0 50px 50px;
+  padding: 50px 0 50px 50px;
 }
 @media (min-width: 1600px) {
   .content {
     width: 70.4%;
-    padding: 132px 0 100px 78px;
+    padding: 50px 0 100px 78px;
   }
 }
 .content:only-child {
@@ -3180,6 +3189,10 @@ private backend styles
   line-height: 16px;
   font-weight: bold;
 }
+.sl-form__btn-holder.sl-form--text-right {
+  text-align: right;
+  margin-top: 30px;
+}
 .sl-form h2 {
   color: #2374bb;
   text-transform: uppercase;
@@ -3198,14 +3211,18 @@ private backend styles
   flex-flow: row nowrap;
   text-align: left;
 }
+.sl-form--other .sl-form__input-holder {
+  min-width: 50%;
+  width: 50%;
+}
 .sl-form__input-holder {
   margin-bottom: 15px;
   padding: 0 15px;
   min-width: 33.3%;
   width: 100%;
   position: relative;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .sl-form__input-holder.error input[type=text],
 .sl-form__input-holder.error input[type=email],
@@ -3219,7 +3236,7 @@ private backend styles
 }
 .sl-form__title {
   display: block;
-  margin: 30px 0 21px;
+  margin: 0 0 21px;
   text-align: left;
   text-transform: uppercase;
   font-size: 15px;
@@ -3248,7 +3265,7 @@ private backend styles
   width: 100%;
   border-radius: 9px;
   background: #f2f2f2;
-  padding: 14px 20px;
+  padding: 16px 20px;
   outline: none;
   text-transform: capitalize;
   border: 1px solid transparent;
@@ -3309,7 +3326,7 @@ private backend styles
   color: #fff;
   text-transform: uppercase;
   border: none;
-  padding: 15px 40px;
+  padding: 15px;
   border-radius: 9px;
   width: 270px;
   margin: 0 auto;
@@ -3336,7 +3353,7 @@ private backend styles
   line-height: 1.2;
   border-radius: 9px;
   background: #f2f2f2;
-  padding: 18px 20px;
+  padding: 17px 20px 16px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;

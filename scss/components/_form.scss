@@ -145,6 +145,13 @@
     font-weight: bold;
   }
 
+  &__btn-holder{
+    &.sl-form--text-right{
+      text-align: right;
+      margin-top: 30px;
+    }
+  }
+
   h2{
     color: #2374bb;
     text-transform: uppercase;
@@ -166,14 +173,21 @@
     text-align: left;
   }
 
+  &--other{
+    .sl-form__input-holder{
+      min-width: 50%;
+      width: 50%;
+    }
+  }
+
   &__input-holder{
     margin-bottom: 15px;
     padding: 0 15px;
     min-width: 33.3%;
     width: 100%;
     position: relative;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
     &.error{
       input[type="text"],
       input[type="email"],
@@ -192,7 +206,7 @@
 
   &__title{
     display: block;
-    margin: 30px 0 21px;
+    margin: 0 0 21px;
     text-align: left;
     text-transform: uppercase;
     font-size: 15px;
@@ -224,7 +238,7 @@
     width: 100%;
     border-radius: 9px;
     background: #f2f2f2;
-    padding: 14px 20px;
+    padding: 16px 20px;
     outline: none;
     text-transform: capitalize;
     border: 1px solid transparent;
@@ -260,7 +274,7 @@
     color: #fff;
     text-transform: uppercase;
     border: none;
-    padding: 15px 40px;
+    padding: 15px;
     border-radius: 9px;
     width: 270px;
     margin: 0 auto;
@@ -290,7 +304,7 @@
 			line-height:1.2;
 			border-radius: 9px;
       background: #f2f2f2;
-      padding: 18px 20px;
+      padding: 17px 20px 16px;
 			appearance:none;
       position: relative;
       border: none;
