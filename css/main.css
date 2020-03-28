@@ -950,6 +950,171 @@ private backend styles
   margin-bottom: 20px;
 }
 
+.tabs-links-list {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.tabs-links-list li {
+  padding-bottom: 40px;
+}
+.tabs-links-list li.active a:after {
+  width: 100%;
+}
+.tabs-links-list a {
+  text-decoration: none;
+  color: #215fac;
+  display: inline;
+  vertical-align: top;
+  position: relative;
+}
+.tabs-links-list a:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #215fac;
+  transition: 0.25s linear;
+}
+.tabs-links-list a:hover:after {
+  width: 100%;
+}
+
+.integration-block {
+  color: #707070;
+}
+.integration-block h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.integration-block .integration-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: bold;
+}
+.integration-block .integration-list li {
+  padding-bottom: 30px;
+}
+.integration-block .integration-list a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 28px;
+  position: relative;
+  color: #0aa7e0;
+  text-decoration: none;
+}
+.integration-block .integration-list a:hover {
+  color: #2374bb;
+}
+.integration-block .integration-list a:before {
+  position: absolute;
+  content: "";
+  font-family: "fontello";
+  top: -1px;
+  left: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.notifications-block {
+  max-width: 743px;
+}
+.notifications-block .notifications-list {
+  margin: 0 0 50px;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 19px;
+  color: #707070;
+}
+.notifications-block .notifications-list li {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #ebebeb;
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.notifications-block .notifications-list .n-text {
+  padding: 0 10px 0 30px;
+  position: relative;
+}
+.notifications-block .notifications-list .n-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2374bb;
+  padding: 0 5px 0 0;
+}
+.notifications-block .notifications-list .n-title:before {
+  position: absolute;
+  content: "";
+  font-family: "fontello";
+  top: 1px;
+  left: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+.notifications-block .notifications-list .date {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  margin: 0 0 0 5px;
+}
+.notifications-block .notifications-list .btn-primary {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #0aa7e0;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.pagination li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.pagination li.active a {
+  color: #0aa7e0;
+  pointer-events: none;
+}
+.pagination a {
+  text-decoration: none;
+  color: #a8a8a8;
+  text-transform: uppercase;
+}
+.pagination a:hover {
+  color: #0aa7e0;
+}
+
 .content {
   width: 75%;
   padding: 50px;
@@ -2292,6 +2457,7 @@ private backend styles
   display: flex;
   flex-flow: row wrap;
   margin: 30px 0 0;
+  width: 100%;
 }
 .select-indicators .left-side {
   width: 50%;
