@@ -779,7 +779,8 @@ private backend styles
     padding: 0 10px 20px;
     position: relative;
     z-index: 1;
-    
+    display: flex;
+    flex-flow: row wrap;
   }
 
   &__img{
@@ -830,6 +831,7 @@ private backend styles
     position: relative;
     margin-bottom: 7px;
     background: $white;
+    width: 100%;
 
     &:after{
       position: absolute;

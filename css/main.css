@@ -1405,6 +1405,8 @@ private backend styles
   padding: 0 10px 20px;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
 }
 .categories__img {
   min-height: 145px;
@@ -1446,6 +1448,7 @@ private backend styles
   position: relative;
   margin-bottom: 7px;
   background: #fff;
+  width: 100%;
 }
 .categories label:after {
   position: absolute;
