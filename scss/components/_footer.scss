@@ -1,11 +1,12 @@
 #footer{
-  padding: 79px 0 40px;
+  padding: 40px 0 20px;
   align-self: flex-end;
   background: url(../images/Footer-Pattern.svg) no-repeat;
   background-size: cover;
   @include media('>=xl-screen') {
     font-size: 16px;
     line-height: 28px;
+    padding: 79px 0 40px;
   }
 
   .container{
@@ -30,7 +31,7 @@
   }
 
   .footer__logo{
-    width: 150px;
+    width: 100px;
     flex-shrink: 0;
     margin: 0 34px 0 0;
     @include media('>=xl-screen') {
@@ -70,11 +71,14 @@
     text-align: center;
     text-transform: uppercase;
     color: $mariner;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 100%;
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
+    @include media('>=xl-screen') {
+      margin-top: 30px;
+    }
   }
 }
 

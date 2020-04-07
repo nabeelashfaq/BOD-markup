@@ -1,8 +1,12 @@
 #header{
-  padding: 35px 0 60px;
+  padding: 25px 0 50px;
   position: relative;
   z-index: 99;
   z-index: 1;
+
+  @include media('>=xl-screen') {
+    padding: 35px 0 60px;
+  }
   
   &:after{
     position: absolute;
@@ -24,7 +28,7 @@
 
   .header__logo{
     float: left;
-    width: 288px;
+    width: 210px;
 
     @include media('>=xl-screen') {
       width: 402px;
@@ -54,7 +58,7 @@
 
 .dr-profile{
   float: right;
-  margin: 5px -5px 0 0;
+  margin: -5px -5px 0 0;
   @include media('>=xl-screen') {
     margin: 45px -5px 0 0;
   }
