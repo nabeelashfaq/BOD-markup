@@ -1,5 +1,5 @@
 #footer{
-  padding: 40px 0 20px;
+  padding: 20px 0 20px;
   align-self: flex-end;
   background: url(../images/Footer-Pattern.svg) no-repeat;
   background-size: cover;
@@ -73,11 +73,13 @@
     color: $mariner;
     margin-top: 10px;
     width: 100%;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 15px;
     font-weight: 600;
     @include media('>=xl-screen') {
       margin-top: 30px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }
@@ -166,9 +168,12 @@
   }
 
   .links-btn-block{
-    width: 50%;
+    width: 43%;
     text-align: right;
     font-weight: 600;
+    @include media('>=xl-screen') {
+
+    }
   }
 
   .links{

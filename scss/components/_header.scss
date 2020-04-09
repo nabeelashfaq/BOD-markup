@@ -1,5 +1,5 @@
 #header{
-  padding: 25px 0 50px;
+  padding: 20px 0 30px;
   position: relative;
   z-index: 99;
   z-index: 1;
@@ -28,7 +28,8 @@
 
   .header__logo{
     float: left;
-    width: 210px;
+    width: 190px;
+    margin-top: 5px;
 
     @include media('>=xl-screen') {
       width: 402px;
@@ -105,6 +106,10 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 30px;
+    max-width: 50px;
+    @include media('>=xl-screen') {
+      max-width: 66px;
+    }
   }
 
   
