@@ -723,7 +723,7 @@ body {
 #main {
   flex-grow: 1;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
 }
 #main > * {
   width: 100%;
@@ -853,6 +853,7 @@ private backend styles
   background-size: cover;
   color: #fff;
   padding: 20px 0;
+  flex-shrink: 0;
 }
 .main-heading-block h1 {
   text-transform: uppercase;
@@ -864,6 +865,7 @@ private backend styles
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
+  flex-grow: 1;
 }
 .dashboard-block.form-container .sidebar {
   width: 20.6%;
