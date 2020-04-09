@@ -1,11 +1,11 @@
 #header{
-  padding: 20px 0 30px;
+  padding: 20px 0;
   position: relative;
   z-index: 99;
   z-index: 1;
 
   @include media('>=xl-screen') {
-    padding: 35px 0 60px;
+    padding: 35px 0 40px;
   }
   
   &:after{
@@ -44,6 +44,11 @@
     background: url(../images/bg-1.jpg) no-repeat;
     background-position: 0 100%;
     background-size: 100%;
+    padding: 20px 0 35px;
+
+    @include media('>=xl-screen') {
+      padding: 35px 0 60px;
+    }
   }
 
   &.secondary-header{
@@ -59,7 +64,7 @@
 
 .dr-profile{
   float: right;
-  margin: -5px -5px 0 0;
+  margin: 0 -5px 0 0;
   @include media('>=xl-screen') {
     margin: 45px -5px 0 0;
   }

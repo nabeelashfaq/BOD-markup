@@ -169,6 +169,19 @@ private backend styles
 */
 
 
+.main-heading-block{
+  background: url(../images/bg-2.jpg) no-repeat;
+  background-size: cover;
+  color: $white;
+  padding: 20px 0;
+
+  h1{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+}
+
 .dashboard-block{
   display: flex;
   flex-flow: row wrap;
