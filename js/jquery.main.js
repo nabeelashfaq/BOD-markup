@@ -8,6 +8,12 @@ function initInViewport() {
 	jQuery('.animate').itemInViewport({});
 }
 
+$(function() {
+	$(".opener").click(function() {
+	  $(this).toggleClass("active");
+	  $('.slide').toggleClass("open");
+	});
+});
 
 /*
  * jQuery In Viewport plugin
