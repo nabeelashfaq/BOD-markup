@@ -2237,6 +2237,141 @@ private backend styles
   border-radius: 10px;
   padding: 36px 42px 36px 45px;
 }
+.review-item-block.new-design {
+  padding-bottom: 10px;
+}
+.review-item-block.new-design .img-holder {
+  width: auto;
+}
+.review-item-block.new-design .lg-title {
+  border-bottom: 2px solid #d8d8d8;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.review-item-block.new-design .lg-title span {
+  display: block;
+  font-weight: 600;
+}
+.review-item-block.new-design .item-detail {
+  margin-bottom: 20px;
+}
+.review-item-block.new-design .info {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.review-item-block.new-design .price {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #ecebeb;
+  text-transform: uppercase;
+  color: #2374bb;
+}
+.review-item-block .add-btn-holder {
+  border-top: 2px solid #d8d8d8;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.review-item-block .add-btn-holder .add-btn {
+  display: flex;
+  align-items: center;
+}
+.review-item-block .add-btn-holder .add-btn .btn {
+  min-width: 120px;
+  text-align: center;
+}
+.review-item-block .add-btn-holder .add-btn i {
+  font-size: 40px;
+  line-height: 42px;
+}
+.review-item-block .add-btn-holder .btn-primary {
+  background: #fb5a1f;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 13px 20px;
+  font-weight: 600;
+}
+.review-item-block .add-btn-holder .btn-secondary {
+  background: #2374bb;
+  border-radius: 20px;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  margin-left: 20px;
+}
+.review-item-block .quantity {
+  position: relative;
+  min-width: 140px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.review-item-block .quantity input {
+  display: block;
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -moz-appearance: textfield;
+  margin: 0 auto;
+  text-align: center;
+}
+.review-item-block .quantity input::-webkit-inner-spin-button, .review-item-block .quantity input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.review-item-block .quantity .btn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  top: 50%;
+  width: 40px;
+  color: #2374bb;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+}
+.review-item-block .quantity .btn:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.review-item-block .quantity .btn.btn-up:after {
+  content: "+";
+}
+.review-item-block .quantity .btn.btn-down {
+  right: auto;
+  left: 0;
+}
+.review-item-block .quantity .btn.btn-down:after {
+  content: "-";
+}
+.review-item-block .img-price-holder {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: right;
+}
 .review-item-block .divider {
   display: block;
   border-bottom: 2px solid #d8d8d8;
@@ -2247,12 +2382,12 @@ private backend styles
 }
 .review-item-block .text {
   width: 70%;
+  padding: 0 30px 0 0;
 }
 .review-item-block .item-detail {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
 }
 .review-item-block .lg-title {
   text-align: left;
@@ -4706,8 +4841,8 @@ private backend styles
 
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello.eot?91812106");
-  src: url("../fonts/fontello.eot?91812106#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?91812106") format("woff2"), url("../fonts/fontello.woff?91812106") format("woff"), url("../fonts/fontello.ttf?91812106") format("truetype"), url("../fonts/fontello.svg?91812106#fontello") format("svg");
+  src: url("../fonts/fontello.eot?85352976");
+  src: url("../fonts/fontello.eot?85352976#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?85352976") format("woff2"), url("../fonts/fontello.woff?85352976") format("woff"), url("../fonts/fontello.ttf?85352976") format("truetype"), url("../fonts/fontello.svg?85352976#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4717,7 +4852,7 @@ private backend styles
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?91812106#fontello') format('svg');
+    src: url('../font/fontello.svg?85352976#fontello') format('svg');
   }
 }
 */
@@ -4899,3 +5034,8 @@ private backend styles
 }
 
 /* '' */
+.icon-transport:before {
+  content: "";
+}
+
+/* '' */

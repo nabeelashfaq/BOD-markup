@@ -8,12 +8,6 @@ function initInViewport() {
 	jQuery('.animate').itemInViewport({});
 }
 
-$(function() {
-	$(".opener").click(function() {
-	  $(this).toggleClass("active");
-	  $('.slide').toggleClass("open");
-	});
-});
 
 /*
  * jQuery In Viewport plugin
@@ -209,8 +203,8 @@ $(function() {
 $('.quantity').each(function() {
     var spinner = $(this),
         input = spinner.find('input[type="number"]'),
-        btnUp = spinner.find('.quantity__btn--up'),
-        btnDown = spinner.find('.quantity__btn--down'),
+        btnUp = spinner.find('.btn-up'),
+        btnDown = spinner.find('.btn-down'),
         min = input.attr('min'),
         max = input.attr('max');
   
