@@ -405,7 +405,7 @@ private backend styles
     img{
       display: block;
       margin: 0 auto;
-      max-width: 100%;
+      max-width: 80%;
     }
   }
 
@@ -436,6 +436,69 @@ private backend styles
   }
 
 }
+
+
+.brackets-tubes-block{
+  text-align: right;
+  .image{
+    margin-bottom: 20px;
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .title{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: $mariner;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .brackets-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+
+    li{
+      width: 50%;
+      background: $white;
+      padding: 10px 5px;
+    }
+
+    a{
+      text-decoration: none;
+      color: $cerulean;
+    }
+
+    span{
+      font-size: 10px;
+      line-height: 15px;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .img-holder{
+      min-height: 100px;
+      max-height: 100px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      img{
+        max-width: 80%;
+      }
+    }
+  }
+}
+
 
 .sidebar{
   padding: 0 0 0 30px;
