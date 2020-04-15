@@ -1684,12 +1684,12 @@ private backend styles
   }
 
   .details{
-    width: 60%;
+    width: 52%;
     padding: 0 22px;
   }
 
   .price-info-block{
-    width: 17%;
+    width: 25%;
   }
 
   .d-title{
@@ -1697,6 +1697,7 @@ private backend styles
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 24px;
+    color: $mariner;
   }
 
   .subtitle{
@@ -1711,20 +1712,23 @@ private backend styles
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 62px;
+    margin-bottom: 32px;
+    text-align: right;
   }
 
   .price{
     display: block;
-    width: 50%;
     font-size: 22px;
     line-height: 26px;
-    margin-top: 10px;
   }
 
   .quantity-block{
-    width: 40%;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+
 
     span{
       display: block;
@@ -1739,17 +1743,22 @@ private backend styles
 
   .quantity {
     position: relative;
-    max-width: 60px;
+    min-width: 140px;
+    max-width: 140px;
     font-size: 14px;
     font-weight: 700;
-    margin:0 0 0 auto;
+    border: 1px solid $gray;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 22px;
 
     input {
       display: block;
-      width: 40px;
+      width: 60px;
       height: 40px;
-      border-radius: 6px;
-      border: 2px solid #d8d8d8;
+      border: none;
+      border-left: 1px solid $gray;
+      border-right: 1px solid $gray;
       -moz-appearance: textfield;
       margin: 0 auto;
       text-align: center;
@@ -1759,64 +1768,90 @@ private backend styles
         margin: 0;
       }
     }
-    &__btn {
+    .btn {
       position: absolute;
       right: 0;
       cursor: pointer;
       top: 50%;
+      width: 40px;
+      color: $mariner;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 400;
       
 
       &:after {
         position: absolute;
         content: "";
-        left:-5px;
-        border-width: 7px;
-        border-style: solid;
+        left:0;
+        right: 0;
+        top: 50%;
         transform: translateY(-50%);
+        text-align: center;
       }
-      &--up {
+      &.btn-up {
 
         &:after {
-          border-color: transparent transparent transparent #a8a8a8;
+          content: '+';
         }
       }
-      &--down {
+      &.btn-down {
         right: auto;
-        left: -4px;
+        left: 0;
 
         &:after {
-          border-color: transparent #a8a8a8 transparent transparent ;
+          content: '-';
         }
       }
     }
   }
 
-  .btns-holder{
+
+  .add-btn{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btn{
+      min-width: 120px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 17px;
+      border-radius: 30px;
+      margin-left: 20px;
+      padding: 13px 20px;
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+    }
+
+    i{
+      font-size: 40px;
+      line-height: 42px;
+    }
   }
 
-  .btn-remove{
-    text-decoration: none;
-    color: #a8a8a8;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 17px;
-  }
-
+  
   .btn-primary{
-    text-decoration: none;
+    background: $mariner;
+  }
+
+  .btn-secondary{
+    background: #fb5a1f;
+  }
+
+  .btn-edit{
     display: inline-block;
     vertical-align: top;
-    color: #fff;
-    border-radius: 7px;
-    background-color: #0aa7e0;
+    padding: 10px 20px;
+    color: $mariner;
+    background: #ebfaff;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    margin: 0 0 0 auto;
     text-transform: uppercase;
-    padding: 7px 23px;
-    font-weight: bold;
-    font-size: 14px;
   }
 }
 
