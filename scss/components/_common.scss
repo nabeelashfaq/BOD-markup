@@ -2179,6 +2179,26 @@ private backend styles
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .update-btn{
+    text-align: right;
+    border-top: 2px solid $alto;
+    padding: 15px 0;
+
+    .btn-update{
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: top;
+      color: #fff;
+      border-radius: 20px;
+      background-color: $mariner;
+      text-transform: capitalize;
+      padding: 10px 16px;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+  }
 }
 
 
