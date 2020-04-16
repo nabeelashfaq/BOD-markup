@@ -2202,11 +2202,11 @@ private backend styles
   margin: 0 auto;
 }
 .your-cart-block .details {
-  width: 52%;
+  width: 50%;
   padding: 0 22px;
 }
 .your-cart-block .price-info-block {
-  width: 25%;
+  width: 27%;
 }
 .your-cart-block .d-title {
   display: block;
@@ -2221,6 +2221,7 @@ private backend styles
   font-size: 11px;
   line-height: 15px;
   font-weight: bold;
+  margin: 0 0 0 20px;
 }
 .your-cart-block .price-quantity {
   display: flex;
@@ -2230,9 +2231,14 @@ private backend styles
   text-align: right;
 }
 .your-cart-block .price {
-  display: block;
-  font-size: 22px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #ecebeb;
+  font-size: 20px;
   line-height: 26px;
+  color: #2374bb;
 }
 .your-cart-block .quantity-block {
   display: flex;
@@ -2333,6 +2339,18 @@ private backend styles
 .your-cart-block .btn-secondary {
   background: #fb5a1f;
 }
+.your-cart-block .edit-remove-btn {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.your-cart-block .btn-remove {
+  text-decoration: none;
+  color: #2374bb;
+  text-transform: capitalize;
+}
 .your-cart-block .btn-edit {
   display: inline-block;
   vertical-align: top;
@@ -2343,8 +2361,11 @@ private backend styles
   text-decoration: none;
   width: 100px;
   text-align: center;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 40px;
   text-transform: uppercase;
+}
+.your-cart-block .details-list {
+  margin: 0 0 0 20px;
 }
 
 .details-list {

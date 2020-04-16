@@ -1684,12 +1684,12 @@ private backend styles
   }
 
   .details{
-    width: 52%;
+    width: 50%;
     padding: 0 22px;
   }
 
   .price-info-block{
-    width: 25%;
+    width: 27%;
   }
 
   .d-title{
@@ -1706,6 +1706,7 @@ private backend styles
     font-size: 11px;
     line-height: 15px;
     font-weight: bold;
+    margin: 0 0 0 20px;
   }
 
   .price-quantity{
@@ -1717,9 +1718,15 @@ private backend styles
   }
 
   .price{
-    display: block;
-    font-size: 22px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #ecebeb;
+    font-size: 20px;
     line-height: 26px;
+    color: $mariner;
+
   }
 
   .quantity-block{
@@ -1840,6 +1847,20 @@ private backend styles
     background: #fb5a1f;
   }
 
+  .edit-remove-btn{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .btn-remove{
+    text-decoration: none;
+    color: $mariner;
+    text-transform: capitalize;
+  }
+
   .btn-edit{
     display: inline-block;
     vertical-align: top;
@@ -1850,8 +1871,12 @@ private backend styles
     text-decoration: none;
     width: 100px;
     text-align: center;
-    margin: 0 0 0 auto;
+    margin: 0 0 0 40px;
     text-transform: uppercase;
+  }
+
+  .details-list{
+    margin: 0 0 0 20px;
   }
 }
 
