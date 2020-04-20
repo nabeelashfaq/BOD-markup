@@ -983,14 +983,19 @@ private backend styles
 .sidebar-2 {
   width: 22%;
   background: #eafaff;
-  padding: 20px 20px 20px 0;
   position: relative;
   margin: 0 0 0 -50px;
+  padding: 20px 0;
 }
 @media (min-width: 1920px) {
   .sidebar-2 {
     width: 22%;
   }
+}
+.sidebar-2 .sidebar-2-holder {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0 20px 0 0;
 }
 .sidebar-2:before {
   position: absolute;
