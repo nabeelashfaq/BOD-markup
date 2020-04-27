@@ -1,12 +1,8 @@
 #header{
-  padding: 20px 0;
+  padding: 15px 0;
   position: relative;
   z-index: 99;
   z-index: 1;
-
-  @include media('>=xl-screen') {
-    padding: 35px 0 40px;
-  }
   
   &:after{
     position: absolute;
@@ -28,12 +24,12 @@
 
   .header__logo{
     float: left;
-    width: 190px;
+    width: 150px;
     margin-top: 5px;
 
     @include media('>=xl-screen') {
-      width: 402px;
-      margin-top: 30px;
+      width: 180px;
+      margin-top: 12px;
     }
     img{
       width: 100%;
@@ -47,7 +43,7 @@
     padding: 20px 0 35px;
 
     @include media('>=xl-screen') {
-      padding: 35px 0 60px;
+      padding: 20px 0 50px;
     }
   }
 
@@ -66,7 +62,7 @@
   float: right;
   margin: 0 -5px 0 0;
   @include media('>=xl-screen') {
-    margin: 45px -5px 0 0;
+    margin: 5px -5px 0 0;
   }
 
   
@@ -110,10 +106,10 @@
   .bucket-icon{
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 0 30px;
-    max-width: 50px;
+    margin: 0 0 0 20px;
+    max-width: 40px;
     @include media('>=xl-screen') {
-      max-width: 66px;
+      max-width: 56px;
     }
   }
 

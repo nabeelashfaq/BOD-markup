@@ -1,12 +1,12 @@
 #footer{
-  padding: 20px 0 20px;
+  padding: 10px 0;
   align-self: flex-end;
   background: url(../images/Footer-Pattern.svg) no-repeat;
   background-size: cover;
   @include media('>=xl-screen') {
     font-size: 16px;
     line-height: 28px;
-    padding: 79px 0 40px;
+    padding: 20px 0;
   }
 
   .container{
@@ -31,11 +31,11 @@
   }
 
   .footer__logo{
-    width: 100px;
+    width: 70px;
     flex-shrink: 0;
-    margin: 0 34px 0 0;
+    margin: 0 24px 0 0;
     @include media('>=xl-screen') {
-      width: 162px;
+      width: 100px;
     }
 
     img{
@@ -71,13 +71,12 @@
     text-align: center;
     text-transform: uppercase;
     color: $mariner;
-    margin-top: 10px;
     width: 100%;
     font-size: 12px;
     line-height: 15px;
     font-weight: 600;
     @include media('>=xl-screen') {
-      margin-top: 30px;
+      margin-top: 5px;
       font-size: 14px;
       line-height: 18px;
     }
@@ -115,6 +114,8 @@
 .footer__address-block{
   width: 20%;
   text-align: right;
+  font-size: 11px;
+  line-height: 14px;
 
   @include media('>=xl-screen') {
     width: 15%;
@@ -163,14 +164,12 @@
     }
   }
 
-  address{
-    margin-bottom: 10px;
-  }
-
   .links-btn-block{
     width: 43%;
     text-align: right;
     font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
     @include media('>=xl-screen') {
 
     }
