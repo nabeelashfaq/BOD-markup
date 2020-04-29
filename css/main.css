@@ -1019,6 +1019,296 @@ private backend styles
   color: #707070;
   pointer-events: none;
 }
+.sign-in-block {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  width: 900px !important;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  border: 2px solid #84a5d2;
+  border-radius: 10px;
+  background: rgba(168, 168, 168, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.sign-in-block.account-details .sign-in-holder {
+  max-width: inherit;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.sign-in-block .sign-in-holder {
+  border: 2px solid #2374bb;
+  background: #5689cc;
+  color: #fff;
+  max-width: 280px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.sign-in-block .title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.sign-in-block a {
+  text-decoration: none;
+  color: #67c6ed;
+}
+.sign-in-block .sign-in-form {
+  padding: 0 20px;
+}
+.sign-in-block .sign-in-form .input-holder {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.sign-in-block .sign-in-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.sign-in-block .sign-in-form .links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 0 30px;
+}
+.sign-in-block input[type=email],
+.sign-in-block input[type=password],
+.sign-in-block input[type=tel],
+.sign-in-block input[type=text] {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #707070;
+  outline: none;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+.sign-in-block .btn-submit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  background: #fb5d20;
+  border-radius: 7px;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.sign-in-block .divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #5689cc;
+  display: block;
+  padding: 10px 0;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sign-in-block .divider:before, .sign-in-block .divider:after {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  width: 2px;
+  background: #5689cc;
+}
+.sign-in-block .divider:after {
+  top: 100%;
+  bottom: auto;
+}
+.sign-in-block .logo-holder {
+  max-width: 120px;
+  margin: 30px auto 20px;
+}
+.sign-in-block .logo-holder img {
+  display: block;
+  max-width: 100%;
+}
+.sign-in-block .detail-block {
+  width: 55%;
+  text-align: right;
+}
+.sign-in-block .info-form .input-holder {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sign-in-block .info-form .input-holder.checkbox-holder {
+  margin-bottom: 20px;
+}
+.sign-in-block .info-form .input-holder.checkbox-holder label {
+  color: #67c6ed;
+}
+.sign-in-block .info-form .row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.sign-in-block .info-form .row .input-holder {
+  margin: 0 0 10px 15px;
+}
+.sign-in-block .info-form .row input[type=text],
+.sign-in-block .info-form .row input[type=email],
+.sign-in-block .info-form .row input[type=password] {
+  width: 100%;
+}
+.sign-in-block .info-form .row input[type=text].sm-input,
+.sign-in-block .info-form .row input[type=email].sm-input,
+.sign-in-block .info-form .row input[type=password].sm-input {
+  width: 50px;
+}
+.sign-in-block .info-form .row input[type=text].md-input,
+.sign-in-block .info-form .row input[type=email].md-input,
+.sign-in-block .info-form .row input[type=password].md-input {
+  width: 80px;
+}
+.sign-in-block .info-form .row input[type=text].lg-input,
+.sign-in-block .info-form .row input[type=email].lg-input,
+.sign-in-block .info-form .row input[type=password].lg-input {
+  width: 120px;
+}
+.sign-in-block .info-form label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.sign-in-block .info-form input[type=text],
+.sign-in-block .info-form input[type=email],
+.sign-in-block .info-form input[type=password] {
+  width: 280px;
+}
+.sign-in-block .divider-line {
+  max-width: 300px;
+  display: block;
+  background: #fff;
+  height: 2px;
+  margin: 20px auto;
+}
+.sign-in-block .or-divider {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sign-in-block .or-divider:before, .sign-in-block .or-divider:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 100%;
+  width: 80px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+.sign-in-block .or-divider:after {
+  left: auto;
+  right: 100%;
+}
+.sign-in-block .create-account-block {
+  width: 45%;
+  text-align: center;
+  padding: 0 20px 0 50px;
+}
+.sign-in-block .create-account-block .sign-in-form label {
+  margin: 0 10px 0 0;
+}
+.sign-in-block .create-account-block .sign-in-form .input-holder {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 180px;
+  margin: 0 auto 10px;
+}
+.sign-in-block .create-account-block .sign-in-form input[type=email],
+.sign-in-block .create-account-block .sign-in-form input[type=password],
+.sign-in-block .create-account-block .sign-in-form input[type=tel],
+.sign-in-block .create-account-block .sign-in-form input[type=text] {
+  width: 120px;
+}
+.sign-in-block .same-address-block.disabled {
+  pointer-events: none;
+}
+.sign-in-block .same-address-block.disabled label {
+  color: #cbcbcb;
+}
+.sign-in-block .same-address-block.disabled input[type=text] {
+  background: #cbcbcb;
+}
+.sign-in-block .checkbox-holder input[type=checkbox] {
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+  display: none;
+}
+.sign-in-block .checkbox-holder .fake-input,
+.sign-in-block .checkbox-holder label {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  color: #707070;
+  margin: 0;
+}
+.sign-in-block .checkbox-holder label {
+  position: relative;
+  padding: 0 25px 0 0;
+}
+.sign-in-block .checkbox-holder .fake-input {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  vertical-align: middle;
+  position: relative;
+  margin-left: 10px;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+.sign-in-block .checkbox-holder .fake-input {
+  border-radius: 100%;
+}
+.sign-in-block .checkbox-holder .fake-input:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: #1ba7e0;
+  border-radius: 100%;
+  opacity: 0;
+}
+.sign-in-block .checkbox-holder input[type=checkbox]:checked + .fake-input:before {
+  opacity: 1;
+}
+
 .catalog-imgs {
   display: flex;
   flex-flow: row wrap;
