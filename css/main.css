@@ -1366,6 +1366,182 @@ private backend styles
   display: block;
 }
 
+.customize-rx-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(112, 112, 112, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.customize-rx-popup .popup-holder {
+  width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.45);
+  padding: 20px;
+}
+.customize-rx-popup .labels-block {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.customize-rx-popup .label-holder {
+  width: 200px;
+  margin: 0 40px 0 0;
+}
+.customize-rx-popup .title-btn-holder {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.customize-rx-popup .title-btn-holder .title {
+  font-size: 10px;
+  line-height: 14px;
+}
+.customize-rx-popup a {
+  text-decoration: none;
+  font-size: 8px;
+  line-height: 12px;
+  color: #a8a8a8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.customize-rx-popup a.btn-primary, .customize-rx-popup a.btn-secondary {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 14px;
+  background: #2374bb;
+  border-radius: 5px;
+  color: #fff;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 700;
+}
+.customize-rx-popup a.btn-primary i, .customize-rx-popup a.btn-secondary i {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+.customize-rx-popup a.btn-secondary {
+  background: #0aa7e0;
+  margin: 0 0 0 20px;
+}
+.customize-rx-popup .info {
+  background: #f4f4f4;
+  padding: 8px 15px;
+  border-radius: 9px;
+  min-height: 41px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+.customize-rx-popup .info img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+.customize-rx-popup .info strong {
+  display: inline-block;
+  vertical-align: middle;
+}
+.customize-rx-popup .reset-link {
+  text-align: right;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+.customize-rx-popup .customize-holder {
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 15px;
+}
+.customize-rx-popup .customize-img-block {
+  display: flex;
+  flex-flow: row wrap;
+}
+.customize-rx-popup .switcher-block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.customize-rx-popup .switcher-block .switch {
+  display: block;
+  margin: 0 0 0 auto;
+}
+.customize-rx-popup .switcher-block .switch input:checked + .slider {
+  background: #0aa7e0;
+}
+.customize-rx-popup .img-block {
+  width: 60%;
+  text-align: center;
+}
+.customize-rx-popup .img-block .img-holder {
+  max-width: 300px;
+  margin: 0 auto 40px;
+}
+.customize-rx-popup .img-block .img-holder img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.customize-rx-popup .img-block .btn-sync {
+  display: inline-block;
+  vertical-align: top;
+  color: #f4f4f4;
+  font-size: 70px;
+  line-height: 80px;
+  text-decoration: none;
+  text-decoration: none;
+  transition: 0.25s linear color;
+}
+.customize-rx-popup .img-block .btn-sync:hover {
+  color: #dbd8d8;
+}
+.customize-rx-popup .customize-block {
+  width: 40%;
+}
+.customize-rx-popup .customize-block .row {
+  margin-bottom: 15px;
+}
+.customize-rx-popup .customize-block .title {
+  display: block;
+  position: relative;
+  padding: 0 0 0 25px;
+  color: #2374bb;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.customize-rx-popup .customize-block .title:before {
+  position: absolute;
+  content: "";
+  font-family: "fontello";
+  top: 0;
+  left: 0;
+}
+.customize-rx-popup .btns-holder {
+  text-align: right;
+}
+.customize-rx-popup .title-link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
 .brackets-tubes-block {
   text-align: right;
 }
