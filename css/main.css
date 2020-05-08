@@ -1623,6 +1623,59 @@ private backend styles
   text-transform: none;
   margin-bottom: 20px;
 }
+.sidebar .fake-select {
+  position: relative;
+  display: block;
+  max-width: 200px;
+}
+.sidebar select {
+  display: block;
+  margin: 0;
+  outline: none;
+  border-radius: 5px;
+  background: #fff;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  border: none;
+  width: 100%;
+  color: #a8a8a8;
+  font-size: 13px;
+  line-height: 16px;
+}
+.sidebar select::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.sidebar select::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.sidebar select:-moz-placeholder {
+  color: #a8a8a8;
+}
+.sidebar select:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.sidebar select.placeholder {
+  color: #a8a8a8;
+}
+.sidebar .fake-select:after {
+  position: absolute;
+  right: 10px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #a8a8a8;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  line-height: 0;
+  z-index: 1;
+}
 
 .content {
   padding: 50px;
@@ -2840,7 +2893,60 @@ private backend styles
   text-transform: uppercase;
 }
 .your-cart-block .details-list {
-  margin: 0 0 0 20px;
+  margin: 0 0 20px 20px;
+}
+.your-cart-block .fake-select {
+  position: relative;
+  display: block;
+  max-width: 200px;
+}
+.your-cart-block select {
+  display: block;
+  margin: 0;
+  outline: none;
+  border-radius: 5px;
+  background: #f2f2f2;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  border: none;
+  width: 100%;
+  color: #a8a8a8;
+  font-size: 13px;
+  line-height: 16px;
+}
+.your-cart-block select::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.your-cart-block select::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.your-cart-block select:-moz-placeholder {
+  color: #a8a8a8;
+}
+.your-cart-block select:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.your-cart-block select.placeholder {
+  color: #a8a8a8;
+}
+.your-cart-block .fake-select:after {
+  position: absolute;
+  right: 10px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #a8a8a8;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  line-height: 0;
+  z-index: 1;
 }
 
 .details-list {
@@ -3193,6 +3299,9 @@ private backend styles
   text-transform: uppercase;
 }
 
+.print-preview-block {
+  margin-bottom: 20px;
+}
 .print-preview-block .sm-title {
   font-size: 15px;
   line-height: 20px;
