@@ -890,23 +890,34 @@ private backend styles
 }
 
 .sidebar-2 {
-  width: 20%;
-  background: #eafaff;
+  width: 22%;
   position: relative;
-  padding: 20px 0;
+  padding: 20px 20px 70px;
 }
-@media (min-width: 1920px) {
-  .sidebar-2 {
-    width: 22%;
-  }
+.sidebar-2:after {
+  position: absolute;
+  content: "";
+  top: 60px;
+  bottom: 100px;
+  right: 0;
+  width: 2px;
+  background: #f3f3f6;
 }
-.sidebar-2 .sidebar-2-holder {
-  padding: 0 20px;
+.sidebar-2 h2 {
+  color: #0aa7e0;
 }
-@media (min-width: 1920px) {
-  .sidebar-2 .sidebar-2-holder {
-    padding: 0 30px;
-  }
+.sidebar-2 .btn-secondary {
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #172b54;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #172b54;
+  font-weight: 600;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 .sidebar-2 .opener {
   position: absolute;
@@ -915,22 +926,7 @@ private backend styles
   color: #0aa7e0;
   text-decoration: none;
 }
-.sidebar-2 .breadcrumbs ul {
-  overflow: hidden;
-}
-.sidebar-2 .breadcrumbs li {
-  padding: 0 20px 5px 0;
-}
-.sidebar-2 .breadcrumbs li + li:before {
-  position: absolute;
-  content: "/";
-  top: 0;
-  left: -13px;
-}
-.sidebar-2 .breadcrumbs li.active a {
-  color: #707070;
-  pointer-events: none;
-}
+
 .sign-in-block {
   position: fixed;
   z-index: 9999;
@@ -1590,14 +1586,8 @@ private backend styles
 }
 
 .content {
-  padding: 50px;
-  padding: 20px 50px 20px 50px;
+  padding: 40px 50px;
   flex-grow: 1;
-}
-@media (min-width: 1920px) {
-  .content {
-    padding: 20px;
-  }
 }
 .content:only-child {
   width: 100%;
@@ -2680,7 +2670,7 @@ private backend styles
 }
 
 .breadcrumbs {
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 15px;
@@ -2705,6 +2695,7 @@ private backend styles
   content: ">";
   top: 0;
   left: 8px;
+  color: #172b54;
 }
 .breadcrumbs a {
   text-decoration: none;
@@ -5406,6 +5397,10 @@ private backend styles
 .cat-selection-block {
   max-width: 600px;
   margin: 0 auto;
+}
+.cat-selection-block h2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .cat-selection-block .btn-holder {
   text-align: right;
