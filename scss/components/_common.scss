@@ -223,46 +223,6 @@ private backend styles
   }
 }
 
-.sidebar-2{
-  width: 22%;
-  position: relative;
-  padding: 20px 20px 70px;
-  &:after{
-    position: absolute;
-    content: '';
-    top: 60px;
-    bottom: 100px;
-    right: 0;
-    width: 2px;
-    background: #f3f3f6;
-  }
-
-  h2{
-    color: $cerulean;
-  }
-
-  .btn-secondary{
-    display: inline-block;
-    vertical-align: top;
-    border: 2px solid #172b54;
-    border-radius: 8px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #172b54;
-    font-weight: 600;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-  }
-
-  .opener{
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    color: $cerulean;
-    text-decoration: none;
-  }
-}
 
 .sign-in-block{
   position: fixed;
@@ -940,19 +900,46 @@ private backend styles
   }
 }
 
+.sidebar-2{
+  width: 30%;
+  position: relative;
+  padding: 0 30px 0 0;
+  &:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    background: #f3f3f6;
+  }
+
+  h2{
+    color: $cerulean;
+  }
+
+  .text-holder{
+    font-size: 16px;
+    line-height: 24px;
+    color: #172b54;
+  }
+
+  .opener{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: $cerulean;
+    text-decoration: none;
+  }
+}
+
 
 .sidebar{
   padding: 0 20px;
-  width: 20%;
+  width: 22%;
   background: #f4f4f4;
   position: relative;
   flex-shrink: 0;
-
-  @include media('>=xl-screen') {
-    //width: 29.6%;
-    width: 22%;
-    padding: 0 30px;
-  }
 
   .sidebar-holder{
     position: sticky;
@@ -1013,12 +1000,62 @@ private backend styles
 }
 
 .content{
-  padding: 40px 50px;
+  padding: 10px 40px;
   flex-grow: 1;
+  width: 78%;
 
   &:only-child {
     width: 100%;
-    padding: 40px 0;
+    padding: 10px 0;
+  }
+}
+
+.dashboard-block{
+  .btns-holder{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+
+    .btn-secondary{
+      display: inline-block;
+      vertical-align: top;
+      border: 2px solid #172b54;
+      border-radius: 8px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #172b54;
+      font-weight: 600;
+    }
+
+    .btn-primary{
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: top;
+      color: #fff;
+      border-radius: 7px;
+      background-color: #0aa7e0;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.sidebar-content-block{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+
+  .center-content-block{
+    width: 70%;
+    padding: 0 30px;
+
+    .cat-selection-block{
+      margin: 0 ;
+    }
   }
 }
 
@@ -2248,9 +2285,10 @@ private backend styles
 
 .breadcrumbs{
   text-transform: capitalize;
-  margin-bottom: 20px;
+  padding: 10px 0 20px;
   font-size: 12px;
   line-height: 15px;
+  width: 100%;
 
   ul{
     margin: 0;

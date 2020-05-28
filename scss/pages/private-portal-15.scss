@@ -55,7 +55,6 @@
   margin: 0 auto;
 
   h2{
-    margin-top: 20px;
     margin-bottom: 50px;
   }
 
@@ -93,8 +92,8 @@
     z-index: 1;
     display: flex;
     flex-flow: row wrap;
-    min-width: 140px;
-    max-width: 140px;
+    min-width: 150px;
+    max-width: 150px;
     @include media('>=xl-screen') {
       width: 33.33%;
       padding: 0 10px 20px;
