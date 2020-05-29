@@ -587,15 +587,21 @@ input[type=submit] {
   z-index: 99;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
+#header .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (min-width: 1920px) {
   #header .container {
     max-width: 1550px;
   }
 }
 #header .header__logo {
-  float: left;
   width: 150px;
   margin-top: 5px;
+  flex-shrink: 0;
 }
 @media (min-width: 1920px) {
   #header .header__logo {
@@ -683,6 +689,124 @@ input[type=submit] {
   .dr-profile .bucket-icon {
     max-width: 56px;
   }
+}
+
+.nav-links {
+  text-align: right;
+  flex-grow: 1;
+}
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-links ul > li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 18px 30px;
+  position: relative;
+  margin: 0 0 -18px;
+}
+.nav-links ul > li:hover .slide {
+  display: block;
+}
+.nav-links ul a {
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-weight: 600;
+}
+.nav-links ul a.opener {
+  position: relative;
+  padding: 0 25px 0 0;
+}
+.nav-links ul a.opener:after {
+  position: absolute;
+  content: "";
+  font-family: "fontello";
+  top: 52%;
+  transform: translateY(-50%);
+  right: 0;
+  color: #0aa7e0;
+}
+.nav-links .slide {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  text-align: left;
+  box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.3);
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+.nav-links .slide li {
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid #edf1f2;
+  margin: 0;
+}
+.nav-links .slide li:last-child {
+  border: none;
+}
+.nav-links .slide a {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  position: relative;
+}
+.nav-links .slide a:before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  background: #e5e5ea;
+}
+.nav-links .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+.nav-links .icon .percentage {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+}
+.nav-links .icon .quantity {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  height: 20px;
+  width: 20px;
+  background: #0aa7e0;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+.nav-links .icon.cart {
+  background: #172b54;
+}
+.nav-links .icon.user {
+  background: #0aa7e0;
+}
+.nav-links span {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 body {
@@ -5641,8 +5765,8 @@ private backend styles
 
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello.eot?20477977");
-  src: url("../fonts/fontello.eot?20477977#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?20477977") format("woff2"), url("../fonts/fontello.woff?20477977") format("woff"), url("../fonts/fontello.ttf?20477977") format("truetype"), url("../fonts/fontello.svg?20477977#fontello") format("svg");
+  src: url("../fonts/fontello.eot?12028465");
+  src: url("../fonts/fontello.eot?12028465#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?12028465") format("woff2"), url("../fonts/fontello.woff?12028465") format("woff"), url("../fonts/fontello.ttf?12028465") format("truetype"), url("../fonts/fontello.svg?12028465#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5652,7 +5776,7 @@ private backend styles
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?20477977#fontello') format('svg');
+    src: url('../font/fontello.svg?12028465#fontello') format('svg');
   }
 }
 */
@@ -5660,7 +5784,7 @@ private backend styles
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: auto;
@@ -5844,6 +5968,26 @@ private backend styles
 }
 
 /* '' */
+.icon-down-open-big:before {
+  content: "";
+}
+
+/* '' */
+.icon-left-open-big:before {
+  content: "";
+}
+
+/* '' */
+.icon-right-open-big:before {
+  content: "";
+}
+
+/* '' */
+.icon-up-open-big:before {
+  content: "";
+}
+
+/* '' */
 .icon-transport:before {
   content: "";
 }
