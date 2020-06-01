@@ -88,6 +88,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 40px;
+      margin-top: 20px;
   
       h1{
         margin-bottom: 0;
@@ -113,48 +114,67 @@
 }
 
 .scoreboard-block{
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 -10px 30px;
-    @include media('>=xl-screen') {
-        margin: 0 -18px 30px;
+    background: #ebebeb;
+    padding: 30px 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    .scoreboard-holder{
+        margin: 0 -10px 30px;
+        display: flex;
+        flex-flow: row wrap;
     }
 
     .col{
-        width: calc(27% - 40px);
-        margin: 0 10px;
+        width: 37%;
+        padding: 0 10px;
         display: flex;
         flex-flow: row wrap;
-        background: #f2f2f2;
-        padding: 40px 20px 40px;
-        border-radius: 8px;
-        align-items: center;
-        justify-content: center;
-        position: relative;
 
-        &.center{
-            margin-left: -5px;
-            background: $cerulean;
-            color: $white;
+        &:first-child{
+            width: 26%;
+
+            .col-holder{
+                background-color: #172b54;
+                background-image: url(../images/graphic_printer.png);
+                background-repeat: no-repeat;
+            }
         }
 
-        &.lg-col{
-            width: 50%;
-            padding: 20px;
-            margin-right: 0;
-            border-radius: 8px 0 0 8px; 
-        }
+        &:last-child{
+            .col-holder{
+                background-color: $cerulean;
+            }
 
-        &.last{
-            background: $mariner;
-            color: $white;
+            .points-holder{
+                .title{
+                    margin: 0 0 0 -120px;
+                }
+            }
         }
     }
 
     .col-holder{
         width: 100%;
-        color: #2374bb;
-        text-align: center;
+        color: $white;
+        background-color: #0ae060;
+        padding: 12px 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-flow: row wrap;
+        text-transform: uppercase;
+        position: relative;
+        background-image: url(../images/graphic_trophey.png);
+        background-repeat: no-repeat;
+    }
+
+    .card-title-block{
+        width: 60%;
+    }
+
+    .points-holder{
+        width: 40%;
+        text-align: right;
     }
 
     .rewards-block{
@@ -176,210 +196,54 @@
         margin-bottom: 10px;
     }
 
-    .point-holder{
-        font-size: 12px;
-        line-height: 16px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
+    .points-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
 
-        .points-num{
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 10px 0 0;
-        }
-
-        .points-info{
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .shape{
-            width: 12px;
-            height: 12px;
+        li{
             display: inline-block;
             vertical-align: top;
-            margin: 3px 10px 0 0;
-
-            &.circle{
-                border-radius: 100%;
-                background: $chelsea-cucumber;
+            padding: 0 6px 0 0;
+            &.fill{
+                span{
+                    background: $white;
+                }
             }
+        }
 
-            &.square{
-                width: 12px;
-                height: 12px;
-                background: $denim;
-                border-radius: 0;
-            }
-
-            &.triangle{
-                height: 12px;
-                width: 12px;
-                background: $black;
-                transform: rotate(45deg);
-            }
+        span{
+            display: block;
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            background: #abb0bd;
         }
     }
 
-    .info{
-        font-size: 16px;
-        line-height: 22px;
-        text-transform: uppercase;
 
-        .num{
-            font-size: 64px;
-            line-height: 70px;
-            color: $white;
-            font-weight: 500;
-        }
-
-        .subtitle{
-            display: block;
-            color: $white;
-        }
-
-        .title{
-            display: block;
-            font-size: 16px;
-            line-height: 22px;
-            color: $white;
-        }
+    .points{
+        font-size: 48px;
+        line-height: 54px;
+        color: $white;
+        font-weight: 500;
     }
 
-    .points-indicators{
-        display: flex;
-        flex-flow: row wrap;
-        border: 1px solid $blue-zodaic;
-        margin-bottom: 50px;
-        position: relative;
-        border-right: none;
-
-        &:after{
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 2%;
-            background: $cerulean;
-            z-index: 1;
-        }
-
-        .bar{
-            width: 15%;
-            height: 23px; 
-            background: #dfdfdf;    
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-
-            &:before{
-                position: absolute;
-                content: '';
-                top: 0;
-                left: -1px;
-                height: 45px;
-                width: 1px;
-                background: #172b54;
-                z-index: 2;
-            }
-
-            .num{
-                position: absolute;
-                bottom: -20px;
-                left: 2px;
-                display: inline-block;
-                vertical-align: middle;
-                font-size: 12px;
-                line-height: 16px;
-                color: #172b54;
-
-                &.last{
-                    position: relative;
-                    left: auto;
-                    right: 0;
-                    bottom: auto;
-                    margin: 0 0 -1px;
-                }
-            }
-
-            .shape-holder{
-                position: absolute;
-                bottom: -18px;
-                right: 5px;
-            }
-
-            .shape{
-                width: 12px;
-                height: 12px;
-                display: inline-block;
-                vertical-align: middle;
-
-                &.circle{
-                    border-radius: 100%;
-                    background: $chelsea-cucumber;
-                }
-
-                &.square{
-                    width: 12px;
-                    height: 12px;
-                    background: $denim;
-                    border-radius: 0;
-                }
-
-                &.triangle{
-                    height: 9px;
-                    width: 9px;
-                    background: $black; 
-                    transform: rotate(45deg);
-                }
-            }
-
-            &.first{
-                width: 10%;  
-            }
-
-            &.second{
-                width: 20%;
-                background: #d3d3d3;
-            }
-
-            &.third{
-                width: 30%;
-                background: #bbbdb8;
-            }
-
-            &.fourth{
-                width: 40%;
-                background: #a4a4a4;
-
-                &:after{
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    right: -1px;
-                    height: 45px;
-                    width: 1px;
-                    background: #172b54;
-                }
-            }
-
-        }
+    .subtitle{
+        display: block;
+        color: $white;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .title{
         display: block;
         font-size: 12px;
-        line-height: 26px;
-        margin-bottom: 4px;
-    }
-
-    .subtitle{
-        display: block;
-        font-size: 16px;
-        line-height: 24px;
-        text-transform: uppercase;
+        line-height: 16px;
+        color: $white;
     }
 }
 
@@ -491,6 +355,134 @@
             width: 50px;
             flex-shrink: 0;
             text-align: right;
+        }
+    }
+
+    .points-indicators{
+        display: flex;
+        flex-flow: row wrap;
+        border: 2px solid #172b54;
+        margin-bottom: 30px;
+        position: relative;
+        border-radius: 3px;
+
+        &:after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 2%;
+            background: #0ae060;
+            z-index: 1;
+        }
+
+        .bar{
+            width: 15%;
+            height: 30px; 
+            background: #c2f7d7;    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &:before{
+                position: absolute;
+                content: '';
+                top: 100%;
+                left: -1px;
+                height: 25px;
+                width: 2px;
+                background: #172b54;
+                z-index: 2;
+            }
+
+            .num{
+                position: absolute;
+                bottom: -20px;
+                left: 5px;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                line-height: 16px;
+                color: #172b54;
+                font-weight: bold;
+
+                &.last{
+                    position: relative;
+                    left: auto;
+                    right: 0;
+                    bottom: auto;
+                    margin: 0 0 -1px;
+                }
+            }
+
+            .shape-holder{
+                position: absolute;
+                top: 42%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .shape{
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                vertical-align: middle;
+
+                &.circle{
+                    border-radius: 100%;
+                    background: #0ae060;
+                }
+
+                &.square{
+                    width: 12px;
+                    height: 12px;
+                    background: $cerulean;
+                    border-radius: 0;
+                }
+
+                &.triangle{
+                    height: 9px;
+                    width: 9px;
+                    background: $black; 
+                    transform: rotate(45deg);
+
+                    &.blue{
+                        background: $mariner;
+                    }
+                }
+            }
+
+            &.first{
+                width: 10%;  
+            }
+
+            &.second{
+                width: 18%;
+                background: #c2e9f7;
+            }
+
+            &.third{
+                width: 27%;
+                background: #c7d7ea;
+            }
+
+            &.fourth{
+                width: 45%;
+                background: #c5cad4;
+
+                &:after{
+                    position: absolute;
+                    content: '';
+                    top: 100%;
+                    right: -1px;
+                    height: 25px;
+                    width: 2px;
+                    background: #172b54;
+                }
+            }
+
         }
     }
 }
