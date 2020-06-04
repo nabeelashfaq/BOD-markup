@@ -823,6 +823,7 @@ body {
   justify-content: space-between;
   align-items: start;
   min-height: inherit;
+  overflow: hidden;
 }
 #wrapper > * {
   width: 100%;
@@ -5784,7 +5785,12 @@ private backend styles
   line-height: 30px;
   color: #2374bb;
 }
-.get-started-block .signup-form {
+
+.signup-block h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.signup-block .signup-form {
   max-width: 924px;
   margin: 0 auto;
   width: 100%;
@@ -5792,7 +5798,7 @@ private backend styles
   position: relative;
   padding-bottom: 60px;
 }
-.get-started-block .signup-form .label {
+.signup-block .signup-form .label {
   display: block;
   margin-bottom: 4px;
   color: #051133;
@@ -5801,36 +5807,32 @@ private backend styles
   line-height: 20px;
   font-weight: bold;
 }
-.get-started-block .signup-form .row {
+.signup-block .signup-form .row {
   margin: 0 -15px;
   display: flex;
   flex-flow: row nowrap;
   text-align: left;
 }
-.get-started-block .signup-form.other .sl-form__input-holder {
-  min-width: 50%;
-  width: 50%;
-}
-.get-started-block .signup-form .input-holder {
+.signup-block .signup-form .input-holder {
   margin-bottom: 23px;
   padding: 0 15px;
-  min-width: 33.3%;
+  min-width: 50%;
   width: 100%;
   position: relative;
   font-size: 16px;
   line-height: 22px;
 }
-.get-started-block .signup-form .input-holder.error input[type=text],
-.get-started-block .signup-form .input-holder.error input[type=email],
-.get-started-block .signup-form .input-holder.error input[type=tel],
-.get-started-block .signup-form .input-holder.error input[type=password] {
+.signup-block .signup-form .input-holder.error input[type=text],
+.signup-block .signup-form .input-holder.error input[type=email],
+.signup-block .signup-form .input-holder.error input[type=tel],
+.signup-block .signup-form .input-holder.error input[type=password] {
   border-color: #cc0813;
   background-color: #f8d9da;
 }
-.get-started-block .signup-form .input-holder.error .error-info {
+.signup-block .signup-form .input-holder.error .error-info {
   display: block;
 }
-.get-started-block .signup-form .title {
+.signup-block .signup-form .title {
   display: block;
   margin: 0 0 21px;
   text-align: left;
@@ -5839,7 +5841,7 @@ private backend styles
   line-height: 20px;
   color: #707070;
 }
-.get-started-block .signup-form .error-info {
+.signup-block .signup-form .error-info {
   position: absolute;
   top: 100%;
   left: 10px;
@@ -5850,14 +5852,14 @@ private backend styles
   line-height: 15px;
   display: none;
 }
-.get-started-block .signup-form a {
+.signup-block .signup-form a {
   text-decoration: none;
   color: #2374bb;
 }
-.get-started-block .signup-form input[type=text],
-.get-started-block .signup-form input[type=email],
-.get-started-block .signup-form input[type=tel],
-.get-started-block .signup-form input[type=password] {
+.signup-block .signup-form input[type=text],
+.signup-block .signup-form input[type=email],
+.signup-block .signup-form input[type=tel],
+.signup-block .signup-form input[type=password] {
   width: 100%;
   border-radius: 5px;
   background: #fff;
@@ -5867,55 +5869,44 @@ private backend styles
   border: 2px solid #c8c8c8;
   height: 47px;
 }
-.get-started-block .signup-form input[type=text]:focus,
-.get-started-block .signup-form input[type=email]:focus,
-.get-started-block .signup-form input[type=tel]:focus,
-.get-started-block .signup-form input[type=password]:focus {
+.signup-block .signup-form input[type=text]:focus,
+.signup-block .signup-form input[type=email]:focus,
+.signup-block .signup-form input[type=tel]:focus,
+.signup-block .signup-form input[type=password]:focus {
   border-color: #a8a8a8;
 }
-.get-started-block .signup-form input[type=text]::-webkit-input-placeholder,
-.get-started-block .signup-form input[type=email]::-webkit-input-placeholder,
-.get-started-block .signup-form input[type=tel]::-webkit-input-placeholder,
-.get-started-block .signup-form input[type=password]::-webkit-input-placeholder {
+.signup-block .signup-form input[type=text]::-webkit-input-placeholder,
+.signup-block .signup-form input[type=email]::-webkit-input-placeholder,
+.signup-block .signup-form input[type=tel]::-webkit-input-placeholder,
+.signup-block .signup-form input[type=password]::-webkit-input-placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form input[type=text]::-moz-placeholder,
-.get-started-block .signup-form input[type=email]::-moz-placeholder,
-.get-started-block .signup-form input[type=tel]::-moz-placeholder,
-.get-started-block .signup-form input[type=password]::-moz-placeholder {
+.signup-block .signup-form input[type=text]::-moz-placeholder,
+.signup-block .signup-form input[type=email]::-moz-placeholder,
+.signup-block .signup-form input[type=tel]::-moz-placeholder,
+.signup-block .signup-form input[type=password]::-moz-placeholder {
   opacity: 1;
   color: #a8a8a8;
 }
-.get-started-block .signup-form input[type=text]:-moz-placeholder,
-.get-started-block .signup-form input[type=email]:-moz-placeholder,
-.get-started-block .signup-form input[type=tel]:-moz-placeholder,
-.get-started-block .signup-form input[type=password]:-moz-placeholder {
+.signup-block .signup-form input[type=text]:-moz-placeholder,
+.signup-block .signup-form input[type=email]:-moz-placeholder,
+.signup-block .signup-form input[type=tel]:-moz-placeholder,
+.signup-block .signup-form input[type=password]:-moz-placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form input[type=text]:-ms-input-placeholder,
-.get-started-block .signup-form input[type=email]:-ms-input-placeholder,
-.get-started-block .signup-form input[type=tel]:-ms-input-placeholder,
-.get-started-block .signup-form input[type=password]:-ms-input-placeholder {
+.signup-block .signup-form input[type=text]:-ms-input-placeholder,
+.signup-block .signup-form input[type=email]:-ms-input-placeholder,
+.signup-block .signup-form input[type=tel]:-ms-input-placeholder,
+.signup-block .signup-form input[type=password]:-ms-input-placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form input[type=text].placeholder,
-.get-started-block .signup-form input[type=email].placeholder,
-.get-started-block .signup-form input[type=tel].placeholder,
-.get-started-block .signup-form input[type=password].placeholder {
+.signup-block .signup-form input[type=text].placeholder,
+.signup-block .signup-form input[type=email].placeholder,
+.signup-block .signup-form input[type=tel].placeholder,
+.signup-block .signup-form input[type=password].placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form .text-holder {
-  text-align: center;
-  font-size: 16px;
-  line-height: 27px;
-  margin-bottom: 52px;
-}
-.get-started-block .signup-form .text-holder strong {
-  font-style: italic;
-  display: block;
-  font-weight: 600;
-}
-.get-started-block .signup-form .btn-holder {
+.signup-block .signup-form .btn-holder {
   text-align: right;
   padding: 0 0 0 30px;
   position: absolute;
@@ -5923,7 +5914,7 @@ private backend styles
   right: 0;
   width: 100%;
 }
-.get-started-block .signup-form .btn-primary {
+.signup-block .signup-form .btn-primary {
   background: #0aa7e0;
   color: #fff;
   border: none;
@@ -5936,10 +5927,10 @@ private backend styles
   line-height: 24px;
   transition: 0.3s linear;
 }
-.get-started-block .signup-form .btn-primary:hover {
+.signup-block .signup-form .btn-primary:hover {
   background: #0995c8;
 }
-.get-started-block .signup-form .btn-secondary {
+.signup-block .signup-form .btn-secondary {
   color: #0aa7e0;
   text-transform: capitalize;
   border: 2px solid #0aa7e0;
@@ -5951,15 +5942,15 @@ private backend styles
   line-height: 24px;
   transition: 0.3s linear;
 }
-.get-started-block .signup-form .btn-secondary:hover {
+.signup-block .signup-form .btn-secondary:hover {
   background: #0aa7e0;
   color: #fff;
 }
-.get-started-block .signup-form .fake-select {
+.signup-block .signup-form .fake-select {
   position: relative;
   display: block;
 }
-.get-started-block .signup-form select {
+.signup-block .signup-form select {
   display: block;
   margin: 0;
   outline: none;
@@ -5978,23 +5969,23 @@ private backend styles
   line-height: 20px;
   height: 47px;
 }
-.get-started-block .signup-form select::-webkit-input-placeholder {
+.signup-block .signup-form select::-webkit-input-placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form select::-moz-placeholder {
+.signup-block .signup-form select::-moz-placeholder {
   opacity: 1;
   color: #a8a8a8;
 }
-.get-started-block .signup-form select:-moz-placeholder {
+.signup-block .signup-form select:-moz-placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form select:-ms-input-placeholder {
+.signup-block .signup-form select:-ms-input-placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form select.placeholder {
+.signup-block .signup-form select.placeholder {
   color: #a8a8a8;
 }
-.get-started-block .signup-form .fake-select:after {
+.signup-block .signup-form .fake-select:after {
   position: absolute;
   right: 15px;
   content: "";
@@ -6005,16 +5996,16 @@ private backend styles
   color: #0aa7e0;
   font-weight: bold;
 }
-.get-started-block .signup-form .radio-list {
+.signup-block .signup-form .radio-list {
   margin-bottom: 50px;
 }
-.get-started-block .signup-form .radio-input {
+.signup-block .signup-form .radio-input {
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
   font-weight: bold;
 }
-.get-started-block .signup-form .radio-input [type=radio] {
+.signup-block .signup-form .radio-input [type=radio] {
   position: fixed;
   left: 0;
   top: 0;
@@ -6022,22 +6013,22 @@ private backend styles
   z-index: -1;
   display: none;
 }
-.get-started-block .signup-form .radio-input .fake-input,
-.get-started-block .signup-form .radio-input label {
+.signup-block .signup-form .radio-input .fake-input,
+.signup-block .signup-form .radio-input label {
   display: inline-block;
   vertical-align: middle;
   font-weight: bold;
   text-transform: uppercase;
   color: #707070;
 }
-.get-started-block .signup-form .radio-input .fake-input strong,
-.get-started-block .signup-form .radio-input label strong {
+.signup-block .signup-form .radio-input .fake-input strong,
+.signup-block .signup-form .radio-input label strong {
   text-transform: none;
 }
-.get-started-block .signup-form .radio-input label {
+.signup-block .signup-form .radio-input label {
   padding-right: 5px;
 }
-.get-started-block .signup-form .fake-input {
+.signup-block .signup-form .fake-input {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -6047,10 +6038,10 @@ private backend styles
   position: relative;
   margin-right: 21px;
 }
-.get-started-block .signup-form .fake-input {
+.signup-block .signup-form .fake-input {
   border-radius: 100%;
 }
-.get-started-block .signup-form .fake-input:before {
+.signup-block .signup-form .fake-input:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -6061,8 +6052,90 @@ private backend styles
   border-radius: 100%;
   opacity: 0;
 }
-.get-started-block .signup-form input[type=radio]:checked + .fake-input:before {
+.signup-block .signup-form input[type=radio]:checked + .fake-input:before {
   opacity: 1;
+}
+
+.settings-block {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+.settings-block > * {
+  width: 100%;
+}
+.settings-block .container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.settings-block .container > * {
+  width: 100%;
+}
+.settings-block .title-block {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  position: relative;
+  width: 1;
+  flex-shrink: 0;
+}
+.settings-block .title-block:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: -1px;
+  left: -9999px;
+  right: -9999px;
+  background: #e5e5e5;
+}
+.settings-block .title-block h1 {
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 36px;
+}
+.settings-block .sidebar-content-holder {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+.settings-block .links-sidebar {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  width: 22%;
+  font-size: 16px;
+  line-height: 24px;
+}
+.settings-block .links-sidebar ul {
+  background: #172b54;
+  margin: 0;
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+.settings-block .links-sidebar li.active a {
+  border-color: #0aa7e0;
+  background: #11203e;
+}
+.settings-block .links-sidebar a {
+  display: block;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border-left: 4px solid transparent;
+}
+.settings-block .links-sidebar a:hover {
+  background: #11203e;
+}
+.settings-block .settings-content-holder {
+  width: 78%;
+  padding: 40px 60px;
+}
+.settings-block .settings-content-holder h2 {
+  margin-bottom: 40px;
 }
 
 @font-face {

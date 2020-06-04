@@ -12,7 +12,8 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: start;
-	min-height: inherit;
+  min-height: inherit;
+  overflow: hidden;
 
 	> * {
 		width: 100%;

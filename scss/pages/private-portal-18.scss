@@ -74,6 +74,16 @@
   }
 
 
+  
+}
+
+.signup-block{
+
+  h2{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   .signup-form{
     max-width: 924px;
     margin:0 auto;
@@ -99,17 +109,10 @@
       text-align: left;
     }
   
-    &.other{
-      .sl-form__input-holder{
-        min-width: 50%;
-        width: 50%;
-      }
-    }
-  
     .input-holder{
       margin-bottom: 23px;
       padding: 0 15px;
-      min-width: 33.3%;
+      min-width: 50%;
       width: 100%;
       position: relative;
       font-size: 16px;
@@ -179,19 +182,6 @@
         color: #a8a8a8;
       }
   
-    }
-  
-    .text-holder{
-      text-align: center;
-      font-size: 16px;
-      line-height: 27px;
-      margin-bottom: 52px;
-  
-      strong{
-        font-style: italic;
-        display: block;
-        font-weight: 600;
-      };
     }
   
     .btn-holder{
