@@ -18,6 +18,30 @@
     }
   }
   
+  h2{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+  }
+
+  .title-link-holder{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h2{
+      margin-bottom: 0;
+    }
+
+    a{
+      text-decoration: none;
+      color: $cerulean;
+      font-weight: bold;
+    }
+  }
 
   .title-block{
     border-bottom: 1px solid #e5e5e5;
@@ -91,10 +115,187 @@
 
   .settings-content-holder{
     width: 78%;
-    padding: 40px 60px;
+    padding: 40px 120px;
+  }
 
-    h2{
-      margin-bottom: 40px;
+  .card-info{
+    border: 2px solid #ced8dc;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+
+    .title,
+    .debit,
+    .num{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15px 0 0;
+    }
+
+    .title{
+      margin: 0 20px 0 0;
+    }
+
+    .btns{
+      font-size: 20px;
+      line-height: 24px;
+
+      a{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  .billing-holder{
+    margin-bottom: 8px;
+    border: 2px solid #ced8dc;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 18px;
+
+    .row{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slide{
+      p{
+        margin-bottom: 0;
+      }
+    }
+
+    .slide-holder{
+      padding-top: 20px;
+    }
+
+    .date-detail{
+      max-width: 70%;
+    }
+
+    .date{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 20px 0 0;
+    }
+
+    .detail{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .price{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .opener{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 25px 0 0;
+      margin: 0 0 0 20px;
+      position: relative;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:after{
+        position: absolute;
+        content: '\e820';
+        font-family: 'fontello';
+        top: 0;
+        right: 0;
+        color: $cerulean;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .notifications-holder{
+    margin-bottom: 8px;
+    border: 2px solid #ced8dc;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 18px;
+
+    .row{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slide{
+      p{
+        margin-bottom: 0;
+      }
+    }
+
+    .slide-holder{
+      padding-top: 20px;
+    }
+
+    .icon-title-block{
+      max-width: 70%;
+    }
+
+    .icon-holder{
+      width: 22px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 20px 0 0;
+
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .title{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .date{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .price{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .opener{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 25px 0 0;
+      margin: 0 0 0 20px;
+      position: relative;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:after{
+        position: absolute;
+        content: '\e820';
+        font-family: 'fontello';
+        top: 0;
+        right: 0;
+        color: $cerulean;
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
   }
 }
