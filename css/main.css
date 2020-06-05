@@ -6306,6 +6306,163 @@ private backend styles
   line-height: 18px;
 }
 
+.login-img-block {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252834;
+}
+.login-img-block .logo {
+  width: 217px;
+  margin-bottom: 40px;
+}
+.login-img-block .logo img {
+  display: block;
+  width: 100%;
+}
+.login-img-block h1 {
+  color: #2374bb;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.login-img-block .login-block {
+  width: 30%;
+  padding: 40px 50px;
+}
+.login-img-block .img-block {
+  width: 70%;
+  background: #2374bb;
+}
+.login-img-block .login-link {
+  display: block;
+  font-weight: 600;
+  color: #172b54;
+}
+.login-img-block .login-link a {
+  text-decoration: none;
+  color: #0aa7e0;
+}
+.login-img-block .login-link a:hover {
+  color: #172b54;
+}
+
+.login-form .label {
+  display: block;
+  margin-bottom: 10px;
+  color: #051133;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+.login-form .input-holder {
+  margin-bottom: 23px;
+}
+.login-form .label-link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.login-form .label-link .label {
+  margin-bottom: 0;
+}
+.login-form .label-link a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #252834;
+}
+.login-form input[type=text],
+.login-form input[type=email],
+.login-form input[type=tel],
+.login-form input[type=password] {
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  padding: 12px 15px;
+  outline: none;
+  text-transform: capitalize;
+  border: 2px solid #c8c8c8;
+  height: 47px;
+}
+.login-form input[type=text]:focus,
+.login-form input[type=email]:focus,
+.login-form input[type=tel]:focus,
+.login-form input[type=password]:focus {
+  border-color: #a8a8a8;
+}
+.login-form input[type=text]::-webkit-input-placeholder,
+.login-form input[type=email]::-webkit-input-placeholder,
+.login-form input[type=tel]::-webkit-input-placeholder,
+.login-form input[type=password]::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.login-form input[type=text]::-moz-placeholder,
+.login-form input[type=email]::-moz-placeholder,
+.login-form input[type=tel]::-moz-placeholder,
+.login-form input[type=password]::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.login-form input[type=text]:-moz-placeholder,
+.login-form input[type=email]:-moz-placeholder,
+.login-form input[type=tel]:-moz-placeholder,
+.login-form input[type=password]:-moz-placeholder {
+  color: #a8a8a8;
+}
+.login-form input[type=text]:-ms-input-placeholder,
+.login-form input[type=email]:-ms-input-placeholder,
+.login-form input[type=tel]:-ms-input-placeholder,
+.login-form input[type=password]:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.login-form input[type=text].placeholder,
+.login-form input[type=email].placeholder,
+.login-form input[type=tel].placeholder,
+.login-form input[type=password].placeholder {
+  color: #a8a8a8;
+}
+.login-form .btns-holder {
+  margin-bottom: 25px;
+}
+.login-form .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
+  border: none;
+  padding: 13px 40px;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.3s linear;
+  margin-bottom: 10px;
+}
+.login-form .btn-primary:hover {
+  background: #0995c8;
+}
+.login-form .btn-secondary {
+  color: #0aa7e0;
+  text-transform: capitalize;
+  border: 2px solid #0aa7e0;
+  padding: 11px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.3s linear;
+}
+.login-form .btn-secondary:hover {
+  background: #0aa7e0;
+  color: #fff;
+}
+
 @font-face {
   font-family: "fontello";
   src: url("../fonts/fontello.eot?67641580");

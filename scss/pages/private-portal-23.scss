@@ -1,0 +1,149 @@
+
+
+.login-img-block{
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252834;
+
+  .logo{
+    width: 217px;
+    margin-bottom: 40px;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  h1{
+    color: $mariner;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .login-block{
+    width: 30%;
+    padding: 40px 50px;
+  }
+
+  .img-block{
+    width: 70%;
+    background: $mariner;
+  }
+
+  .login-link{
+    display: block;
+    font-weight: 600;
+    color: #172b54;
+    a{
+      text-decoration: none;
+      color: $cerulean;
+      &:hover{
+        color: #172b54;
+      }
+    }
+  }
+}
+
+.login-form{
+  .label{
+    display: block;
+    margin-bottom: 10px;
+    color: #051133;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .input-holder{
+    margin-bottom: 23px;
+  }
+
+  .label-link{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .label{
+      margin-bottom: 0;
+    }
+
+    a{
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 18px;
+      color: #252834;
+    }
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"]{
+    width: 100%;
+    border-radius: 5px;
+    background: $white;
+    padding: 12px 15px;
+    outline: none;
+    text-transform: capitalize;
+    border: 2px solid #c8c8c8;
+    height: 47px;
+
+    &:focus{
+      border-color: #a8a8a8;
+    }
+
+    @include placeholder{
+      color: #a8a8a8;
+    }
+
+  }
+
+  .btns-holder{
+    margin-bottom: 25px;
+  }
+
+  .btn-primary{
+    background: $cerulean;
+    color: #fff;
+    border: none;
+    padding: 13px 40px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.3s linear;
+    margin-bottom: 10px;
+
+    &:hover{
+      background: darken($cerulean, 5%);
+    }
+  }
+
+  .btn-secondary{
+    color: $cerulean;
+    text-transform: capitalize;
+    border: 2px solid $cerulean;
+    padding: 11px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.3s linear;
+
+    &:hover{
+      background: $cerulean;
+      color: $white;
+    }
+  }
+}
