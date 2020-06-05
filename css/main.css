@@ -6062,6 +6062,7 @@ private backend styles
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;
+  position: relative;
 }
 .settings-block > * {
   width: 100%;
@@ -6306,6 +6307,120 @@ private backend styles
   color: #0aa7e0;
   font-size: 14px;
   line-height: 18px;
+}
+.settings-block .add-card-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+  z-index: 1;
+  display: none;
+}
+.settings-block .add-card-popup h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  color: #0aa7e0;
+}
+.settings-block .add-card-popup .popup-holder {
+  width: 500px;
+  background: #fff;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.settings-block .add-card-popup .popup-frame {
+  width: 100%;
+}
+.settings-block .add-card-popup .btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-decoration: none;
+  color: #172b54;
+}
+.settings-block .add-card-form .label {
+  display: block;
+  margin-bottom: 10px;
+  color: #051133;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+.settings-block .add-card-form .input-holder {
+  margin-bottom: 23px;
+}
+.settings-block .add-card-form input[type=text],
+.settings-block .add-card-form input[type=email],
+.settings-block .add-card-form input[type=tel],
+.settings-block .add-card-form input[type=password] {
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  padding: 12px 15px;
+  outline: none;
+  text-transform: capitalize;
+  border: 2px solid #c8c8c8;
+  height: 47px;
+}
+.settings-block .add-card-form input[type=text]:focus,
+.settings-block .add-card-form input[type=email]:focus,
+.settings-block .add-card-form input[type=tel]:focus,
+.settings-block .add-card-form input[type=password]:focus {
+  border-color: #a8a8a8;
+}
+.settings-block .add-card-form input[type=text]::-webkit-input-placeholder,
+.settings-block .add-card-form input[type=email]::-webkit-input-placeholder,
+.settings-block .add-card-form input[type=tel]::-webkit-input-placeholder,
+.settings-block .add-card-form input[type=password]::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.settings-block .add-card-form input[type=text]::-moz-placeholder,
+.settings-block .add-card-form input[type=email]::-moz-placeholder,
+.settings-block .add-card-form input[type=tel]::-moz-placeholder,
+.settings-block .add-card-form input[type=password]::-moz-placeholder {
+  opacity: 1;
+  color: #a8a8a8;
+}
+.settings-block .add-card-form input[type=text]:-moz-placeholder,
+.settings-block .add-card-form input[type=email]:-moz-placeholder,
+.settings-block .add-card-form input[type=tel]:-moz-placeholder,
+.settings-block .add-card-form input[type=password]:-moz-placeholder {
+  color: #a8a8a8;
+}
+.settings-block .add-card-form input[type=text]:-ms-input-placeholder,
+.settings-block .add-card-form input[type=email]:-ms-input-placeholder,
+.settings-block .add-card-form input[type=tel]:-ms-input-placeholder,
+.settings-block .add-card-form input[type=password]:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+.settings-block .add-card-form input[type=text].placeholder,
+.settings-block .add-card-form input[type=email].placeholder,
+.settings-block .add-card-form input[type=tel].placeholder,
+.settings-block .add-card-form input[type=password].placeholder {
+  color: #a8a8a8;
+}
+.settings-block .add-card-form .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
+  border: none;
+  padding: 13px 40px;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.3s linear;
+  margin-bottom: 10px;
+}
+.settings-block .add-card-form .btn-primary:hover {
+  background: #0995c8;
 }
 
 .login-img-block {
