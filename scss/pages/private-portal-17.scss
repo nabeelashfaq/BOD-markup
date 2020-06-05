@@ -60,7 +60,32 @@
     width: 58%;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+  }
+
+  ul{
+    margin: 0 0 5px;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 30px 10px 0;
+      min-width: 140px;
+    }
+
+    strong{
+      font-weight: 600;
+    }
+
+    &.full-row{
+      li{
+        display: block;
+        padding-bottom: 10px;
+      }
+    }
+    
+    
   }
 
   .quantity-info-block{
@@ -225,23 +250,5 @@
     color: $mariner;
     text-decoration: none;
     font-weight: 600;
-  }
-
-  dl{
-    margin: 0 0 5px;
-    font-size: 16px;
-    line-height: 22px;
-    
-    dt{
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    dd{
-      display: inline-block;
-      vertical-align: top;
-      margin: 0;
-      font-weight: 600;
-    }
   }
 }

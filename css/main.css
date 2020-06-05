@@ -5563,7 +5563,24 @@ private backend styles
   width: 58%;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+}
+.your-cart-block ul {
+  margin: 0 0 5px;
+  padding: 0;
+  list-style: none;
+}
+.your-cart-block ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 30px 10px 0;
+  min-width: 140px;
+}
+.your-cart-block ul strong {
+  font-weight: 600;
+}
+.your-cart-block ul.full-row li {
+  display: block;
+  padding-bottom: 10px;
 }
 .your-cart-block .quantity-info-block {
   width: 42%;
@@ -5704,21 +5721,6 @@ private backend styles
   vertical-align: top;
   color: #2374bb;
   text-decoration: none;
-  font-weight: 600;
-}
-.your-cart-block dl {
-  margin: 0 0 5px;
-  font-size: 16px;
-  line-height: 22px;
-}
-.your-cart-block dl dt {
-  display: inline-block;
-  vertical-align: top;
-}
-.your-cart-block dl dd {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
   font-weight: 600;
 }
 
