@@ -6598,6 +6598,7 @@ private backend styles
 .support-block h2 {
   font-size: 20px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 .support-block .title-box {
   background-color: #1f5aa3;
