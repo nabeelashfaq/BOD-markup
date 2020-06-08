@@ -1,0 +1,7 @@
+.support-block {
+  padding: 40px 0;
+}
+.support-block .container {
+  display: flex;
+  flex-flow: row wrap;
+}

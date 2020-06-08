@@ -1,0 +1,115 @@
+
+
+.support-block{
+  padding: 40px 0;
+  color: #172b54;
+  font-size: 14px;
+  line-height: 22px;
+
+  .container{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  h1{
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .title-box{
+    background-color: #1f5aa3;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    color: $white;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../images/support_graphic.svg);
+    background-repeat: no-repeat;
+  }
+
+  .title-holder{
+    width: 100%;
+  }
+
+  .info-box{
+    width: 70%;
+    padding: 40px 0 40px 100px;
+  }
+
+  .faq-box{
+    background: #172b54;
+    color: $white;
+    padding: 30px 35px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 30px;
+
+    p{
+      margin-bottom: 0;
+    }
+
+    .btn-primary{
+      flex-shrink: 0;
+      background: $cerulean;
+      color: #fff;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      transition: 0.3s linear;
+      text-decoration: none;
+
+      &:hover{
+        background: darken($cerulean, 5%);
+      }
+    }
+  }
+
+  .text-holder{
+    flex-grow: 1;
+    padding: 0 30px 0 0;
+  }
+
+  .two-boxes-holder{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -15px;
+  }
+
+  .box-holder{
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .box-frame{
+    padding:  30px 35px 20px;
+    border: 2px solid #ebebeb;
+    border-radius: 8px;
+    width: 100%;
+    a{
+      text-decoration: none;
+      color: #172b54;
+      font-weight: bold;
+    }
+  }
+
+  .title{
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+}
