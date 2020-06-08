@@ -1,0 +1,247 @@
+
+
+.signin-popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+  z-index: 1;
+  display: none;
+
+  h1{
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    color: $cerulean;
+  }
+
+  .popup-holder{
+    width: 500px;
+    background: $white;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .popup-frame{
+    width: 100%;
+  }
+
+  .btn-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    color: #172b54;
+  }
+}
+
+.guest-popup{
+  position: fixed;
+  top: 82px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  z-index: 1;
+  max-height: calc(100vh - 82px);
+  overflow-y: auto;
+
+  h1{
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    color: $cerulean;
+  }
+
+  h2{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #215Fac;
+  }
+
+  .popup-holder{
+    width: 865px;
+    margin: 0 auto;
+    background: $white;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .popup-frame{
+    width: 100%;
+  }
+
+  .btn-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    color: #172b54;
+  }
+
+  .checkout-guest-form{
+  
+    .label{
+      display: block;
+      margin-bottom: 4px;
+      color: #051133;
+      text-transform: capitalize;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+  
+    .row{
+      margin: 0 -15px;
+      display: flex;
+      flex-flow: row wrap;
+      text-align: left;
+    }
+  
+    .input-holder{
+      margin-bottom: 23px;
+      padding: 0 15px;
+      min-width: 50%;
+      width: 50%;
+      position: relative;
+      font-size: 16px;
+      line-height: 22px;
+
+      &.error{
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"]{
+          border-color: #cc0813;
+          background-color: #f8d9da;
+        }
+  
+        .error-info{
+          display: block;
+        }
+  
+      }
+    }
+  
+    .title{
+      display: block;
+      margin: 0 0 21px;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: 20px;
+      color: #707070;
+    }
+  
+    .error-info{
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      color: #cc0813;
+      font-style: italic;
+      padding-top: 5px;
+      font-size: 12px;
+      line-height: 15px;
+      display: none;
+    }
+  
+    a{
+      text-decoration: none;
+      color: #2374bb;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"]{
+      width: 100%;
+      border-radius: 5px;
+      background: $white;
+      padding: 12px 15px;
+      outline: none;
+      text-transform: capitalize;
+      border: 2px solid #c8c8c8;
+      height: 47px;
+
+      &:focus{
+        border-color: #a8a8a8;
+      }
+  
+      @include placeholder{
+        color: #a8a8a8;
+      }
+  
+    }
+  
+    .btn-holder{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .btn-primary{
+      background: $cerulean;
+      color: #fff;
+      border: none;
+      padding: 13px 40px;
+      border-radius: 5px;
+      width: 100%;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      transition: 0.3s linear;
+      &:hover{
+        background: darken($cerulean, 5%);
+      }
+    }
+  
+    .fake-select{
+      position: relative;
+      display:block;
+    }
+  
+    select{
+      display:block;
+      margin:0;
+      outline:none;
+      line-height:1.2;
+      border-radius: 5px;
+      border: 2px solid #c8c8c8;
+      background: $white;
+      padding: 11px 15px 12px;
+      appearance:none;
+      position: relative;
+      width: 100%;
+      color: #172B54;;
+      font-size: 16px;
+      line-height: 20px;
+      height: 47px;
+
+      @include placeholder{
+        color: #a8a8a8;
+      }
+    }
+    
+    .fake-select:after{
+      position: absolute;
+      right:15px;
+      content:'\e820';
+      font-family: 'fontello';
+      top:50%;
+      z-index: 1;
+      transform: translateY(-50%);
+      color: $cerulean;
+      font-weight: bold;
+    }
+  }
+}
