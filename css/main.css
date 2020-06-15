@@ -6953,18 +6953,17 @@ private backend styles
 }
 .part-label .label-holder {
   padding: 10px;
-  display: flex;
-  flex-flow: row nowrap;
+  overflow: hidden;
 }
 .part-label .logo {
   width: 50px;
-  flex-shrink: 0;
+  float: left;
   margin: 0 20px 0 0;
 }
 .part-label .text-holder {
-  flex-grow: 1;
   position: relative;
   padding: 0 20px 0 0;
+  overflow: hidden;
 }
 .part-label .title {
   display: block;
@@ -7000,14 +6999,15 @@ private backend styles
   text-transform: uppercase;
 }
 .part-label .icons-address-block {
-  display: flex;
-  flex-flow: row wrap;
+  overflow: hidden;
 }
 .part-label .icons-block {
   width: 43%;
+  float: left;
 }
 .part-label .address-block {
   width: 57%;
+  float: left;
 }
 .part-label .icons {
   list-style: none;

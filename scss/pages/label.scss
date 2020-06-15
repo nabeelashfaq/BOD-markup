@@ -10,20 +10,19 @@
 
   .label-holder{
     padding: 10px;
-    display: flex;
-    flex-flow: row nowrap;
+    overflow: hidden;
   }
 
   .logo{
     width: 50px;
-    flex-shrink: 0;
+    float: left;
     margin: 0 20px 0 0;
   }
 
   .text-holder{
-    flex-grow: 1;
     position: relative;
     padding: 0 20px 0 0;
+    overflow: hidden;
   }
 
   .title{
@@ -66,16 +65,17 @@
   }
 
   .icons-address-block{
-    display: flex;
-    flex-flow: row wrap;
+    overflow: hidden;
   }
 
   .icons-block{
     width: 43%;
+    float: left;
   }
 
   .address-block{
     width: 57%;
+    float: left;
   }
 
   .icons{
