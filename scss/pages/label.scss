@@ -1,16 +1,25 @@
 
+.labels-row{
+  overflow: hidden;
+  max-width: 490px;
+}
+
 
 .part-label{
   width: 159px !important;
-  border: 1px solid #363434;
-  margin: 0 auto;
+  height: 72px;
+  float: left;
   font-size: 4px;
   line-height: 7px;
   color: #373435;
+  padding: 0 4px;
+  margin-bottom: 8px;
 
   .label-holder{
     padding: 4px;
     overflow: hidden;
+    border: 1px solid #363434;
+    height: 72px;
   }
 
   .logo{
