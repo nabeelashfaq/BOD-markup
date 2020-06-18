@@ -6944,57 +6944,56 @@ private backend styles
 }
 
 .part-label {
-  width: 496px !important;
-  border: 2px solid #363434;
+  width: 159px !important;
+  border: 1px solid #363434;
   margin: 0 auto;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 4px;
+  line-height: 7px;
   color: #373435;
 }
 .part-label .label-holder {
-  padding: 10px;
+  padding: 4px;
   overflow: hidden;
 }
 .part-label .logo {
-  width: 50px;
+  width: 16px;
   float: left;
-  margin: 0 20px 0 0;
+  margin: 0 7px 0 0;
 }
 .part-label .text-holder {
   position: relative;
-  padding: 0 20px 0 0;
+  padding: 0 5px 0 0;
   overflow: hidden;
 }
 .part-label .title {
   display: block;
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 6px;
+  line-height: 8px;
 }
 .part-label .p-num {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 5px;
+  line-height: 7px;
   display: block;
-  margin-bottom: 5px;
 }
 .part-label .product-info {
   list-style: none;
-  margin: 0 0 10px;
   padding: 0;
+  margin: 0 0 2px;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 5px;
+  line-height: 7px;
 }
 .part-label .product-info li {
   display: inline-block;
   vertical-align: top;
-  padding: 0 30px 0 0;
+  padding: 0 10px 0 0;
 }
 .part-label .product-info .lot {
   display: inline-block;
   vertical-align: middle;
   border: 1px solid #373435;
-  padding: 0 4px;
+  padding: 0 2px;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -7011,27 +7010,32 @@ private backend styles
 }
 .part-label .icons {
   list-style: none;
-  margin: 0 0 5px;
+  margin: 0 0 2px;
   padding: 0;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -0.32px;
 }
 .part-label .icons li {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 20px 0 0;
+  padding: 0 8px 0 0;
+  width: 33.33%;
 }
-.part-label .icons li:last-child {
-  padding: 0;
+.part-label .icons img {
+  display: block;
+  width: 100%;
 }
 .part-label .category {
   display: block;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 5px;
+  line-height: 7px;
 }
 .part-label .made {
   display: block;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 5px;
+  line-height: 7px;
 }
 .part-label .address-block a {
   text-decoration: none;
@@ -7046,8 +7050,8 @@ private backend styles
   top: 47%;
   right: -55px;
   transform: rotate(-90deg);
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 5px;
+  line-height: 7px;
 }
 
 @font-face {

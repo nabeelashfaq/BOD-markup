@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Braces on demand</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font: 13px/1.2 "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: relative;width: 100%;, overflow: hidden;">
+  <div style="width: 496px !important;border: 2px solid #363434;margin: 10px;font-size: 14px;line-height: 20px;color: #373435;">
+    <div style="padding: 10px; overflow: hidden;">
+      <div style="width: 50px; float: left; margin: 0 20px 0 0;">
+        <a href="#"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/images/label-logo.png" alt=""></a>
+      </div>
+      <div style="flex-grow: 1;position: relative;padding: 0 20px 0 0;">
+        <strong style="display: block;text-transform: uppercase;font-size: 17px;line-height: 24px;"> Twin 10 Bracket kit  UL4 MBT 022             </strong>
+        <span style="font-size: 15px;line-height: 20px;display: block;margin-bottom: 5px;">P/N: 20-99-UL4-22-P00-N07-P00-27-25-1</span>
+        <ul style="list-style: none;margin: 0 0 10px;padding: 0;font-weight: bold;font-size: 17px;line-height: 24px;">
+          <li style="display: inline-block;vertical-align: top;padding: 0 30px 0 0;">QTY: 10</li>
+          <li style="display: inline-block;vertical-align: top;padding: 0 30px 0 0;"><span style="display: inline-block;vertical-align: middle;border: 1px solid #373435;padding: 0 4px;font-weight: normal;text-transform: uppercase;">Lot</span> 23475</li>
+          <li style="display: inline-block;vertical-align: top;padding: 0 30px 0 0;">Rx Only</li>
+        </ul>
+        <div style="display: flex;flex-flow: row wrap;">
+          <div style="width: 43%;">
+            <ul style="list-style: none;margin: 0 0 5px;padding: 0;">
+              <li style="display: inline-block;vertical-align: middle;padding: 0 20px 0 0;"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/svgs/icon-1.svg" alt="" height="32" width="43"></li>
+              <li style="display: inline-block;vertical-align: middle;padding: 0 20px 0 0;"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/svgs/icon-2.svg" alt="" height="31" width="31"></li>
+              <li style="display: inline-block;vertical-align: middle;padding: 0"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/svgs/icon-1.svg" alt="" height="27" width="27"></li>
+            </ul>
+            <span style="display: block;text-transform: uppercase;font-size: 16px;line-height: 20px;">Non-sterile</span>
+            <span style="display: block;font-size: 16px;line-height: 20px;">Made in USA</span>
+          </div>
+          <div style="width: 57%;">
+            <span>Braces on Demand Inc</span>
+            <address style="font-style: normal;display: block;">422 South Broadway, STE 203 Hicksville, NY 11201</address>
+            <a style="text-decoration: none;color: #373435;" href="tel:6465832735">646-583-2735</a>
+          </div>
+        </div>
+        <span style="position: absolute;top: 47%;right: -55px;transform: rotate(-90deg);font-size: 15px;line-height: 20px;">Patent pending</span>
+      </div>
+    </div>
+  </div>
+  <div style="width: 496px !important;border: 2px solid #363434;margin: 10px;font-size: 14px;line-height: 20px;color: #373435;">
+    <div style="padding: 10px;display: flex;flex-flow: row nowrap;">
+      <div style="width: 50px;flex-shrink: 0;margin: 0 20px 0 0;">
+        <a href="#"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/images/label-logo.png" alt=""></a>
+      </div>
+      <div style="flex-grow: 1;position: relative;padding: 0 20px 0 0;">
+        <strong style="display: block;text-transform: uppercase;font-size: 17px;line-height: 24px;"> Non-Convertible 10 Bracket kit  UR7 ROTH 022             </strong>
+        <span style="font-size: 15px;line-height: 20px;display: block;margin-bottom: 5px;">P/N: 20-89-UR7-22-P00-N14-P14-33-15-2</span>
+        <ul style="list-style: none;margin: 0 0 10px;padding: 0;font-weight: bold;font-size: 17px;line-height: 24px;">
+          <li style="display: inline-block;vertical-align: top;padding: 0 30px 0 0;">QTY: 10</li>
+          <li style="display: inline-block;vertical-align: top;padding: 0 30px 0 0;"><span style="display: inline-block;vertical-align: middle;border: 1px solid #373435;padding: 0 4px;font-weight: normal;text-transform: uppercase;">Lot</span> 23475</li>
+          <li style="display: inline-block;vertical-align: top;padding: 0 30px 0 0;">Rx Only</li>
+        </ul>
+        <div style="display: flex;flex-flow: row wrap;">
+          <div style="width: 43%;">
+            <ul style="list-style: none;margin: 0 0 5px;padding: 0;">
+              <li style="display: inline-block;vertical-align: middle;padding: 0 20px 0 0;"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/svgs/icon-1.svg" alt="" height="32" width="43"></li>
+              <li style="display: inline-block;vertical-align: middle;padding: 0 20px 0 0;"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/svgs/icon-2.svg" alt="" height="31" width="31"></li>
+              <li style="display: inline-block;vertical-align: middle;padding: 0"><img src="https://bracesondemand.s3-ap-southeast-1.amazonaws.com/svgs/icon-1.svg" alt="" height="27" width="27"></li>
+            </ul>
+            <span style="display: block;text-transform: uppercase;font-size: 16px;line-height: 20px;">Non-sterile</span>
+            <span style="display: block;font-size: 16px;line-height: 20px;">Made in USA</span>
+          </div>
+          <div style="width: 57%;">
+            <span>Braces on Demand Inc</span>
+            <address style="font-style: normal;display: block;">422 South Broadway, STE 203 Hicksville, NY 11201</address>
+            <a style="text-decoration: none;color: #373435;" href="tel:6465832735">646-583-2735</a>
+          </div>
+        </div>
+        <span style="position: absolute;top: 47%;right: -55px;transform: rotate(-90deg);font-size: 15px;line-height: 20px;">Patent pending</span>
+      </div>
+    </div>
+  </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Message Rizwan Arshad
+
