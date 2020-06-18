@@ -6943,12 +6943,15 @@ private backend styles
   font-weight: bold;
 }
 
-.labels-row {
+/*
+.labels-row{
   overflow: hidden;
   max-width: 490px;
 }
 
-.part-label {
+*/
+/*
+.part-label{
   width: 159px !important;
   height: 72px;
   float: left;
@@ -6957,112 +6960,136 @@ private backend styles
   color: #373435;
   padding: 0 4px;
   margin-bottom: 8px;
-}
-.part-label .label-holder {
-  padding: 4px;
-  overflow: hidden;
-  border: 1px solid #363434;
-  height: 72px;
-}
-.part-label .logo {
-  width: 16px;
-  float: left;
-  margin: 0 7px 0 0;
-}
-.part-label .text-holder {
-  position: relative;
-  padding: 0 5px 0 0;
-  overflow: hidden;
-}
-.part-label .title {
-  display: block;
-  text-transform: uppercase;
-  font-size: 6px;
-  line-height: 8px;
-}
-.part-label .p-num {
-  font-size: 5px;
-  line-height: 7px;
-  display: block;
-}
-.part-label .product-info {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2px;
-  font-weight: bold;
-  font-size: 5px;
-  line-height: 7px;
-}
-.part-label .product-info li {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 10px 0 0;
-}
-.part-label .product-info .lot {
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid #373435;
-  padding: 0 2px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-.part-label .icons-address-block {
-  overflow: hidden;
-}
-.part-label .icons-block {
-  width: 43%;
-  float: left;
-}
-.part-label .address-block {
-  width: 57%;
-  float: left;
-}
-.part-label .icons {
-  list-style: none;
-  margin: 0 0 2px;
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
-  letter-spacing: -0.32px;
-}
-.part-label .icons li {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 8px 0 0;
-  width: 33.33%;
-}
-.part-label .icons img {
-  display: block;
-  width: 100%;
-}
-.part-label .category {
-  display: block;
-  text-transform: uppercase;
-  font-size: 5px;
-  line-height: 7px;
-}
-.part-label .made {
-  display: block;
-  font-size: 5px;
-  line-height: 7px;
-}
-.part-label .address-block a {
-  text-decoration: none;
-  color: #373435;
-}
-.part-label address {
-  font-style: normal;
-  display: block;
-}
-.part-label .patent-info {
-  position: absolute;
-  top: 47%;
-  right: -55px;
-  transform: rotate(-90deg);
-  font-size: 5px;
-  line-height: 7px;
+
+  .label-holder{
+    padding: 4px;
+    overflow: hidden;
+    border: 1px solid #363434;
+    height: 72px;
+  }
+
+  .logo{
+    width: 16px;
+    float: left;
+    margin: 0 7px 0 0;
+  }
+
+  .text-holder{
+    position: relative;
+    padding: 0 5px 0 0;
+    overflow: hidden;
+  }
+
+  .title{
+    display: block;
+    text-transform: uppercase;
+    font-size: 6px;
+    line-height: 8px;
+  }
+
+  .p-num{
+    font-size: 5px;
+    line-height: 7px;
+    display: block;
+  }
+
+  .product-info{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2px;
+    font-weight: bold;
+    font-size: 5px;
+    line-height: 7px;
+
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 10px 0 0;
+    }
+
+    .lot{
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #373435;
+      padding: 0 2px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .icons-address-block{
+    overflow: hidden;
+  }
+
+  .icons-block{
+    width: 43%;
+    float: left;
+  }
+
+  .address-block{
+    width: 57%;
+    float: left;
+  }
+
+  .icons{
+    list-style: none;
+    margin: 0 0 2px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -0.32px;
+
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 8px 0 0;
+      width: 33.33%;
+    }
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .category{
+    display: block;
+    text-transform: uppercase;
+    font-size: 5px;
+    line-height: 7px;
+  }
+
+  .made{
+    display: block;
+    font-size: 5px;
+    line-height: 7px;
+  }
+
+  .address-block{
+    a{
+      text-decoration: none;
+      color: #373435;
+    }
+  }
+
+  address{
+    font-style: normal;
+    display: block;
+  }
+
+  .patent-info{
+    position: absolute;
+    top: 47%;
+    right: -55px;
+    transform: rotate(-90deg);
+    font-size: 5px;
+    line-height: 7px;
+
+  }
 }
 
+*/
 @font-face {
   font-family: "fontello";
   src: url("../fonts/fontello.eot?67641580");
