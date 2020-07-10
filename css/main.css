@@ -5790,6 +5790,9 @@ private backend styles
   color: #2374bb;
 }
 
+.signup-block.confirmation {
+  justify-content: center;
+}
 .signup-block h2 {
   font-size: 24px;
   line-height: 30px;
@@ -6058,6 +6061,42 @@ private backend styles
 }
 .signup-block .signup-form input[type=radio]:checked + .fake-input:before {
   opacity: 1;
+}
+
+.confirmation-info {
+  color: #242736;
+  font-size: 16px;
+  line-height: 22px;
+}
+.confirmation-info .icon-holder {
+  display: block;
+  margin-bottom: 10px;
+}
+.confirmation-info .title {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  color: #172b54;
+  margin-bottom: 10px;
+}
+.confirmation-info p {
+  margin-bottom: 15px;
+}
+.confirmation-info .btn-primary {
+  background: #0aa7e0;
+  color: #fff;
+  padding: 13px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.3s linear;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.confirmation-info .btn-primary:hover {
+  background: #0995c8;
 }
 
 .settings-block {

@@ -79,6 +79,11 @@
 
 .signup-block{
 
+  &.confirmation{
+    justify-content: center;
+  }
+  
+
   h2{
     font-size: 24px;
     line-height: 30px;
@@ -330,5 +335,46 @@
     }
 
     input[type="radio"]:checked + .fake-input:before{opacity:1;}
+  }
+}
+
+.confirmation-info{
+  color: #242736;
+  font-size: 16px;
+  line-height: 22px;
+  
+  .icon-holder{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .title{
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    color: $blue-zodaic;
+    margin-bottom: 10px;
+  }
+
+  p{
+    margin-bottom: 15px;
+  }
+
+  .btn-primary{
+    background: $cerulean;
+    color: #fff;
+    padding: 13px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.3s linear;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+
+    &:hover{
+      background: darken($cerulean, 5%);
+    }
   }
 }
