@@ -2631,6 +2631,68 @@ private backend styles
   font-size: 14px;
   line-height: 20px;
 
+
+  .tabs-list{
+    @extend %listreset;
+    padding: 20px;
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 30px 0 0;
+
+      &:first-child{
+        a{
+          padding: 0;
+          &:before{
+            display: none;
+          }
+        }
+      }
+
+      &.active{
+        a{
+          border-bottom: 2px solid #215FAC;
+        }
+      }
+
+      &.print{
+        a{
+          font-weight: 500;
+        }
+      }
+
+      &.delivery{
+        a{
+          font-weight: 500;
+          &:before{
+            background: #215FAC;
+          }
+        }
+      }
+    }
+
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color: #172B54;
+      position: relative;
+      padding: 0 0 0 15px;
+      display: block;
+
+      &:before{
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 0;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background: #0AA7E0;
+      }
+    }
+  }
+
   .history-detail{
     display: flex;
     flex-flow: row nowrap;
@@ -2678,13 +2740,26 @@ private backend styles
     display: block;
   }
 
-  .teeth-pos{
-    display: block;
+  .teeth-info{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     width: 13%;
-    padding: 15px 0;
+    justify-content: center;
     border-left: 1px solid #EBEBEB;
     border-right: 1px solid #EBEBEB;
     flex-shrink: 0;
+    height: 60px;
+  }
+
+  .teeth-pos{
+    display: block;
+    width: 100%;
+  }
+
+  .printer-detail{
+    display: block;
+    width: 100%;
   }
 
   .link-holder{
@@ -2718,6 +2793,16 @@ private backend styles
     display: flex;
     flex-flow: row wrap;
 
+    &.print{
+      li{
+        &:nth-last-child(2) {
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+
     li{
       position: relative;
       width: 20%;
@@ -2750,6 +2835,35 @@ private backend styles
         }
       }
 
+      &.thumbs-up{
+
+        &.success{
+          .check-holder{
+            background: #0AA7E0;
+            border-color: #0AA7E0;
+          }
+        }
+
+        .check-holder{
+          background: #C9C9C9;
+          border-color: #C9C9C9;
+        }
+      }
+
+      &.thumbs-down{
+
+        .check-holder{
+          background: #e02020;
+          border-color: #e02020;
+        }
+      }
+
+      i{
+        color: $white;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
       &:before{
         position: absolute;
         content: '';
@@ -2763,7 +2877,9 @@ private backend styles
     }
 
     .check-holder{
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: 40px;
       width: 40px;
       border: 2px solid #c9c9c9;

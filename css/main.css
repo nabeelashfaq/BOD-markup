@@ -394,7 +394,7 @@ th {
   padding: 0;
 }
 
-.error-block .links, .instructions-block .steps-list, #header__nav > ul, .header__nav-links-block .header__links-list, .footer__links-block ul, .history-block .progress-list {
+.error-block .links, .instructions-block .steps-list, #header__nav > ul, .header__nav-links-block .header__links-list, .footer__links-block ul, .history-block .progress-list, .history-block .tabs-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -3139,6 +3139,50 @@ private backend styles
   font-size: 14px;
   line-height: 20px;
 }
+.history-block .tabs-list {
+  padding: 20px;
+}
+.history-block .tabs-list li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 30px 0 0;
+}
+.history-block .tabs-list li:first-child a {
+  padding: 0;
+}
+.history-block .tabs-list li:first-child a:before {
+  display: none;
+}
+.history-block .tabs-list li.active a {
+  border-bottom: 2px solid #215FAC;
+}
+.history-block .tabs-list li.print a {
+  font-weight: 500;
+}
+.history-block .tabs-list li.delivery a {
+  font-weight: 500;
+}
+.history-block .tabs-list li.delivery a:before {
+  background: #215FAC;
+}
+.history-block .tabs-list a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #172B54;
+  position: relative;
+  padding: 0 0 0 15px;
+  display: block;
+}
+.history-block .tabs-list a:before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: #0AA7E0;
+}
 .history-block .history-detail {
   display: flex;
   flex-flow: row nowrap;
@@ -3180,13 +3224,24 @@ private backend styles
 .history-block .date {
   display: block;
 }
-.history-block .teeth-pos {
-  display: block;
+.history-block .teeth-info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   width: 13%;
-  padding: 15px 0;
+  justify-content: center;
   border-left: 1px solid #EBEBEB;
   border-right: 1px solid #EBEBEB;
   flex-shrink: 0;
+  height: 60px;
+}
+.history-block .teeth-pos {
+  display: block;
+  width: 100%;
+}
+.history-block .printer-detail {
+  display: block;
+  width: 100%;
 }
 .history-block .link-holder {
   border-left: 1px solid #EBEBEB;
@@ -3215,6 +3270,9 @@ private backend styles
   display: flex;
   flex-flow: row wrap;
 }
+.history-block .progress-list.print li:nth-last-child(2):before {
+  display: none;
+}
 .history-block .progress-list li {
   position: relative;
   width: 20%;
@@ -3236,6 +3294,23 @@ private backend styles
 .history-block .progress-list li.completed:before {
   background: #C9C9C9;
 }
+.history-block .progress-list li.thumbs-up.success .check-holder {
+  background: #0AA7E0;
+  border-color: #0AA7E0;
+}
+.history-block .progress-list li.thumbs-up .check-holder {
+  background: #C9C9C9;
+  border-color: #C9C9C9;
+}
+.history-block .progress-list li.thumbs-down .check-holder {
+  background: #e02020;
+  border-color: #e02020;
+}
+.history-block .progress-list li i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
 .history-block .progress-list li:before {
   position: absolute;
   content: "";
@@ -3247,7 +3322,9 @@ private backend styles
   width: 70px;
 }
 .history-block .progress-list .check-holder {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border: 2px solid #c9c9c9;
@@ -7263,8 +7340,8 @@ private backend styles
 */
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello.eot?67641580");
-  src: url("../fonts/fontello.eot?67641580#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?67641580") format("woff2"), url("../fonts/fontello.woff?67641580") format("woff"), url("../fonts/fontello.ttf?67641580") format("truetype"), url("../fonts/fontello.svg?67641580#fontello") format("svg");
+  src: url("../fonts/fontello.eot?79319557");
+  src: url("../fonts/fontello.eot?79319557#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?79319557") format("woff2"), url("../fonts/fontello.woff?79319557") format("woff"), url("../fonts/fontello.ttf?79319557") format("truetype"), url("../fonts/fontello.svg?79319557#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -7274,7 +7351,7 @@ private backend styles
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?67641580#fontello') format('svg');
+    src: url('../font/fontello.svg?79319557#fontello') format('svg');
   }
 }
 */
@@ -7506,6 +7583,16 @@ private backend styles
 }
 
 /* '' */
+.icon-thumbs-up:before {
+  content: "";
+}
+
+/* '' */
+.icon-thumbs-down:before {
+  content: "";
+}
+
+/* '' */
 .icon-transport:before {
   content: "";
 }
